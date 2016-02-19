@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="discovery_badge_download_count_magnitude_radius">10.0dip</dimen>
+    <dimen name="discovery_badge_family_age_range_radius">24.0dip</dimen>
+    <dimen name="discovery_badge_radius">29.0dip</dimen>
+    <dimen name="play_card_default_radius">2.0dip</dimen>
+    <dimen name="abc_control_corner_material">2.0dip</dimen>
+    <dimen name="play_action_button_corner">2.0dip</dimen>
+    <dimen name="discovery_badge_rating_bar_height">6.0dip</dimen>
+    <dimen name="discovery_badge_rating_bar_star_gap">1.0dip</dimen>
+    <dimen name="play_details_section_title_size">18.0sp</dimen>
+    <dimen name="details_content_margin">10.0dip</dimen>
+    <dimen name="play_cluster_header_height">48.0dip</dimen>
+    <dimen name="play_star_rating_bar_mini_height">8.0dip</dimen>
+    <dimen name="play_star_rating_bar_small_height">11.0dip</dimen>
+    <dimen name="play_star_rating_bar_small_gap">1.0dip</dimen>
+    <dimen name="stream_intro_card_radius">0.0dip</dimen>
+    <dimen name="play_card_default_elevation">2.0dip</dimen>
+    <dimen name="play_card_default_inset">4.0dip</dimen>
+    <dimen name="content_generic_large_size">18.0sp</dimen>
+    <dimen name="play_empty_page_graphic_size">60.0dip</dimen>
+</resources>

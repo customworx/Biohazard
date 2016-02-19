@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pressed_adaway">#8bd32f2f</color>
+    <color name="accent">#fff44336</color>
+    <color name="primary">#ffd32f2f</color>
+    <color name="primary_dark">#ffc62828</color>
+    <color name="tabsScrollColor">#ffffffff</color>
+</resources>

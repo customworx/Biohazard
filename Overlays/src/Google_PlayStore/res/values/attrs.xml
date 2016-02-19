@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="allowsCompactLineSpacing" format="boolean" />
+    <attr name="colorButtonNormal" format="color" />
+    <attr name="action_xpadding" format="dimension" />
+    <attr name="action_top_padding" format="dimension" />
+    <attr name="action_bottom_padding" format="dimension" />
+    <attr name="playCardBackgroundColor" format="color" />
+    <attr name="playCardCornerRadius" format="dimension" />
+    <attr name="playCardElevation" format="dimension" />
+    <attr name="playCardInset" format="dimension" />
+    <attr name="playCardClipToOutline" format="boolean" />
+    <attr name="background" format="reference" />
+    <attr name="actionBarSize" format="dimension">
+        <enum name="wrap_content" value="0" />
+    </attr>
+    <attr name="actionModeBackground" format="reference" />
+    <attr name="actionModeSplitBackground" format="reference" />
+    <attr name="use_all_caps_in_label_mode" format="boolean" />
+    <attr name="star_height" format="dimension" />
+    <attr name="star_color" format="color" />
+    <attr name="star_bg_color" format="color" />
+    <attr name="gap" format="dimension" />
+    <attr name="buttonBarStyle" format="reference" />
+    <attr name="buttonBarButtonStyle" format="reference" />
+    <attr name="uicDelegateToSupportLibAlertDialog" format="boolean" />
+    <attr name="colorControlActivated" format="color" />
+    <attr name="playAccessibilityClassOverride" format="string" />
+    <attr name="elevation" format="dimension" />
+    <attr name="fixed_bounds" format="boolean" />
+    <attr name="height" format="dimension" />
+    <attr name="titleTextStyle" format="reference" />
+    <attr name="subtitleTextStyle" format="reference" />
+    <attr name="closeItemLayout" format="reference" />
+    <attr name="actionModeCloseDrawable" format="reference" />
+    <attr name="actionModeCloseButtonStyle" format="reference" />
+    <attr name="mark_as_button" format="boolean" />
+    <attr name="hide_separator" format="boolean" />
+    <attr name="backgroundSplit" format="reference|color" />
+    <attr name="actionBarItemBackground" format="reference" />
+    <attr name="textAllCaps" format="reference|boolean" />
+    <attr name="windowActionBar" format="boolean" />
+    <attr name="windowNoTitle" format="boolean" />
+    <attr name="expandedTitleMargin" format="dimension" />
+    <attr name="statusBarScrim" format="color" />
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTitleTheme" parent="@android:style/Theme.Holo">
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@android:color/background_dark</item>
+        <item name="android:actionBarStyle">@style/HoloActionBar</item>
+        <item name="android:actionBarSize">56.0dip</item>
+    </style>
+    <style name="HoloActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">#ffd32f2f</item>
+        <item name="android:titleTextStyle">@style/HoloActionBarTitle</item>
+        <item name="android:subtitleTextStyle">@style/HoloActionBarSubtitle</item>
+    </style>
+    <style name="HoloActionBarTitle"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="HoloActionBarSubtitle"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AppNoTitleTheme" parent="@android:style/Theme.Holo.NoActionBar" />
+    <style name="DialogTheme" parent="@android:style/Theme.Holo.Dialog" />
+    <style name="AppTheme.ListView" parent="@android:style/Widget.Holo.ListView">
+        <item name="android:cacheColorHint">@android:color/background_dark</item>
+    </style>
+    <style name="TourTheme" parent="@style/AppNoTitleTheme">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="ShortcutConfigTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="ButtonBar" parent="@android:style/Holo.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ButtonBarButton" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>

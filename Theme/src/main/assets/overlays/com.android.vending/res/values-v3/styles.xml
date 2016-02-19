@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PlayPopupSelector" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/PlayPopupSelectorAnimation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateUnchanged</item>
+    </style>
+    <style name="GenericInstrument_TextField">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColorHint">#b3ffffff</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+    </style>
+</resources>

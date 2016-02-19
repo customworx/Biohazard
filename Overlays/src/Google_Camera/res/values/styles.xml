@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Camera" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowTitleSize">0.0dip</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/black</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:actionBarStyle">@style/Camera.ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:colorAccent">#ffffffff</item>
+    </style>
+    <style name="Theme.CameraSettings" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@android:drawable/screen_background_dark_transparent
+        </item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">#2b000000</item>
+        <item name="android:actionBarStyle">@style/Settings.ActionBar</item>
+    </style>
+    <style name="Settings.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:background">#ffd32f2f</item>
+    </style>
+    <style name="Camera.ActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:displayOptions">homeAsUp|showHome|useLogo</item>
+        <item name="android:backgroundStacked">@null</item>
+    </style>
+</resources>

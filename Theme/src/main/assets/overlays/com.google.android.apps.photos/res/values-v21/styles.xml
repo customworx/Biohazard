@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorPrimaryDisableOnly">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffffffff</item>
+        <item name="android:textColorPrimaryInverse">#ffffffff</item>
+        <item name="android:textColorSecondaryInverse">#ffffffff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">#b3ffffff</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">#ffffffff</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:actionMenuTextColor">#ffffffff</item>
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="android:colorAccent">#ffd32f2f</item>
+        <item name="android:backgroundTint">@android:color/background_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppCompat.Light"
+        parent="@android:style/ThemeOverlay.Material.Dark">
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="isLightTheme">false</item>
+        <item name="colorControlHighlight">#ffd32f2f</item>
+    </style>
+    <style name="Theme.Photos.Dialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorPrimary">#ffd32f2f</item>
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="android:colorAccent">#ffd32f2f</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title"
+        parent="@android:style/TextAppearance.Material.Widget.ActionMode.Title" />
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow"
+        parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="Base.Widget.AppCompat.ActionButton"
+        parent="@android:style/Widget.Material.ActionButton" />
+    <style name="Base.ThemeOverlay.AppCompat" parent="@android:style/ThemeOverlay.Material" />
+    <style name="Base.ThemeOverlay.AppCompat.Dark"
+        parent="@android:style/ThemeOverlay.Material.Dark">
+        <item name="isLightTheme">false</item>
+        <item name="colorControlHighlight">#ffd32f2f</item>
+    </style>
+    <style name="Base.Widget.AppCompat.DropDownItem.Spinner"
+        parent="@android:style/Widget.Material.DropDownItem.Spinner" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+        parent="@android:style/TextAppearance.Material.Widget.ActionMode.Subtitle" />
+    <style name="Base.Widget.AppCompat.PopupMenu"
+        parent="@android:style/Widget.Material.PopupMenu" />
+    <style name="Base.Widget.AppCompat.ActionButton.CloseMode"
+        parent="@android:style/Widget.Material.ActionButton.CloseMode" />
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        parent="@android:style/TextAppearance.Material.Widget.PopupMenu.Large" />
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"
+        parent="@android:style/TextAppearance.Material.Widget.PopupMenu.Small" />
+</resources>

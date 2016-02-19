@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pierx.biohazard.overlays">
+
+    <application
+        android:hasCode="false"
+        android:vmSafeMode="true" />
+    <overlay
+        android:priority="${priorityLabel}"
+        android:targetPackage="${targetPackageLabel}" />
+
+    <meta-data
+        android:name="theme"
+        android:value="Biohazard" />
+    <meta-data
+        android:name="author"
+        android:value="pierx" />
+</manifest>

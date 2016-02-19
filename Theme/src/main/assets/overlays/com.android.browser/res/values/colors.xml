@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fffafafa</color>
+    <color name="black">#ff212121</color>
+    <color name="primary">#ffd32f2f</color>
+    <color name="primary_dark">#ffc62828</color>
+    <color name="accent">#ffd32f2f</color>
+    <color name="floating_action_button_touch_tint">#ffc62828</color>
+    <color name="bookmarkWidgetHeader">#ff383847</color>
+    <color name="bookmarkWidgetDivider">#ff383847</color>
+    <color name="bookmarkWidgetItemBackground">#ff2b2b3c</color>
+    <color name="bookmarkWidgetFolderBackground">#a0383847</color>
+    <color name="bookmarkWidgetFaviconBackground">#23ffffff</color>
+    <color name="bookmarkListFaviconBackground">#23ffffff</color>
+    <color name="tabFaviconBackground">#ffd32f2f</color>
+    <color name="tabFocusHighlight">#ff99cc00</color>
+    <color name="qcMenuBackground">#c0000000</color>
+    <color name="qc_normal">#ffd32f2f</color>
+    <color name="qc_selected">#ffc62828</color>
+    <color name="qc_sub">#ffc62828</color>
+    <color name="qc_tab_nr">#ffc62828</color>
+    <color name="tabViewTitleBackground">#d0000000</color>
+    <color name="navtab_bg">#80606060</color>
+</resources>

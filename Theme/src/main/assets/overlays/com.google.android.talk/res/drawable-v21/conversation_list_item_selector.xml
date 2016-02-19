@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@*android:color/search_url_text_material_dark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask"
+        android:drawable="@*android:color/system_notification_accent_color" />
+    <item>
+        <selector>
+            <item android:state_focused="true"
+                android:drawable="@*android:drawable/list_section_divider_material" />
+        </selector>
+    </item>
+</ripple>

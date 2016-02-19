@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:name="root"
+    android:alpha="0.3" android:height="32dp" android:width="32dp" android:viewportHeight="48"
+    android:viewportWidth="48">
+    <group android:name="ic_signal_wifi" android:translateX="21.9995" android:translateY="25.73401">
+        <group android:name="ic_signal_wifi_pivot" android:translateX="-23.21545"
+            android:translateY="-18.86649">
+            <clip-path android:name="mask"
+                android:pathData="M 38.8337860107,-40.3974914551 c 0.0,0.0 -35.8077850342,31.5523681641 -35.8077850342,31.5523681641 c 0.0,0.0 40.9884796143,41.1153411865 40.9884796143,41.1153411865 c 0.0,0.0 -2.61700439453,2.0938873291 -2.61700439453,2.0938873291 c 0.0,0.0 -41.1884460449,-41.1267852783 -41.1884460449,-41.1267852783 c 0.0,0.0 -34.6200408936,25.4699249268 -34.6200408936,25.4699249268 c 0.0,0.0 55.9664764404,69.742401123 55.9664764404,69.742401123 c 0.0,0.0 73.2448120117,-59.1047973633 73.2448120117,-59.1047973633 c 0.0,0.0 -55.9664916992,-69.7423400879 -55.9664916992,-69.7423400879 Z" />
+            <group android:name="cross">
+                <path android:name="cross_1"
+                    android:pathData="M 6.44050598145,1.9430847168 c 0.0,0.0 33.5749816895,33.4499664307 33.5749816895,33.4499664307 "
+                    android:strokeColor="#ffffffff" android:strokeAlpha="1"
+                    android:strokeWidth="3.5" android:fillColor="#00000000" />
+            </group>
+            <group android:name="wifi" android:translateX="0" android:translateY="-8">
+                <path android:name="wifi_1"
+                    android:pathData="M16.192,3.840 C23.968,8.266 31.832,3.976 31.832,3.976 L24.080,22.575 L16.192,3.840 ZM22.448,23.796 L3.680,31.670 C8.114,23.908 3.816,16.058 3.816,16.058 L22.448,23.796 ZM31.968,44.160 C24.192,39.734 16.328,44.024 16.328,44.024 L24.080,25.425 L31.968,44.160 ZM25.712,23.796 L44.480,15.922 C40.046,23.685 44.344,31.535 44.344,31.535 L25.712,23.796 Z"
+                    android:fillColor="#ffffffff" android:fillAlpha="1" />
+            </group>
+        </group>
+    </group>
+</vector>

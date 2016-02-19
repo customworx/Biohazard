@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?buttonBarButtonStyle</item>
+    </style>
+    <style name="Platform.ThemeOverlay.AppCompat.Light" parent="">
+        <item name="android:colorControlNormal">#ffffffff</item>
+        <item name="android:colorControlActivated">#ffd32f2f</item>
+        <item name="android:colorPrimary">#ffd32f2f</item>
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="android:colorAccent">#fff44336</item>
+    </style>
+</resources>

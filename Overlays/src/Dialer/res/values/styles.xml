@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogTheme" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorForeground">@android:color/background_dark</item>
+        <item name="android:colorBackground">@android:color/background_dark</item>
+        <item name="android:colorAccent">#ffd32f2f</item>
+    </style>
+    <style name="DialtactsTheme1" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/background_dark</item>
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffffffff</item>
+    </style>
+    <style name="TextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="TextAppearanceSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#fffafafa</item>
+    </style>
+</resources>

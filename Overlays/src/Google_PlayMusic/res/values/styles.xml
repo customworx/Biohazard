@@ -1,0 +1,37 @@
+<resources>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material" />
+    <style name="BaseMusicActivityTheme" parent="@android:style/Theme.Material" />
+    <style name="PlayDrawerList">
+        <item name="android:background">@android:color/background_dark</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:cacheColorHint">@android:color/background_dark</item>
+        <item name="android:divider">@null</item>
+        <item name="android:choiceMode">none</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="PrimaryText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SecondaryText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#b3ffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Tutorial.Button.White" parent="@style/Tutorial.Button">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="Tutorial.Button" parent="@style/Tutorial">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="Tutorial" />
+    <style name="ToolbarBackground">
+        <item name="android:background">@android:color/background_dark</item>
+    </style>
+</resources>

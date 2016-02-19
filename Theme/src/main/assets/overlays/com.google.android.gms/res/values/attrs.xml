@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="buttonBarStyle" format="reference" />
+    <attr name="buttonBarButtonStyle" format="reference" />
+    <attr name="dividerHorizontal" format="reference" />
+    <attr name="auth_setup_wizard_divider_color" format="reference" />
+    <attr name="auth_setup_wizard_link_color" format="reference|color" />
+    <attr name="isLightTheme" format="boolean" />
+    <attr name="colorControlHighlight" format="color" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="colorAccent" format="color" />
+    <attr name="colorControlNormal" format="color" />
+    <attr name="indeterminateProgressStyle" format="reference" />
+    <attr name="textAllCaps" format="reference|boolean" />
+    <attr name="auth_setup_wizard_header_background" format="reference|color" />
+    <attr name="auth_setup_wizard_header_foreground" format="reference" />
+    <attr name="auth_setup_wizard_progress_bar_color" format="reference|color" />
+    <attr name="credential_option_account_name_text_color" format="reference|color" />
+    <attr name="credential_option_display_name_text_color" format="reference|color" />
+</resources>

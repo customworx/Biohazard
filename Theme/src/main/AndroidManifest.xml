@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pierx.biohazard">
+
+    <uses-feature
+        android:name="org.cyanogenmod.theme"
+        android:required="false" />
+
+    <meta-data
+        android:name="org.cyanogenmod.theme.name"
+        android:value="@string/theme_name" />
+    <meta-data
+        android:name="org.cyanogenmod.theme.author"
+        android:value="@string/theme_author" />
+
+    <application
+        android:allowBackup="true"
+        android:hasCode="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/theme_name"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.pierx.biohazard.Overlay"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.layers.plugins.PICK_OVERLAYS" />
+                <category android:name="Overlay" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="Layers_Name"
+            android:value="@string/ThemeName" />
+        <meta-data
+            android:name="Layers_Developer"
+            android:value="@string/ThemeAuthor" />
+        <meta-data
+            android:name="Layers_Description"
+            android:value="@string/ThemeDescription" />
+        <meta-data
+            android:name="Layers_WhatsNew"
+            android:value="@string/ThemeChangelog" />
+
+    </application>
+
+</manifest>

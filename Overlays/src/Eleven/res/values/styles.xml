@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Eleven.Theme" parent="@android:style/Theme.Material">
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:colorPrimary">#ffd32f2f</item>
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="android:colorAccent">#fff44336</item>
+    </style>
+    <style name="NotificationText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="DropDownListView" parent="@android:style/Widget.Material.ListView.DropDown">
+        <item name="android:divider">#2bffffff</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="ListView" parent="@android:style/Widget.Material.ListView">
+        <item name="android:divider">#2bffffff</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="Eleven.Theme.ActionBar.Overlay"
+        parent="@android:style/ThemeOverlay.Material.Dark.ActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

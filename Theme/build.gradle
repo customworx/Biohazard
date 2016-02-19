@@ -1,0 +1,272 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.pierx.biohazard"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 11
+        versionName "2.1"
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                output.outputFile = new File(
+                        output.outputFile.parent, "Biohazard-${variant.versionName}.apk")
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+//Overlays location
+def Overlays = copySpec {
+    from('../Overlays/build/outputs/apk') {
+        include "*.apk"
+    }
+}
+
+task copy(type: Copy) {
+    into "src/main/assets/Files"
+    with Overlays
+}
+
+task createZip(type:Zip) {
+    from ('src/main/assets/Files/')
+    include '*.apk'
+//    into ''
+    destinationDir file('src/main/assets/Files/') // directory that you want your archive to be placed in
+    baseName = 'Biohazard_General'
+}
+
+task RRO(dependsOn: ['copy', 'createZip']) {
+    println "Preparing assets..."
+}
+
+task cleanFiles(type: Delete) {
+    delete fileTree(dir: "src/main/assets/Files", exclude: "Biohazard_General.zip")
+}
+
+//assembleDebug.finalizedBy(['assetsReady', 'cleanFiles'])
+//assembleRelease.finalizedBy(['assetsReady', 'cleanFiles'])
+
+//Theme Engine
+
+project.afterEvaluate{
+    prepareDebugDependencies.dependsOn(['CM','RRO', 'cleanFiles'])
+}
+
+task CM << {
+    copy {
+        from('../Overlays/src/AudioFX')
+        into 'src/main/assets/overlays/org.cyanogenmod.audiofx'
+    }
+    copy {
+        from('../Overlays/src/Browser')
+        into 'src/main/assets/overlays/com.android.browser'
+    }
+    copy {
+        from('../Overlays/src/Calculator')
+        into 'src/main/assets/overlays/com.android.calculator2'
+    }
+    copy {
+        from('../Overlays/src/Contacts')
+        into 'src/main/assets/overlays/com.android.contacts'
+    }
+    copy {
+        from('../Overlays/src/Camera')
+        into 'src/main/assets/overlays/com.android.camera2'
+    }
+    copy {
+        from('../Overlays/src/CatLog')
+        into 'src/main/assets/overlays/com.nolanlawson.logcat'
+    }
+    copy {
+        from('../Overlays/src/CellBroadcast')
+        into 'src/main/assets/overlays/com.android.cellbroadcastreceiver'
+    }
+    copy {
+        from('../Overlays/src/Dialer')
+        into 'src/main/assets/overlays/com.android.dialer'
+    }
+    copy {
+        from('../Overlays/src/DocumentsUI')
+        into 'src/main/assets/overlays/com.android.documentsui'
+    }
+    copy {
+        from('../Overlays/src/Deskclock')
+        into 'src/main/assets/overlays/com.android.deskclock'
+    }
+    copy {
+        from('../Overlays/src/Development')
+        into 'src/main/assets/overlays/com.android.development'
+    }
+    copy {
+        from('../Overlays/src/Diskinfo')
+        into 'src/main/assets/overlays/me.kuder.diskinfo'
+    }
+    copy {
+        from('../Overlays/src/Eleven')
+        into 'src/main/assets/overlays/com.cyanogenmod.eleven'
+    }
+    copy {
+        from('../Overlays/src/Email')
+        into 'src/main/assets/overlays/com.android.email'
+    }
+
+    copy {
+        from('../Overlays/src/ES_Explorer')
+        into 'src/main/assets/overlays/com.estrongs.android.pop'
+    }
+    copy {
+        from('../Overlays/src/Framework') {
+            exclude 'list_divider_material.png'
+        }
+        into 'src/main/assets/overlays/android'
+    }
+    copy {
+        from('../Overlays/src/Gallery')
+        into 'src/main/assets/overlays/com.android.gallery3d'
+    }
+    copy {
+        from('../Overlays/src/Chrome')
+        into 'src/main/assets/overlays/com.android.chrome'
+    }
+    copy {
+        from('../Overlays/src/Gmail')
+        into 'src/main/assets/overlays/com.google.android.gm'
+    }
+    copy {
+        from('../Overlays/src/Google_Camera')
+        into 'src/main/assets/overlays/com.google.android.GoogleCamera'
+    }
+    copy {
+        from('../Overlays/src/Google_Contacts')
+        into 'src/main/assets/overlays/com.google.android.contacts'
+    }
+    copy {
+        from('../Overlays/src/Google_Deskclock')
+        into 'src/main/assets/overlays/com.google.android.dialer'
+    }
+    copy {
+        from('../Overlays/src/Google_Drive')
+        into 'src/main/assets/overlays/com.google.android.dialer'
+    }
+    copy {
+        from('../Overlays/src/Google_Hangout')
+        into 'src/main/assets/overlays/com.google.android.talk'
+    }
+    copy {
+        from('../Overlays/src/Google_Hangout_ThemeReady')
+        into 'src/main/assets/overlays/com.google.android.talk'
+    }
+    copy {
+        from('../Overlays/src/Google_Keep')
+        into 'src/main/assets/overlays/com.google.android.keep'
+    }
+    copy {
+        from('../Overlays/src/Google_Keyboard')
+        into 'src/main/assets/overlays/com.google.android.inputmethod.latin'
+    }
+    copy {
+        from('../Overlays/src/Google_Messenger')
+        into 'src/main/assets/overlays/com.google.android.apps.messaging'
+    }
+    copy {
+        from('../Overlays/src/Google_Photos')
+        into 'src/main/assets/overlays/com.google.android.apps.photos'
+    }
+    copy {
+        from('../Overlays/src/Google_PlayMusic')
+        into 'src/main/assets/overlays/com.google.android.music'
+    }
+    copy {
+        from('../Overlays/src/Google_PlayStore')
+        into 'src/main/assets/overlays/com.android.vending'
+    }
+    copy {
+        from('../Overlays/src/Google_Plus')
+        into 'src/main/assets/overlays/com.google.android.apps.plus'
+    }
+    copy {
+        from('../Overlays/src/Google_Settings')
+        into 'src/main/assets/overlays/com.google.android.gms'
+    }
+    copy {
+        from('../Overlays/src/Google_Translate')
+        into 'src/main/assets/overlays/com.google.android.apps.translate'
+    }
+    copy {
+        from('../Overlays/src/Inbox')
+        into 'src/main/assets/overlays/com.google.android.apps.inbox'
+    }
+
+    copy {
+        from('../Overlays/src/Keyboard')
+        into 'src/main/assets/overlays/com.android.inputmethod.latin'
+    }
+
+    copy {
+        from('../Overlays/src/Kernel_Adiutor')
+        into 'src/main/assets/overlays/com.grarak.kerneladiutor'
+    }
+    copy {
+        from('../Overlays/src/Launcher3')
+        into 'src/main/assets/overlays/com.android.launcher3'
+    }
+
+    copy {
+        from('../Overlays/src/Layers_Manager')
+        into 'src/main/assets/overlays/com.lovejoy777.rroandlayersmanager'
+    }
+    copy {
+        from('../Overlays/src/Nova_Launcher')
+        into 'src/main/assets/overlays/com.teslacoilsw.launcher'
+    }
+    copy {
+        from('../Overlays/src/Package_Installer')
+        into 'src/main/assets/overlays/com.android.packageinstaller'
+    }
+    copy {
+        from('../Overlays/src/PushBullet')
+        into 'src/main/assets/overlays/com.pushbullet.android'
+    }
+    copy {
+        from('../Overlays/src/SMSBackupRestore')
+        into 'src/main/assets/overlays/com.riteshsahu.SMSBackupRestore'
+    }
+    copy {
+        from('../Overlays/src/SMSBackupRestorePro')
+        into 'src/main/assets/overlays/com.riteshsahu.SMSBackupRestorePro'
+    }
+    copy {
+        from('../Overlays/src/Settings')
+        into 'src/main/assets/overlays/com.android.settings'
+    }
+    copy {
+        from('../Overlays/src/Softkey')
+        into 'src/main/assets/overlays/com.android.systemui'
+    }
+    copy {
+        from('../Overlays/src/SystemUI')
+        into 'src/main/assets/overlays/com.android.systemui'
+    }
+    copy {
+        from('../Overlays/src/SuperSu')
+        into 'src/main/assets/overlays/eu.chainfire.supersu'
+    }
+    copy {
+        from('../Overlays/src/Telecom')
+        into 'src/main/assets/overlays/com.android.server.telecom'
+    }
+    copy {
+        from('../Overlays/src/org.cyanogenmod.theme.chooser')
+        into 'src/main/assets/overlays/org.cyanogenmod.theme.chooser'
+    }
+}

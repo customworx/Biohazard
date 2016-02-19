@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+	<issue id="UnusedResources" severity="ignore" />
+	<issue id="PrivateResource" severity="ignore" />
+	<issue id="IconDipSize" severity="ignore" />
+	<issue id="IconDuplicatesConfig" severity="ignore" />
+	<issue id="MissingApplicationIcon" severity="ignore" />
+	<issue id="IconDensities" severity="ignore" />
+	<issue id="IconDuplicates" severity="ignore" />
+	<issue id="IconMissingDensityFolder" severity="ignore" />
+	<issue id="AllowBackup" severity="ignore" />
+</lint>

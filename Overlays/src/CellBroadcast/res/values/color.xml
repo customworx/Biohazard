@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cell_broadcast_color_primary">#ffd32f2f</color>
+    <color name="cell_broadcast_color_primary_dark">#ffc62828</color>
+</resources>
