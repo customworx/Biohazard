@@ -56,9 +56,9 @@
     <style name="Theme.CallerId" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColor">#ffdddddd</item>
-        <item name="android:colorPrimary">#ff1976d2</item>
-        <item name="android:colorPrimaryDark">#ff0d47a1</item>
-        <item name="android:colorAccent">#ff1976d2</item>
+        <item name="android:colorPrimary">#ffd32f2f</item>
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="android:colorAccent">#ffd32f2f</item>
     </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView"
         parent="@android:style/Widget.Material.ActionBar.TabView" />

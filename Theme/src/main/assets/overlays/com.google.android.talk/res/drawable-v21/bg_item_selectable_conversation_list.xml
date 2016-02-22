@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple android:color="@*android:color/search_url_text_material_dark"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@android:id/mask" android:drawable="@android:color/background_dark" />
+<ripple android:color="#ffdbdbdb" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/darker_gray" />
     <item>
         <selector>
-            <item android:drawable="@*android:color/system_notification_accent_color"
+            <item android:drawable="@android:color/background_dark"
                 android:state_activated="true" />
             <item android:drawable="@android:color/background_dark" />
         </selector>

@@ -217,6 +217,10 @@ android {
             applicationId 'com.pierx.biohazard.pkgviewer'
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.cuilab.pkgviewer" ]
         }
+        Pandora {
+            applicationId 'com.pierx.biohazard.pandora'
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.pandora.android" ]
+        }
 /*        Phone {
             applicationId 'com.pierx.biohazard.phone'
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.phone" ]

@@ -233,7 +233,7 @@
     <color name="material_blue_grey_800">#ff212121</color>
     <color name="material_blue_grey_900">#ff131313</color>
     <color name="material_blue_grey_950">@android:color/background_dark</color>
-    <item type="color" name="gray_alpha">0.54</item>
+    <!--<item type="color" name="gray_alpha">0.54</item>-->
     <color name="translucent_black">#66000000</color>
     <color name="dark_shadow_black">#cc000000</color>
     <color name="background_activity_translucent_overlay">#55000000</color>

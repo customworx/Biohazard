@@ -156,7 +156,7 @@
     <color name="background">#ff212121</color>
     <color name="actionbar_gradient_top_color">#99bdbdbd</color>
     <color name="actionbar_gradient_text_shadow">#26ffffff</color>
-    <color name="quantum_white_100">#fff44336</color>
+    <color name="quantum_white_100">#ffffff</color>               <!--TODO G+-->
     <color name="text_black_87_percent">#ffffffff</color>
     <color name="bright_foreground_disabled_material_light">#50ffffff</color>
     <color name="square_promo_header_color">#ffbdbdbd</color>

@@ -8,8 +8,8 @@ android {
         applicationId "com.pierx.biohazard"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 11
-        versionName "2.1"
+        versionCode 12
+        versionName "2.2"
         applicationVariants.all { variant ->
             variant.outputs.each { output ->
                 output.outputFile = new File(
@@ -40,8 +40,7 @@ task copy(type: Copy) {
 task createZip(type:Zip) {
     from ('src/main/assets/Files/')
     include '*.apk'
-//    into ''
-    destinationDir file('src/main/assets/Files/') // directory that you want your archive to be placed in
+    destinationDir file('src/main/assets/Files/')
     baseName = 'Biohazard_General'
 }
 
@@ -53,10 +52,9 @@ task cleanFiles(type: Delete) {
     delete fileTree(dir: "src/main/assets/Files", exclude: "Biohazard_General.zip")
 }
 
-//assembleDebug.finalizedBy(['assetsReady', 'cleanFiles'])
-//assembleRelease.finalizedBy(['assetsReady', 'cleanFiles'])
-
-//Theme Engine
+task clean(type: Delete) {
+    delete buildDir,'src/main/assets/overlays','src/main/assets/Files/'
+}
 
 project.afterEvaluate{
     prepareDebugDependencies.dependsOn(['CM','RRO', 'cleanFiles'])
@@ -76,8 +74,8 @@ task CM << {
         into 'src/main/assets/overlays/com.android.calculator2'
     }
     copy {
-        from('../Overlays/src/Contacts')
-        into 'src/main/assets/overlays/com.android.contacts'
+        from('../Overlays/src/Calendar')
+        into 'src/main/assets/overlays/com.android.calendar'
     }
     copy {
         from('../Overlays/src/Camera')
@@ -90,6 +88,38 @@ task CM << {
     copy {
         from('../Overlays/src/CellBroadcast')
         into 'src/main/assets/overlays/com.android.cellbroadcastreceiver'
+    }
+    copy {
+        from('../Overlays/src/Chrome')
+        into 'src/main/assets/overlays/com.android.chrome'
+    }
+    copy {
+        from('../Overlays/src/Contacts')
+        into 'src/main/assets/overlays/com.android.contacts'
+    }
+    copy {
+        from('../Overlays/src/com.cyanogenmod.lockclock')
+        into 'src/main/assets/overlays/com.cyanogenmod.lockclock'
+    }
+    copy {
+        from('../Overlays/src/com.cyanogenmod.settings.device')
+        into 'src/main/assets/overlays/com.cyanogenmod.settings.device'
+    }
+    copy {
+        from('../Overlays/src/com.dirtyunicorns.about')
+        into 'src/main/assets/overlays/com.dirtyunicorns.about'
+    }
+    copy {
+        from('../Overlays/src/com.dirtyunicorns.certified')
+        into 'src/main/assets/overlays/com.dirtyunicorns.certified'
+    }
+    copy {
+        from('../Overlays/src/com.dirtyunicorns.dutweaks')
+        into 'src/main/assets/overlays/com.dirtyunicorns.dutweaks'
+    }
+    copy {
+        from('../Overlays/src/com.dirtyunicorns.duupdater')
+        into 'src/main/assets/overlays/com.dirtyunicorns.duupdater'
     }
     copy {
         from('../Overlays/src/Dialer')
@@ -119,24 +149,17 @@ task CM << {
         from('../Overlays/src/Email')
         into 'src/main/assets/overlays/com.android.email'
     }
-
     copy {
         from('../Overlays/src/ES_Explorer')
         into 'src/main/assets/overlays/com.estrongs.android.pop'
     }
     copy {
-        from('../Overlays/src/Framework') {
-            exclude 'list_divider_material.png'
-        }
+        from('../Overlays/src/Framework')
         into 'src/main/assets/overlays/android'
     }
     copy {
         from('../Overlays/src/Gallery')
         into 'src/main/assets/overlays/com.android.gallery3d'
-    }
-    copy {
-        from('../Overlays/src/Chrome')
-        into 'src/main/assets/overlays/com.android.chrome'
     }
     copy {
         from('../Overlays/src/Gmail')
@@ -162,10 +185,10 @@ task CM << {
         from('../Overlays/src/Google_Hangout')
         into 'src/main/assets/overlays/com.google.android.talk'
     }
-    copy {
+    /*copy {
         from('../Overlays/src/Google_Hangout_ThemeReady')
         into 'src/main/assets/overlays/com.google.android.talk'
-    }
+    }*/
     copy {
         from('../Overlays/src/Google_Keep')
         into 'src/main/assets/overlays/com.google.android.keep'
@@ -220,10 +243,17 @@ task CM << {
         from('../Overlays/src/Launcher3')
         into 'src/main/assets/overlays/com.android.launcher3'
     }
-
     copy {
         from('../Overlays/src/Layers_Manager')
         into 'src/main/assets/overlays/com.lovejoy777.rroandlayersmanager'
+    }
+    copy {
+        from('../Overlays/src/Messaging')
+        into 'src/main/assets/overlays/com.android.messaging'
+    }
+    copy {
+        from('../Overlays/src/MMS')
+        into 'src/main/assets/overlays/com.android.mms'
     }
     copy {
         from('../Overlays/src/Nova_Launcher')
@@ -232,6 +262,10 @@ task CM << {
     copy {
         from('../Overlays/src/Package_Installer')
         into 'src/main/assets/overlays/com.android.packageinstaller'
+    }
+    copy {
+        from('../Overlays/src/org.omnirom.omniswitch')
+        into 'src/main/assets/overlays/org.omnirom.omniswitch'
     }
     copy {
         from('../Overlays/src/PushBullet')
