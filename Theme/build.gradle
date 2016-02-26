@@ -15,7 +15,6 @@ android {
 }
 
 def themeName = 'Biohazard'
-//def apkLocation = '../Overlays/build/outputs/apk'
 
 //Overlays location
 def Overlays = copySpec {

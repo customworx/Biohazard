@@ -29,255 +29,225 @@ android {
         }
     }
 
-
-/*// delete unaligned files
-    android.applicationVariants.all { variant ->
-        variant.assemble.doLast {
-            variant.outputs.each { output ->
-                println "aligned " + output.outputFile
-                println "unaligned " + output.packageApplication.outputFile
-
-                File unaligned = output.packageApplication.outputFile;
-                File aligned = output.outputFile
-                if (!unaligned.getName().equalsIgnoreCase(aligned.getName())) {
-                    println "deleting " + unaligned.getName()
-                    unaligned.delete()
-                }
-            }
-        }
-    }*/
-
     productFlavors {
+        Android {
+            applicationId packageName +"."+ "Android"
+            manifestPlaceholders = [ priorityLabel:"50", targetPackageLabel:"android" ]
+        }
         AudioFX {
-            applicationId 'com.pierx.biohazard.AudioFX'
+            applicationId packageName +"."+ "AudioFX"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"org.cyanogenmod.audiofx" ]
         }
         Browser {
-            applicationId 'com.pierx.biohazard.browser'
+            applicationId packageName +"."+ "Browser"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.browser" ]
         }
         Calculator {
-            applicationId 'com.pierx.biohazard.calculator'
+            applicationId packageName +"."+ "Calculator"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.calculator2" ]
         }
         Contacts {
-            applicationId 'com.pierx.biohazard.contacts'
+            applicationId packageName +"."+ "Contacts"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.contacts" ]
         }
         Camera {
-            applicationId 'com.pierx.biohazard.camera2'
+            applicationId packageName +"."+ "Camera"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.camera2" ]
         }
         CatLog {
-            applicationId 'com.pierx.biohazard.logcat'
+            applicationId packageName +"."+ "CatLog"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.nolanlawson.logcat" ]
         }
         CellBroadcast {
-            applicationId 'com.pierx.biohazard.cellbroadcastreceiver'
+            applicationId packageName +"."+ "CellBroadcast"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.cellbroadcastreceiver" ]
         }
         Chrome {
-            applicationId 'com.pierx.biohazard.chrome'
+            applicationId packageName +"."+ "Chrome"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.chrome" ]
         }
         Dialer {
-            applicationId 'com.pierx.biohazard.dialer'
+            applicationId packageName +"."+ "Dialer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.dialer" ]
         }
         DocumentsUI {
-            applicationId 'com.pierx.biohazard.documentsui'
+            applicationId packageName +"."+ "DocumentsUI"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.documentsui" ]
         }
         Deskclock {
-            applicationId 'com.pierx.biohazard.deskclock'
+            applicationId packageName +"."+ "Deskclock"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.deskclock" ]
         }
         Development {
-            applicationId 'com.pierx.biohazard.development'
+            applicationId packageName +"."+ "Development"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.development" ]
         }
         Diskinfo {
-            applicationId 'com.pierx.biohazard.diskinfo'
+            applicationId packageName +"."+ "Diskinfo"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"me.kuder.diskinfo" ]
         }
         Eleven {
-            applicationId 'com.pierx.biohazard.eleven'
+            applicationId packageName +"."+ "Eleven"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.cyanogenmod.eleven" ]
         }
         Email {
-            applicationId 'com.pierx.biohazard.email'
+            applicationId packageName +"."+ "Email"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.email" ]
         }
         ES_Explorer {
-            applicationId 'com.pierx.biohazard.estrongs'
+            applicationId packageName +"."+ "ES_Explorer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.estrongs.android.pop" ]
         }
-        Framework {
-            applicationId 'com.pierx.biohazard.framework'
-            manifestPlaceholders = [ priorityLabel:"50", targetPackageLabel:"android" ]
-        }
         Gallery {
-            applicationId 'com.pierx.biohazard.gallery3d'
+            applicationId packageName +"."+ "Gallery"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.gallery3d" ]
         }
         Gmail {
-            applicationId 'com.pierx.biohazard.gm'
+            applicationId packageName +"."+ "Gmail"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.gm" ]
         }
         Google_Camera {
-            applicationId 'com.pierx.biohazard.GoogleCamera'
+            applicationId packageName +"."+ "Google_Camera"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.GoogleCamera" ]
         }
         Google_Contacts {
-            applicationId 'com.pierx.biohazard.GoogleContacts'
+            applicationId packageName +"."+ "Google_Contacts"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.contacts" ]
         }
         Google_Deskclock {
-            applicationId 'com.pierx.biohazard.GoogleDeskclock'
+            applicationId packageName +"."+ "Google_Deskclock"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.deskclock" ]
         }
         Google_Dialer {
-            applicationId 'com.pierx.biohazard.GoogleDialer'
+            applicationId packageName +"."+ "Google_Dialer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.dialer" ]
         }
         Google_Drive {
-            applicationId 'com.pierx.biohazard.drive'
+            applicationId packageName +"."+ "Google_Drive"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.docs" ]
         }
         Google_Hangout {
-            applicationId 'com.pierx.biohazard.hangout'
+            applicationId packageName +"."+ "Google_Hangout"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.talk" ]
         }
         Google_Hangout_ThemeReady {
-            applicationId 'com.pierx.biohazard.hangoutTR'
+            applicationId packageName +"."+ "Google_Hangout_ThemeReady"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.talk" ]
         }
         Google_Keep {
-            applicationId 'com.pierx.biohazard.keep'
+            applicationId packageName +"."+ "Google_Keep"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.keep" ]
         }
         Google_Keyboard {
-            applicationId 'com.pierx.biohazard.keyboard'
+            applicationId packageName +"."+ "Google_Keyboard"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.inputmethod.latin" ]
         }
         Google_Messenger {
-            applicationId 'com.pierx.biohazard.messenger'
+            applicationId packageName +"."+ "Google_Messenger"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.messaging" ]
         }
         Google_Photos {
-            applicationId 'com.pierx.biohazard.photos'
+            applicationId packageName +"."+ "Google_Photos"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.photos" ]
         }
         Google_PlayMusic {
-            applicationId 'com.pierx.biohazard.PlayMusic'
+            applicationId packageName +"."+ "Google_PlayMusic"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.music" ]
         }
         Google_PlayStore {
-            applicationId 'com.pierx.biohazard.vending'
+            applicationId packageName +"."+ "Google_PlayStore"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.vending" ]
         }
         Google_Plus {
-            applicationId 'com.pierx.biohazard.googleplus'
+            applicationId packageName +"."+ "Google_Plus"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.plus" ]
         }
         Google_Settings {
-            applicationId 'com.pierx.biohazard.gms'
+            applicationId packageName +"."+ "Google_Settings"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.gms" ]
         }
         Google_Translate {
-            applicationId 'com.pierx.biohazard.translate'
+            applicationId packageName +"."+ "Google_Translate"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.translate" ]
         }
         Inbox {
-            applicationId 'com.pierx.biohazard.inbox'
+            applicationId packageName +"."+ "Inbox"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.inbox" ]
         }
         Keyboard {
-            applicationId 'com.pierx.biohazard.keyboard'
+            applicationId packageName +"."+ "Keyboard"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.inputmethod.latin" ]
         }
         Kernel_Adiutor {
-            applicationId 'com.pierx.biohazard.kerneladiutor'
+            applicationId packageName +"."+ "Kernel_Adiutor"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.grarak.kerneladiutor" ]
         }
         Launcher3 {
-            applicationId 'com.pierx.biohazard.Launcher3'
+            applicationId packageName +"."+ "Launcher3"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.launcher3" ]
         }
         Layers_Manager {
-            applicationId 'com.pierx.biohazard.LayersManager'
+            applicationId packageName +"."+ "Layers_Manager"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.lovejoy777.rroandlayersmanager" ]
         }
         Nova_Launcher {
-            applicationId 'com.pierx.biohazard.NovaLauncher'
+            applicationId packageName +"."+ "Nova_Launcher"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.teslacoilsw.launcher" ]
         }
         Package_Installer {
-            applicationId 'com.pierx.biohazard.packageinstaller'
+            applicationId packageName +"."+ "Package_Installer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.packageinstaller" ]
         }
         Package_Viewer {
-            applicationId 'com.pierx.biohazard.pkgviewer'
+            applicationId packageName +"."+ "Package_Viewer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.cuilab.pkgviewer" ]
         }
         Pandora {
-            applicationId 'com.pierx.biohazard.pandora'
+            applicationId packageName +"."+ "Pandora"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.pandora.android" ]
         }
 /*        Phone {
-            applicationId 'com.pierx.biohazard.phone'
+            applicationId packageName +"."+ "Phone"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.phone" ]
         }*/
         PushBullet {
-            applicationId 'com.pierx.biohazard.pushbullet'
+            applicationId packageName +"."+ "PushBullet"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.pushbullet.android" ]
         }
-/*        Slimlauncher {
-            applicationId 'com.pierx.biohazard.slimlauncher'
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.slim.slimlauncher" ]
-        }
-        SlimOTA {
-            applicationId 'com.pierx.biohazard.slimota'
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.fusionjack.slimota" ]
-        }*/
         SMSBackupRestore {
-            applicationId 'com.pierx.biohazard.SMSBackupRestore'
+            applicationId packageName +"."+ "SMSBackupRestore"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.riteshsahu.SMSBackupRestore" ]
         }
         SMSBackupRestorePro {
-            applicationId 'com.pierx.biohazard.SMSBackupRestorePro'
+            applicationId packageName +"."+ "SMSBackupRestorePro"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.riteshsahu.SMSBackupRestorePro" ]
         }
         Settings {
-            applicationId 'com.pierx.biohazard.settings'
+            applicationId packageName +"."+ "Settings"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
         }
         Softkey {
-            applicationId 'com.pierx.biohazard.softkey'
+            applicationId packageName +"."+ "Softkey"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.systemui" ]
         }
         SystemUI {
-            applicationId 'com.pierx.biohazard.systemui'
+            applicationId packageName +"."+ "SystemUI"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.systemui" ]
         }
         SuperSu {
-            applicationId 'com.pierx.biohazard.supersu'
+            applicationId packageName +"."+ "SuperSu"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"eu.chainfire.supersu" ]
         }
         Telecom {
-            applicationId 'com.pierx.biohazard.telecom'
+            applicationId packageName +"."+ "Telecom"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.server.telecom" ]
         }
 /*        TwoColums {
-            applicationId 'com.pierx.biohazard.twoColumn'
+            applicationId packageName +"."+ "TwoColums"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
         }*/
-/*        Velvet {
-            applicationId 'com.pierx.biohazard.velvet'
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.googlequicksearchbox" ]
-        }*/
         WhatsApp {
-            applicationId 'com.pierx.biohazard.whatsapp'
+            applicationId packageName +"."+ "WhatsApp"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.whatsapp" ]
         }
     }
