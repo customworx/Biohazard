@@ -1,5 +1,0 @@
-<resources>
-    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material" />
-    <style name="DialogTheme" parent="@android:style/Theme.Material.Dialog" />
-    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
-</resources>

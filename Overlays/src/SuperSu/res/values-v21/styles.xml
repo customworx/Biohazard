@@ -5,8 +5,7 @@
     </style>
     <style name="Sherlock.__Theme.Material" parent="@android:style/Theme.Material" />
     <style name="Sherlock.__Theme.Material.Light" parent="@android:style/Theme.Material" />
-    <style name="Sherlock.__Theme.Material.Light.DarkActionBar"
-        parent="@android:style/Theme.Material" />
+    <style name="Sherlock.__Theme.Material.Light.DarkActionBar" parent="@android:style/Theme.Material" />
     <style name="Theme.SuperSU.Material.Light.DarkActionBar.Dialog"
         parent="@android:style/Theme.Material.Dialog">
         <item name="android:colorPrimary">#ffd32f2f</item>

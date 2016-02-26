@@ -8,56 +8,59 @@ android {
         applicationId "com.pierx.biohazard"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 12
-        versionName "2.2"
-        applicationVariants.all { variant ->
-            variant.outputs.each { output ->
-                output.outputFile = new File(
-                        output.outputFile.parent, "Biohazard-${variant.versionName}.apk")
-            }
-        }
+        versionCode 13
+        versionName "2.3"
 
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
-    }
 }
+
+def themeName = 'Biohazard'
+//def apkLocation = '../Overlays/build/outputs/apk'
 
 //Overlays location
 def Overlays = copySpec {
     from('../Overlays/build/outputs/apk') {
         include "*.apk"
+        exclude '*release.apk'
+        exclude '*unaligned.apk'
     }
 }
 
-task copy(type: Copy) {
+//Copy overlays to Files for RRO
+task copyOverlays(type: Copy) {
     into "src/main/assets/Files"
     with Overlays
 }
 
+//Give the .zip package a name
 task createZip(type:Zip) {
     from ('src/main/assets/Files/')
     include '*.apk'
     destinationDir file('src/main/assets/Files/')
-    baseName = 'Biohazard_General'
+    baseName = themeName + "_General"
+    doFirst {
+        println 'Creating zip...'
+    }
 }
 
-task RRO(dependsOn: ['copy', 'createZip']) {
-    println "Preparing assets..."
+//Preparing assets...
+task RRO(dependsOn: ['copyOverlays', 'createZip']) {
+    doFirst {
+        println "Processing RRO"
+    }
 }
 
+//Clean the apk's
 task cleanFiles(type: Delete) {
-    delete fileTree(dir: "src/main/assets/Files", exclude: "Biohazard_General.zip")
+    delete fileTree(dir: "src/main/assets/Files", exclude: "*.zip")
+    doFirst {
+        println 'Finishing Plugin'
+    }
 }
 
-task clean(type: Delete) {
-    delete buildDir,'src/main/assets/overlays','src/main/assets/Files/'
-}
-
+//Prepare all required files for theme engine and RRO
 project.afterEvaluate{
-    prepareDebugDependencies.dependsOn(['CM','RRO', 'cleanFiles'])
+    prepareDebugDependencies.dependsOn(['CM','RRO','cleanFiles'])
 }
 
 task CM << {
@@ -303,4 +306,12 @@ task CM << {
         from('../Overlays/src/org.cyanogenmod.theme.chooser')
         into 'src/main/assets/overlays/org.cyanogenmod.theme.chooser'
     }
+    copy {
+        from('../Overlays/src/WhatsApp')
+        into 'src/main/assets/overlays/com.whatsapp'
+    }
+}
+
+CM.doLast {
+    println 'Theme Engine Start'
 }

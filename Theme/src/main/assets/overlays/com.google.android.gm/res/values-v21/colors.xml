@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="text_color_undo_notification">#ffd32f2f</color>
-    <color name="mini_drawer_activated_background_color">#ffd32f2f</color>
-    <color name="text_color_undo_notification_description">#ffffffff</color>
-</resources>
