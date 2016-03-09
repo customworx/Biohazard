@@ -16,52 +16,6 @@ android {
 
 def themeName = 'Biohazard'
 
-//Overlays location
-def Overlays = copySpec {
-    from('../Overlays/build/outputs/apk') {
-        include "*.apk"
-        exclude '*release.apk'
-        exclude '*unaligned.apk'
-    }
-}
-
-//Copy overlays to Files for RRO
-task copyOverlays(type: Copy) {
-    into "src/main/assets/Files"
-    with Overlays
-}
-
-//Give the .zip package a name
-task createZip(type:Zip) {
-    from ('src/main/assets/Files/')
-    include '*.apk'
-    destinationDir file('src/main/assets/Files/')
-    baseName = themeName + "_General"
-    doFirst {
-        println 'Creating zip...'
-    }
-}
-
-//Preparing assets...
-task RRO(dependsOn: ['copyOverlays', 'createZip']) {
-    doFirst {
-        println "Processing RRO"
-    }
-}
-
-//Clean the apk's
-task cleanFiles(type: Delete) {
-    delete fileTree(dir: "src/main/assets/Files", exclude: "*.zip")
-    doFirst {
-        println 'Finishing Plugin'
-    }
-}
-
-//Prepare all required files for theme engine and RRO
-project.afterEvaluate{
-    prepareDebugDependencies.dependsOn(['CM','RRO','cleanFiles'])
-}
-
 task CM << {
     copy {
         from('../Overlays/src/AudioFX')
@@ -313,4 +267,50 @@ task CM << {
 
 CM.doLast {
     println 'Theme Engine Start'
+}
+
+//Overlays location
+def Overlays = copySpec {
+    from('../Overlays/build/outputs/apk') {
+        include "*.apk"
+        exclude '*release.apk'
+        exclude '*unaligned.apk'
+    }
+}
+
+//Copy overlays to Files for RRO
+task copyOverlays(type: Copy) {
+    into "src/main/assets/Files"
+    with Overlays
+}
+
+//Give the .zip package a name
+task createZip(type:Zip) {
+    from ('src/main/assets/Files/')
+    include '*.apk'
+    destinationDir file('src/main/assets/Files/')
+    baseName = themeName + "_General"
+    doFirst {
+        println 'Creating zip...'
+    }
+}
+
+//Preparing assets...
+task RRO(dependsOn: ['copyOverlays', 'createZip']) {
+    doFirst {
+        println "Processing RRO"
+    }
+}
+
+//Clean the apk's
+task cleanFiles(type: Delete) {
+    delete fileTree(dir: "src/main/assets/Files", exclude: "*.zip")
+    doFirst {
+        println 'Finishing Plugin'
+    }
+}
+
+//Prepare all required files for theme engine and RRO
+project.afterEvaluate{
+    prepareDebugDependencies.dependsOn(['CM','RRO','cleanFiles'])
 }

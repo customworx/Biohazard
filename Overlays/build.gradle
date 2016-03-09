@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId packageName + ".overlay"
-        minSdkVersion 22
+        minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -20,7 +20,7 @@ android {
         ]
     }
 
-//remove '-debug' when running assembleDebug task
+//remove '-debug' when running gradle assembleDebug
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def apk = output.outputFile;

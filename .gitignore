@@ -1,3 +1,6 @@
+/.gitignore
+/Biohazard.jks
+/.idea
 .gradle
 /local.properties
 /.idea/workspace.xml
