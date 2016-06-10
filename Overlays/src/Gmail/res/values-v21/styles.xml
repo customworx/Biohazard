@@ -1,56 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ConversationListFadeBase" parent="@android:style/Widget.Material.ListView">
-        <item name="android:colorBackground">@android:color/background_dark</item>
-        <item name="android:windowBackground">@android:color/background_dark</item>
-        <item name="android:background">@android:color/background_dark</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/background_dark</item>
+    <style name="Base.TextAppearance.AppCompat.Inverse" parent="@android:style/TextAppearance.Material" />
+    <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@android:style/TextAppearance.Material.Large" />
+    <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@android:style/TextAppearance.Material.Medium" />
+    <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@android:style/TextAppearance.Material.Small" />
+    <style name="NotificationPrimaryText">
+        <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="UnifiedEmailTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/background_dark</item>
         <item name="android:windowBackground">@android:color/background_dark</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/background_dark</item>
-        <item name="android:actionModeBackground">@android:color/background_dark</item>
-        <item name="android:colorEdgeEffect">#ffd32f2f</item>
-    </style>
-    <style name="NotificationPrimaryText">
-        <item name="android:textColor">#ffd32f2f</item>
-    </style>
-    <style name="NotificationSecondaryText">
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:listViewWhiteStyle">@android:style/Widget.Material.ListView</item>
+        <item name="android:background">@android:color/background_dark</item>
     </style>
     <style name="LabelSyncTheme" parent="@android:style/Theme.Material.Dialog" />
     <style name="GmailTheme.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
-        <item name="android:colorBackgroundCacheHint">@android:color/background_dark</item>
+        <item name="android:colorPrimary">@android:color/holo_blue_light</item>
+        <item name="android:colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="android:colorAccent">@android:color/holo_blue_bright</item>
     </style>
-    <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@style/GmailTheme.NoActionBar">
-        <item name="android:windowBackground">@android:color/background_dark</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/background_dark</item>
-        <item name="android:colorPrimaryDark">#ffc62828</item>
+    <style name="GmailTheme.NoActionBar.Fullscreen" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:colorPrimary">@android:color/holo_blue_light</item>
+        <item name="android:colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="android:colorAccent">@android:color/holo_blue_bright</item>
     </style>
-    <style name="GmailTheme.NoActionBar.Fullscreen"
-        parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
-        <item name="android:colorBackgroundCacheHint">@android:color/background_dark</item>
-        <item name="android:colorPrimary">#ffd32f2f</item>
-        <item name="android:colorPrimaryDark">#ffc62828</item>
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
     <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/background_dark</item>
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffffffff</item>
+        <item name="android:textColorSecondaryInverse">#ffffffff</item>
+        <item name="android:textColorSecondaryInverseNoDisable">#ffffffff</item>
+        <item name="android:windowBackground">@android:color/background_dark</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/background_dark</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorTertiary">#ffffffff</item>
+        <item name="android:textColorTertiaryInverse">#ffffffff</item>
         <item name="android:windowActionBar">false</item>
-        <item name="android:actionMenuTextColor">#ffffffff</item>
-        <item name="android:navigationBarColor">@android:color/background_dark</item>
+        <item name="android:editTextColor">#ffffffff</item>
     </style>
-    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-    </style>
-    <style name="AccountSetupDialogActivityTheme"
-        parent="@android:style/Theme.Material.Dialog.NoActionBar" />
-    <style name="Base.ThemeOverlay.AppCompat.Light"
-        parent="@android:style/ThemeOverlay.Material.Dark">
-        <item name="android:colorBackgroundCacheHint">@android:color/background_dark</item>
-        <item name="isLightTheme">false</item>
-        <item name="colorControlHighlight">#ffd32f2f</item>
+    <style name="NotificationSecondaryText">
+        <item name="android:textColor">#ffdddddd</item>
     </style>
 </resources>

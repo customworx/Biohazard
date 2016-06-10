@@ -20,7 +20,7 @@
         android:label="@string/theme_name"
         android:theme="@style/AppTheme">
         <service
-            android:name="com.pierx.biohazard.Overlay"
+            android:name=".Overlay"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.layers.plugins.PICK_OVERLAYS" />
@@ -28,6 +28,9 @@
             </intent-filter>
         </service>
 
+        <meta-data
+            android:name="Substratum_Enabled"
+            android:value="@string/ThemeAuthor" />
         <meta-data
             android:name="Layers_Name"
             android:value="@string/ThemeName" />

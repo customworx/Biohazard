@@ -1,280 +1,285 @@
 apply plugin: 'com.android.application'
 
+def themeName = 'Biohazard'
+
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.pierx.biohazard"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 13
-        versionName "2.3"
-
+        versionCode 14
+        versionName "3.0"
+        setProperty("archivesBaseName", themeName + "-" + "$versionName")
     }
 }
 
-def themeName = 'Biohazard'
-
-task CM << {
-    copy {
-        from('../Overlays/src/AudioFX')
-        into 'src/main/assets/overlays/org.cyanogenmod.audiofx'
-    }
-    copy {
-        from('../Overlays/src/Browser')
-        into 'src/main/assets/overlays/com.android.browser'
-    }
-    copy {
-        from('../Overlays/src/Calculator')
-        into 'src/main/assets/overlays/com.android.calculator2'
-    }
-    copy {
-        from('../Overlays/src/Calendar')
-        into 'src/main/assets/overlays/com.android.calendar'
-    }
-    copy {
-        from('../Overlays/src/Camera')
-        into 'src/main/assets/overlays/com.android.camera2'
-    }
-    copy {
-        from('../Overlays/src/CatLog')
-        into 'src/main/assets/overlays/com.nolanlawson.logcat'
-    }
-    copy {
-        from('../Overlays/src/CellBroadcast')
-        into 'src/main/assets/overlays/com.android.cellbroadcastreceiver'
-    }
-    copy {
-        from('../Overlays/src/Chrome')
-        into 'src/main/assets/overlays/com.android.chrome'
-    }
-    copy {
-        from('../Overlays/src/Contacts')
-        into 'src/main/assets/overlays/com.android.contacts'
-    }
-    copy {
-        from('../Overlays/src/com.cyanogenmod.lockclock')
-        into 'src/main/assets/overlays/com.cyanogenmod.lockclock'
-    }
-    copy {
-        from('../Overlays/src/com.cyanogenmod.settings.device')
-        into 'src/main/assets/overlays/com.cyanogenmod.settings.device'
-    }
-    copy {
-        from('../Overlays/src/com.dirtyunicorns.about')
-        into 'src/main/assets/overlays/com.dirtyunicorns.about'
-    }
-    copy {
-        from('../Overlays/src/com.dirtyunicorns.certified')
-        into 'src/main/assets/overlays/com.dirtyunicorns.certified'
-    }
-    copy {
-        from('../Overlays/src/com.dirtyunicorns.dutweaks')
-        into 'src/main/assets/overlays/com.dirtyunicorns.dutweaks'
-    }
-    copy {
-        from('../Overlays/src/com.dirtyunicorns.duupdater')
-        into 'src/main/assets/overlays/com.dirtyunicorns.duupdater'
-    }
-    copy {
-        from('../Overlays/src/Dialer')
-        into 'src/main/assets/overlays/com.android.dialer'
-    }
-    copy {
-        from('../Overlays/src/DocumentsUI')
-        into 'src/main/assets/overlays/com.android.documentsui'
-    }
-    copy {
-        from('../Overlays/src/Deskclock')
-        into 'src/main/assets/overlays/com.android.deskclock'
-    }
-    copy {
-        from('../Overlays/src/Development')
-        into 'src/main/assets/overlays/com.android.development'
-    }
-    copy {
-        from('../Overlays/src/Diskinfo')
-        into 'src/main/assets/overlays/me.kuder.diskinfo'
-    }
-    copy {
-        from('../Overlays/src/Eleven')
-        into 'src/main/assets/overlays/com.cyanogenmod.eleven'
-    }
-    copy {
-        from('../Overlays/src/Email')
-        into 'src/main/assets/overlays/com.android.email'
-    }
-    copy {
-        from('../Overlays/src/ES_Explorer')
-        into 'src/main/assets/overlays/com.estrongs.android.pop'
-    }
-    copy {
-        from('../Overlays/src/Framework')
-        into 'src/main/assets/overlays/android'
-    }
-    copy {
-        from('../Overlays/src/Gallery')
-        into 'src/main/assets/overlays/com.android.gallery3d'
-    }
-    copy {
-        from('../Overlays/src/Gmail')
-        into 'src/main/assets/overlays/com.google.android.gm'
-    }
-    copy {
-        from('../Overlays/src/Google_Camera')
-        into 'src/main/assets/overlays/com.google.android.GoogleCamera'
-    }
-    copy {
-        from('../Overlays/src/Google_Contacts')
-        into 'src/main/assets/overlays/com.google.android.contacts'
-    }
-    copy {
-        from('../Overlays/src/Google_Deskclock')
-        into 'src/main/assets/overlays/com.google.android.dialer'
-    }
-    copy {
-        from('../Overlays/src/Google_Drive')
-        into 'src/main/assets/overlays/com.google.android.dialer'
-    }
-    copy {
-        from('../Overlays/src/Google_Hangout')
-        into 'src/main/assets/overlays/com.google.android.talk'
-    }
-    /*copy {
-        from('../Overlays/src/Google_Hangout_ThemeReady')
-        into 'src/main/assets/overlays/com.google.android.talk'
-    }*/
-    copy {
-        from('../Overlays/src/Google_Keep')
-        into 'src/main/assets/overlays/com.google.android.keep'
-    }
-    copy {
-        from('../Overlays/src/Google_Keyboard')
-        into 'src/main/assets/overlays/com.google.android.inputmethod.latin'
-    }
-    copy {
-        from('../Overlays/src/Google_Messenger')
-        into 'src/main/assets/overlays/com.google.android.apps.messaging'
-    }
-    copy {
-        from('../Overlays/src/Google_Photos')
-        into 'src/main/assets/overlays/com.google.android.apps.photos'
-    }
-    copy {
-        from('../Overlays/src/Google_PlayMusic')
-        into 'src/main/assets/overlays/com.google.android.music'
-    }
-    copy {
-        from('../Overlays/src/Google_PlayStore')
-        into 'src/main/assets/overlays/com.android.vending'
-    }
-    copy {
-        from('../Overlays/src/Google_Plus')
-        into 'src/main/assets/overlays/com.google.android.apps.plus'
-    }
-    copy {
-        from('../Overlays/src/Google_Settings')
-        into 'src/main/assets/overlays/com.google.android.gms'
-    }
-    copy {
-        from('../Overlays/src/Google_Translate')
-        into 'src/main/assets/overlays/com.google.android.apps.translate'
-    }
-    copy {
-        from('../Overlays/src/Inbox')
-        into 'src/main/assets/overlays/com.google.android.apps.inbox'
-    }
-
-    copy {
-        from('../Overlays/src/Keyboard')
-        into 'src/main/assets/overlays/com.android.inputmethod.latin'
-    }
-
-    copy {
-        from('../Overlays/src/Kernel_Adiutor')
-        into 'src/main/assets/overlays/com.grarak.kerneladiutor'
-    }
-    copy {
-        from('../Overlays/src/Launcher3')
-        into 'src/main/assets/overlays/com.android.launcher3'
-    }
-    copy {
-        from('../Overlays/src/Layers_Manager')
-        into 'src/main/assets/overlays/com.lovejoy777.rroandlayersmanager'
-    }
-    copy {
-        from('../Overlays/src/Messaging')
-        into 'src/main/assets/overlays/com.android.messaging'
-    }
-    copy {
-        from('../Overlays/src/MMS')
-        into 'src/main/assets/overlays/com.android.mms'
-    }
-    copy {
-        from('../Overlays/src/Nova_Launcher')
-        into 'src/main/assets/overlays/com.teslacoilsw.launcher'
-    }
-    copy {
-        from('../Overlays/src/Package_Installer')
-        into 'src/main/assets/overlays/com.android.packageinstaller'
-    }
-    copy {
-        from('../Overlays/src/org.omnirom.omniswitch')
-        into 'src/main/assets/overlays/org.omnirom.omniswitch'
-    }
-    copy {
-        from('../Overlays/src/PushBullet')
-        into 'src/main/assets/overlays/com.pushbullet.android'
-    }
-    copy {
-        from('../Overlays/src/SMSBackupRestore')
-        into 'src/main/assets/overlays/com.riteshsahu.SMSBackupRestore'
-    }
-    copy {
-        from('../Overlays/src/SMSBackupRestorePro')
-        into 'src/main/assets/overlays/com.riteshsahu.SMSBackupRestorePro'
-    }
-    copy {
-        from('../Overlays/src/Settings')
-        into 'src/main/assets/overlays/com.android.settings'
-    }
-    copy {
-        from('../Overlays/src/Softkey')
-        into 'src/main/assets/overlays/com.android.systemui'
-    }
-    copy {
-        from('../Overlays/src/SystemUI')
-        into 'src/main/assets/overlays/com.android.systemui'
-    }
-    copy {
-        from('../Overlays/src/SuperSu')
-        into 'src/main/assets/overlays/eu.chainfire.supersu'
-    }
-    copy {
-        from('../Overlays/src/Telecom')
-        into 'src/main/assets/overlays/com.android.server.telecom'
-    }
-    copy {
-        from('../Overlays/src/org.cyanogenmod.theme.chooser')
-        into 'src/main/assets/overlays/org.cyanogenmod.theme.chooser'
-    }
-    copy {
-        from('../Overlays/src/WhatsApp')
-        into 'src/main/assets/overlays/com.whatsapp'
-    }
+task cleanFirst(type: Delete) {
+    delete 'src/main/assets/overlays', 'src/main/assets/Files/'
 }
 
-CM.doLast {
-    println 'Theme Engine Start'
+def source = "../Overlays/src/"
+def dest = "src/main/assets/overlays/"
+
+//Theme Engine resources overlays.
+task CMTE(dependsOn: ['cleanFirst']) {
+    doFirst {
+        copy {
+            from source + "Android"
+            into dest + "android"
+        }
+        copy {
+            from source + "AudioFX"
+            into dest + "org.cyanogenmod.audiofx"
+        }
+        copy {
+            from source + "Browser"
+            into dest + "com.android.browser"
+        }
+        copy {
+            from source + "Calculator"
+            into dest + "com.android.calculator2"
+        }
+        copy {
+            from source + "Calendar"
+            into dest + "com.android.calendar"
+        }
+        copy {
+            from source + "Camera"
+            into dest + "com.android.camera2"
+        }
+        copy {
+            from source + "CatLog"
+            into dest + "com.nolanlawson.logcat"
+        }
+        copy {
+            from source + "CellBroadcast"
+            into dest + "com.android.cellbroadcastreceiver"
+        }
+        copy {
+            from source + "Chrome"
+            into dest + "com.android.chrome"
+        }
+        copy {
+            from source + "Contacts"
+            into dest + "com.android.contacts"
+        }
+        copy {
+            from source + "com.cyanogenmod.lockclock"
+            into dest + "com.cyanogenmod.lockclock"
+        }
+        copy {
+            from source + "com.cyanogenmod.settings.device"
+            into dest + "com.cyanogenmod.settings.device"
+        }
+        copy {
+            from source + "com.dirtyunicorns.about"
+            into dest + "com.dirtyunicorns.about"
+        }
+        copy {
+            from source + "com.dirtyunicorns.certified"
+            into dest + "com.dirtyunicorns.certified"
+        }
+        copy {
+            from source + "com.dirtyunicorns.dutweaks"
+            into dest + "com.dirtyunicorns.dutweaks"
+        }
+        copy {
+            from source + "com.dirtyunicorns.duupdater"
+            into dest + "com.dirtyunicorns.duupdater"
+        }
+        copy {
+            from source + "Dialer"
+            into dest + "com.android.dialer"
+        }
+        copy {
+            from source + "DocumentsUI"
+            into dest + "com.android.documentsui"
+        }
+        copy {
+            from source + "Deskclock"
+            into dest + "com.android.deskclock"
+        }
+        copy {
+            from source + "Development"
+            into dest + "com.android.development"
+        }
+        copy {
+            from source + "Diskinfo"
+            into dest + "me.kuder.diskinfo"
+        }
+        copy {
+            from source + "Eleven"
+            into dest + "com.cyanogenmod.eleven"
+        }
+        copy {
+            from source + "Email"
+            into dest + "com.android.email"
+        }
+        copy {
+            from source + "ES_Explorer"
+            into dest + "com.estrongs.android.pop"
+        }
+        copy {
+            from source + "Framework"
+            into dest + "android"
+        }
+        copy {
+            from source + "Gallery"
+            into dest + "com.android.gallery3d"
+        }
+        copy {
+            from source + "Gmail"
+            into dest + "com.google.android.gm"
+        }
+        copy {
+            from source + "Google_Camera"
+            into dest + "com.google.android.GoogleCamera"
+        }
+        copy {
+            from source + "Google_Contacts"
+            into dest + "com.google.android.contacts"
+        }
+        copy {
+            from source + "Google_Deskclock"
+            into dest + "com.google.android.dialer"
+        }
+        copy {
+            from source + "Google_Drive"
+            into dest + "com.google.android.dialer"
+        }
+        copy {
+            from source + "Google_Hangout"
+            into dest + "com.google.android.talk"
+        }
+        copy {
+            from source + "Google_Keep"
+            into dest + "com.google.android.keep"
+        }
+        copy {
+            from source + "Google_Keyboard"
+            into dest + "com.google.android.inputmethod.latin"
+        }
+        copy {
+            from source + "Google_Messenger"
+            into dest + "com.google.android.apps.messaging"
+        }
+        copy {
+            from source + "Google_Photos"
+            into dest + "com.google.android.apps.photos"
+        }
+        copy {
+            from source + "Google_PlayMusic"
+            into dest + "com.google.android.music"
+        }
+        copy {
+            from source + "Google_PlayStore"
+            into dest + "com.android.vending"
+        }
+        copy {
+            from source + "Google_Plus"
+            into dest + "com.google.android.apps.plus"
+        }
+        copy {
+            from source + "Google_Settings"
+            into dest + "com.google.android.gms"
+        }
+        copy {
+            from source + "Google_Translate"
+            into dest + "com.google.android.apps.translate"
+        }
+        copy {
+            from source + "Inbox"
+            into dest + "com.google.android.apps.inbox"
+        }
+
+        copy {
+            from source + "Keyboard"
+            into dest + "com.android.inputmethod.latin"
+        }
+
+        copy {
+            from source + "Kernel_Adiutor"
+            into dest + "com.grarak.kerneladiutor"
+        }
+        copy {
+            from source + "Launcher3"
+            into dest + "com.android.launcher3"
+        }
+        copy {
+            from source + "Layers_Manager"
+            into dest + "com.lovejoy777.rroandlayersmanager"
+        }
+        copy {
+            from source + "Messaging"
+            into dest + "com.android.messaging"
+        }
+        copy {
+            from source + "MMS"
+            into dest + "com.android.mms"
+        }
+        copy {
+            from source + "Nova_Launcher"
+            into dest + "com.teslacoilsw.launcher"
+        }
+        copy {
+            from source + "Package_Installer"
+            into dest + "com.android.packageinstaller"
+        }
+        copy {
+            from source + "org.omnirom.omniswitch"
+            into dest + "org.omnirom.omniswitch"
+        }
+        copy {
+            from source + "PushBullet"
+            into dest + "com.pushbullet.android"
+        }
+        copy {
+            from source + "SMSBackupRestore"
+            into dest + "com.riteshsahu.SMSBackupRestore"
+        }
+        copy {
+            from source + "SMSBackupRestorePro"
+            into dest + "com.riteshsahu.SMSBackupRestorePro"
+        }
+        copy {
+            from source + "Settings"
+            into dest + "com.android.settings"
+        }
+        copy {
+            from source + "Softkey"
+            into dest + "com.android.systemui"
+        }
+        copy {
+            from source + "SystemUI"
+            into dest + "com.android.systemui"
+        }
+        copy {
+            from source + "SuperSu"
+            into dest + "eu.chainfire.supersu"
+        }
+        copy {
+            from source + "Telecom"
+            into dest + "com.android.server.telecom"
+        }
+        copy {
+            from source + "org.cyanogenmod.theme.chooser"
+            into dest + "org.cyanogenmod.theme.chooser"
+        }
+        copy {
+            from source + "WhatsApp"
+            into dest + "com.whatsapp"
+        }
+    }
 }
 
 //Overlays location
 def Overlays = copySpec {
     from('../Overlays/build/outputs/apk') {
         include "*.apk"
-        exclude '*release.apk'
-        exclude '*unaligned.apk'
+        exclude '*release.apk', '*unaligned.apk'
     }
 }
 
@@ -285,8 +290,8 @@ task copyOverlays(type: Copy) {
 }
 
 //Give the .zip package a name
-task createZip(type:Zip) {
-    from ('src/main/assets/Files/')
+task createZip(type: Zip) {
+    from('src/main/assets/Files/')
     include '*.apk'
     destinationDir file('src/main/assets/Files/')
     baseName = themeName + "_General"
@@ -311,6 +316,6 @@ task cleanFiles(type: Delete) {
 }
 
 //Prepare all required files for theme engine and RRO
-project.afterEvaluate{
-    prepareDebugDependencies.dependsOn(['CM','RRO','cleanFiles'])
+project.afterEvaluate {
+    prepareDebugDependencies.dependsOn(['CMTE', 'RRO', 'cleanFiles'])
 }
