@@ -12,12 +12,12 @@ Biohazard > :Theme > build > assembleDebug
 * Gradle via Terminal (Linux)
     From Biohazard directory, open terminal then type
 ```
-./gradlew Theme:assembleDebug
+./gradlew assembleDebug
 ```
 * Gradle via CommandPrompt (Windows)
     From Biohazard folder, open up cmd then type
 ```
-gradlew.bat Theme:assembleDebug
+gradlew.bat assembleDebug
 ```
 *It will download the required Gradle plugin first, so make sure you have internet connection.
 
