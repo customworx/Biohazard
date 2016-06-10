@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="Widget.DeviceDefault.Light.PopupWindow" parent="@android:style/Widget.Material.PopupWindow">
         <item name="android:textColor">#ffffffff</item>
         <item name="android:textColorHint">#c0ffffff</item>
     </style>
-
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Settings">
+    <!--<style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Settings">
         <item name="android:colorPrimary">#ffd32f2f</item>
         <item name="android:colorPrimaryDark">#ffc62828</item>
         <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
+    </style>-->
     <style name="Theme.DeviceDefault.Resolver" parent="@android:style/Theme.Material.Panel">
         <item name="windowBackground">@android:color/background_dark</item>
         <item name="android:backgroundTint">@android:color/background_dark</item>

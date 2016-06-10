@@ -47,35 +47,25 @@
     <color name="memory_apps_usage">#ffc62828</color>
     <color name="memory_user_light">#ffd32f2f</color>
     <color name="memory_user_dark">#ffc62828</color>
-
     <!-- Dashboard background color -->
     <color name="dashboard_category_background_color">@android:color/black</color>
-
     <!-- Dashboard Category Title Background Color -->
     <color name="dashboard_category_title_bg_color">@android:color/transparent</color>
     <color name="divider">@android:color/transparent</color>
-
     <color name="floating_action_button_touch_tint">#80ffffff</color>
-
     <color name="screencolor_background">#50000000</color>
     <drawable name="transparent_background">#00000000</drawable>
-
-    <!--<drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>-->
-    <!--<drawable name="expanded_item_bg">@android:color/background_light</drawable>-->
-
     <color name="qs_tile_default_background_color">@android:color/transparent</color>
-
     <!-- Hard coded background and text colors exposed for better theme support -->
-    <color name="background_color_darker_gray">@android:color/darker_gray</color>
+    <color name="background_color_darker_gray">#ff212121</color>
     <color name="background_color_gray">#ddd</color>
-    <color name="background_color_holo_blue_light">@android:color/holo_blue_light</color>
+    <color name="background_color_holo_blue_light">#ffc62828</color>
     <color name="background_color_transparent">@android:color/transparent</color>
     <color name="background_color_white">@android:color/black</color>
     <color name="text_color_black">@android:color/white</color>
     <color name="text_color_darker_gray">#ffdbdbdb</color>
-    <color name="text_color_holo_blue_light">@android:color/holo_blue_light</color>
+    <color name="text_color_holo_blue_light">#ffc62828</color>
     <color name="text_color_secondary_text_material_light">#b3ffffff</color>
     <color name="text_color_translucent_white">#B3FFFFFF</color>
     <color name="text_color_white">@android:color/black</color>
-
 </resources>
