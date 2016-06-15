@@ -8,7 +8,7 @@
     <color name="holo_red_light">#ff303030</color>
     <color name="holo_red_dark">#ff212121</color>
     <color name="material_deep_teal_200">#ffd32f2f</color>
-    <color name="material_deep_teal_500">#ffc62828</color>
+    <color name="material_deep_teal_500">#ffd32f2f</color>
     <color name="material_blue_grey_800">#ff424242</color>
     <color name="material_blue_grey_900">#ff303030</color>
     <color name="material_blue_grey_950">#ff000000</color>

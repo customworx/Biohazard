@@ -10,8 +10,8 @@ android {
         applicationId "com.pierx.biohazard"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 15
-        versionName "3.1"
+        versionCode 19
+        versionName "3.4"
         setProperty("archivesBaseName", themeName + "-" + "$versionName")
     }
 }
@@ -148,7 +148,7 @@ task CMTE(dependsOn: ['cleanFirst']) {
         }
         copy {
             from source + "Google_Drive"
-            into dest + "com.google.android.dialer"
+            into dest + "com.google.android.apps.docs"
         }
         copy {
             from source + "Google_Hangout"
@@ -315,7 +315,10 @@ task cleanFiles(type: Delete) {
     }
 }
 
-//Prepare all required files for theme engine and RRO
+//Prepare all required files for theme engine and RRO and OMS
 project.afterEvaluate {
+//    OMS (without Assets Files for RRO)
+//    prepareDebugDependencies.dependsOn(['CMTE', 'cleanFiles'])
+//    prepareDebugDependencies.dependsOn(['RRO', 'cleanFiles'])
     prepareDebugDependencies.dependsOn(['CMTE', 'RRO', 'cleanFiles'])
 }

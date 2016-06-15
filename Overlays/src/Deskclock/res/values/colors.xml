@@ -3,10 +3,13 @@
     <color name="hot_pink">#fff44336</color>
     <color name="control_highlight_color">#42ffffff</color>
     <color name="notification_bg">#ff181818</color>
-    <color name="notification_icon_bg">#fff44336</color>
+    <color name="notification_icon_bg">#ffd32f2f</color>
     <color name="notification_pressed">#ff333333</color>
     <color name="notification_divider">#ff272727</color>
     <color name="black_87p">#deffffff</color>
     <color name="black_54p">#8affffff</color>
     <color name="black_16p">#28ffffff</color>
+    <color name="hot_blue">#ffd32f2f</color>
+    <color name="hot_blue_dark">#ffc62828</color>
+    <color name="default_background">#ffd32f2f</color>
 </resources>

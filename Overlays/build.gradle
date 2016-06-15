@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.3"
 
     def themeName = "Biohazard"
     def themeAuthor = "pierx"
-    def packageName = "com.pierx.biohazard"
+    def packageName = "com.pierx.biohazard."
 
     defaultConfig {
-        applicationId packageName + ".overlay"
+        applicationId packageName + "overlay"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
@@ -31,223 +31,223 @@ android {
 
     productFlavors {
         Android {
-            applicationId packageName +"."+ "Android"
+            applicationId packageName + "Android"
             manifestPlaceholders = [ priorityLabel:"50", targetPackageLabel:"android" ]
         }
         AudioFX {
-            applicationId packageName +"."+ "AudioFX"
+            applicationId packageName + "AudioFX"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"org.cyanogenmod.audiofx" ]
         }
         Browser {
-            applicationId packageName +"."+ "Browser"
+            applicationId packageName + "Browser"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.browser" ]
         }
         Calculator {
-            applicationId packageName +"."+ "Calculator"
+            applicationId packageName + "Calculator"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.calculator2" ]
         }
         Contacts {
-            applicationId packageName +"."+ "Contacts"
+            applicationId packageName + "Contacts"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.contacts" ]
         }
         Camera {
-            applicationId packageName +"."+ "Camera"
+            applicationId packageName + "Camera"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.camera2" ]
         }
         CatLog {
-            applicationId packageName +"."+ "CatLog"
+            applicationId packageName + "CatLog"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.nolanlawson.logcat" ]
         }
         CellBroadcast {
-            applicationId packageName +"."+ "CellBroadcast"
+            applicationId packageName + "CellBroadcast"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.cellbroadcastreceiver" ]
         }
         Chrome {
-            applicationId packageName +"."+ "Chrome"
+            applicationId packageName + "Chrome"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.chrome" ]
         }
         Dialer {
-            applicationId packageName +"."+ "Dialer"
+            applicationId packageName + "Dialer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.dialer" ]
         }
         DocumentsUI {
-            applicationId packageName +"."+ "DocumentsUI"
+            applicationId packageName + "DocumentsUI"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.documentsui" ]
         }
         Deskclock {
-            applicationId packageName +"."+ "Deskclock"
+            applicationId packageName + "Deskclock"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.deskclock" ]
         }
         Development {
-            applicationId packageName +"."+ "Development"
+            applicationId packageName + "Development"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.development" ]
         }
         Diskinfo {
-            applicationId packageName +"."+ "Diskinfo"
+            applicationId packageName + "Diskinfo"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"me.kuder.diskinfo" ]
         }
         Eleven {
-            applicationId packageName +"."+ "Eleven"
+            applicationId packageName + "Eleven"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.cyanogenmod.eleven" ]
         }
         Email {
-            applicationId packageName +"."+ "Email"
+            applicationId packageName + "Email"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.email" ]
         }
         ES_Explorer {
-            applicationId packageName +"."+ "ES_Explorer"
+            applicationId packageName + "ES_Explorer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.estrongs.android.pop" ]
         }
         Gallery {
-            applicationId packageName +"."+ "Gallery"
+            applicationId packageName + "Gallery"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.gallery3d" ]
         }
         Gmail {
-            applicationId packageName +"."+ "Gmail"
+            applicationId packageName + "Gmail"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.gm" ]
         }
         Google_Camera {
-            applicationId packageName +"."+ "Google_Camera"
+            applicationId packageName + "Google_Camera"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.GoogleCamera" ]
         }
         Google_Contacts {
-            applicationId packageName +"."+ "Google_Contacts"
+            applicationId packageName + "Google_Contacts"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.contacts" ]
         }
         Google_Deskclock {
-            applicationId packageName +"."+ "Google_Deskclock"
+            applicationId packageName + "Google_Deskclock"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.deskclock" ]
         }
         Google_Dialer {
-            applicationId packageName +"."+ "Google_Dialer"
+            applicationId packageName + "Google_Dialer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.dialer" ]
         }
         Google_Drive {
-            applicationId packageName +"."+ "Google_Drive"
+            applicationId packageName + "Google_Drive"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.docs" ]
         }
         Google_Hangout {
-            applicationId packageName +"."+ "Google_Hangout"
+            applicationId packageName + "Google_Hangout"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.talk" ]
         }
         Google_Hangout_ThemeReady {
-            applicationId packageName +"."+ "Google_Hangout_ThemeReady"
+            applicationId packageName + "Google_Hangout_ThemeReady"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.talk" ]
         }
         Google_Keep {
-            applicationId packageName +"."+ "Google_Keep"
+            applicationId packageName + "Google_Keep"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.keep" ]
         }
         Google_Keyboard {
-            applicationId packageName +"."+ "Google_Keyboard"
+            applicationId packageName + "Google_Keyboard"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.inputmethod.latin" ]
         }
         Google_Messenger {
-            applicationId packageName +"."+ "Google_Messenger"
+            applicationId packageName + "Google_Messenger"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.messaging" ]
         }
         Google_Photos {
-            applicationId packageName +"."+ "Google_Photos"
+            applicationId packageName + "Google_Photos"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.photos" ]
         }
         Google_PlayMusic {
-            applicationId packageName +"."+ "Google_PlayMusic"
+            applicationId packageName + "Google_PlayMusic"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.music" ]
         }
         Google_PlayStore {
-            applicationId packageName +"."+ "Google_PlayStore"
+            applicationId packageName + "Google_PlayStore"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.vending" ]
         }
         Google_Plus {
-            applicationId packageName +"."+ "Google_Plus"
+            applicationId packageName + "Google_Plus"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.plus" ]
         }
         Google_Settings {
-            applicationId packageName +"."+ "Google_Settings"
+            applicationId packageName + "Google_Settings"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.gms" ]
         }
         Google_Translate {
-            applicationId packageName +"."+ "Google_Translate"
+            applicationId packageName + "Google_Translate"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.translate" ]
         }
         Inbox {
-            applicationId packageName +"."+ "Inbox"
+            applicationId packageName + "Inbox"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.inbox" ]
         }
         Keyboard {
-            applicationId packageName +"."+ "Keyboard"
+            applicationId packageName + "Keyboard"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.inputmethod.latin" ]
         }
         Kernel_Adiutor {
-            applicationId packageName +"."+ "Kernel_Adiutor"
+            applicationId packageName + "Kernel_Adiutor"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.grarak.kerneladiutor" ]
         }
         Launcher3 {
-            applicationId packageName +"."+ "Launcher3"
+            applicationId packageName + "Launcher3"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.launcher3" ]
         }
         Layers_Manager {
-            applicationId packageName +"."+ "Layers_Manager"
+            applicationId packageName + "Layers_Manager"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.lovejoy777.rroandlayersmanager" ]
         }
         Nova_Launcher {
-            applicationId packageName +"."+ "Nova_Launcher"
+            applicationId packageName + "Nova_Launcher"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.teslacoilsw.launcher" ]
         }
         Package_Installer {
-            applicationId packageName +"."+ "Package_Installer"
+            applicationId packageName + "Package_Installer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.packageinstaller" ]
         }
         Package_Viewer {
-            applicationId packageName +"."+ "Package_Viewer"
+            applicationId packageName + "Package_Viewer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.cuilab.pkgviewer" ]
         }
         Pandora {
-            applicationId packageName +"."+ "Pandora"
+            applicationId packageName + "Pandora"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.pandora.android" ]
         }
 /*        Phone {
-            applicationId packageName +"."+ "Phone"
+            applicationId packageName + "Phone"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.phone" ]
         }*/
         PushBullet {
-            applicationId packageName +"."+ "PushBullet"
+            applicationId packageName + "PushBullet"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.pushbullet.android" ]
         }
         SMSBackupRestore {
-            applicationId packageName +"."+ "SMSBackupRestore"
+            applicationId packageName + "SMSBackupRestore"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.riteshsahu.SMSBackupRestore" ]
         }
         SMSBackupRestorePro {
-            applicationId packageName +"."+ "SMSBackupRestorePro"
+            applicationId packageName + "SMSBackupRestorePro"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.riteshsahu.SMSBackupRestorePro" ]
         }
         Settings {
-            applicationId packageName +"."+ "Settings"
+            applicationId packageName + "Settings"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
         }
-        Softkey {
-            applicationId packageName +"."+ "Softkey"
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.systemui" ]
-        }
+/*        Softkey {
+            applicationId packageName + "Softkey"
+            manifestPlaceholders = [ priorityLabel:"998", targetPackageLabel:"com.android.systemui" ]
+        }*/
         SystemUI {
-            applicationId packageName +"."+ "SystemUI"
+            applicationId packageName + "SystemUI"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.systemui" ]
         }
         SuperSu {
-            applicationId packageName +"."+ "SuperSu"
+            applicationId packageName + "SuperSu"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"eu.chainfire.supersu" ]
         }
         Telecom {
-            applicationId packageName +"."+ "Telecom"
+            applicationId packageName + "Telecom"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.server.telecom" ]
         }
 /*        TwoColums {
-            applicationId packageName +"."+ "TwoColums"
+            applicationId packageName + "TwoColums"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
         }*/
         WhatsApp {
-            applicationId packageName +"."+ "WhatsApp"
+            applicationId packageName + "WhatsApp"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.whatsapp" ]
         }
     }

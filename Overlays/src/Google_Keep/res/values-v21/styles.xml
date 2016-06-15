@@ -11,6 +11,6 @@
         <item name="android:colorControlActivated">#ffd32f2f</item>
         <item name="android:colorPrimary">#ffd32f2f</item>
         <item name="android:colorPrimaryDark">#ffc62828</item>
-        <item name="android:colorAccent">#fff44336</item>
+        <item name="android:colorAccent">#ffd32f2f</item>
     </style>
 </resources>
