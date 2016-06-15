@@ -1,189 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="BaseAppTheme" parent="@android:style/Theme.Holo" />
-    <style name="RecipientEditTextViewBase"
-        parent="@android:style/Widget.Material.AutoCompleteTextView">
+    <style name="BaseAppTheme" parent="@android:style/Theme.Material" />
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material" />
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="RecipientEditTextViewBase" parent="@android:attr/autoCompleteTextViewStyle">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:background">@null</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">32.0dip</item>
-        <item name="android:popupBackground">@android:color/background_dark</item>
-        <item name="android:inputType">textEmailAddress|textMultiLine</item>
-        <item name="android:textDirection">locale</item>
-        <item name="android:textAlignment">viewStart</item>
-    </style>
-    <style name="AccountsSwitcher" />
-    <style name="AccountsSwitcher.OwnersListItemStyle" parent="@style/AccountsSwitcher">
-        <item name="android:background">@android:color/background_dark</item>
-        <item name="android:paddingLeft">16.0dip</item>
-        <item name="android:paddingRight">16.0dip</item>
-    </style>
-    <style name="Base.Widget.AppCompat.ActionBar" parent="">
-        <item name="android:gravity">center_vertical</item>
-        <item name="height">?actionBarSize</item>
-        <item name="background">@null</item>
-        <item name="backgroundStacked">@null</item>
-        <item name="backgroundSplit">@null</item>
-        <item name="displayOptions">showTitle</item>
-        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
-        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle
-        </item>
-        <item name="elevation">8.0dip</item>
-        <item name="popupTheme">?actionBarPopupTheme</item>
-        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
-        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
-        <item name="divider">?dividerVertical</item>
-    </style>
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title"
-        parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title" />
-    <style name="Widget.AppCompat.ActionButton"
-        parent="@style/Base.Widget.AppCompat.ActionButton" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar"
-        parent="@style/Base.Widget.AppCompat.ActionBar">
-        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow
-        </item>
-        <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
-    </style>
-    <style name="Widget.AppCompat.Light.ActionButton"
-        parent="@style/Widget.AppCompat.ActionButton" />
-    <style name="Widget.AppCompat.Light.ActionButton.Overflow"
-        parent="@style/Widget.AppCompat.ActionButton.Overflow" />
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
-        parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
-    <style name="Widget.AppCompat.ActionButton.Overflow"
-        parent="@style/RtlOverlay.Widget.AppCompat.ActionButton.Overflow" />
-    <style name="RtlOverlay.Widget.AppCompat.ActionButton.Overflow"
-        parent="@style/Base.Widget.AppCompat.ActionButton.Overflow">
-        <item name="android:paddingLeft">0.0dip</item>
-        <item name="android:paddingRight">12.0dip</item>
-    </style>
-    <style name="WelcomeThemeBase" parent="@android:style/Theme.Holo.NoActionBar">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-    </style>
-    <style name="BaseActionBarOverflow" parent="@android:style/Widget.Holo.ActionButton.Overflow" />
-    <style name="BaseAutoCompleteTextView"
-        parent="@android:style/Widget.Holo.AutoCompleteTextView" />
-    <style name="BlackTitledDialog" parent="@android:style/Theme.Holo.Dialog">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowTitleStyle">@style/DialogTitleBlack</item>
-        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
-        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
-    </style>
-    <style name="DialogTitleBlack" parent="@android:style/TextAppearance.DialogWindowTitle">
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-    <style name="WelcomeTextButtonStyle" parent="@android:style/Widget.Material.Button.Borderless">
-        <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:ellipsize">marquee</item>
-        <item name="android:layout_marginLeft">24.0dip</item>
-        <item name="android:layout_marginRight">24.0dip</item>
-        <item name="android:minWidth">88.0dip</item>
-        <item name="android:minHeight">48.0dip</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    <style name="BaseDialogThemeWhenLarge" parent="@android:style/Theme.Holo.DialogWhenLarge">
-        <item name="android:textAppearanceMedium">@style/PreLDialogTextAppearance</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowTitleStyle">@style/PreLDialogTitleStyle</item>
-        <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:buttonBarStyle">@style/PreLDialogButtonBar</item>
-        <item name="android:buttonBarButtonStyle">@style/DialogButton</item>
-    </style>
-    <style name="BaseDialogTheme" parent="@android:style/Theme.Holo.Dialog.MinWidth">
-        <item name="android:textAppearanceMedium">@style/PreLDialogTextAppearance</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowTitleStyle">@style/PreLDialogTitleStyle</item>
-        <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:buttonBarStyle">@style/PreLDialogButtonBar</item>
-        <item name="android:buttonBarButtonStyle">@style/DialogButton</item>
-    </style>
-    <style name="PreLDialogTextAppearance">
-        <item name="android:textSize">16.0sp</item>
-    </style>
-    <style name="PreLDialogTitleStyle">
-        <item name="android:textSize">20.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-    <style name="PreLDialogButtonBar">
-        <item name="android:background">@android:color/background_dark</item>
-        <item name="android:padding">16.0dip</item>
-        <item name="android:showDividers">none</item>
-    </style>
-    <style name="DialogButton" parent="@style/HorizontalPadder">
-        <item name="android:textAppearance">@style/ButtonText</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">48.0dip</item>
-        <item name="android:minWidth">88.0dip</item>
-    </style>
-    <style name="HorizontalPadder">
-        <item name="android:paddingLeft">16.0dip</item>
-        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:popupBackground">#ff191919</item>
     </style>
     <style name="ButtonText">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#ffffffff</item>
-        <item name="android:textAllCaps">true</item>
     </style>
-    <style name="CakemixTheme.Upload" parent="@android:style/Theme.Holo" />
-    <style name="ProjectorActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
-        <item name="android:icon">@drawable/hack_empty_actionbar_icon</item>
-        <item name="android:height">56.0dip</item>
-        <item name="android:titleTextStyle">@style/ProjectorActionBarText</item>
-    </style>
-    <style name="ProjectorActionBarText" parent="@style/ActionBarText">
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-    <style name="ActionBarText" parent="@style/BaseActionBarText">
-        <item name="android:textSize">20.0sp</item>
-    </style>
-    <style name="BaseActionBarText"
-        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" />
-    <style name="HelpCardContentSeparator">
-        <item name="android:background">#2bffffff</item>
-        <item name="android:paddingLeft">16.0dip</item>
-        <item name="android:paddingRight">16.0dip</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">1.0dip</item>
-    </style>
-    <style name="HoloLikeButton" parent="@android:style/Widget.Button">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
-        <item name="android:textColor">#ffd32f2f</item>
-        <item name="android:minHeight">48.0dip</item>
-    </style>
-    <style name="HoloLikeButtonBar" parent="@android:style/ButtonBar">
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@android:color/background_dark</item>
-        <item name="android:padding">0.0dip</item>
-        <item name="android:minHeight">48.0dip</item>
-    </style>
-    <style name="CakemixTheme" parent="@style/BaseAppTheme">
-        <item name="android:textColorPrimary">#ffffffff</item>
-        <item name="android:textColorPrimaryInverse">#ffffffff</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:actionBarStyle">@style/ActionBar</item>
-        <item name="android:statusBarColor">#ffc62828</item>
-        <item name="icMenuAddCollaborator">@drawable/ic_menu_add_collaborator</item>
-        <item name="icMenuMove">@drawable/ic_menu_move</item>
-        <item name="icMenuOffline">@drawable/ic_menu_offline</item>
-    </style>
-    <style name="ActionBar" parent="@style/BaseActionBar">
-        <item name="android:icon">@drawable/hack_empty_actionbar_icon</item>
-        <item name="android:height">56.0dip</item>
-        <item name="android:title"></item>
-        <item name="android:displayOptions">showHome|showTitle</item>
-        <item name="android:titleTextStyle">@style/ActionBarText</item>
-    </style>
-    <style name="BaseActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
-        <item name="android:background">#ffd32f2f</item>
-        <item name="android:backgroundStacked">#ffd32f2f</item>
-        <item name="android:backgroundSplit">#ffd32f2f</item>
+    <style name="SnackbarText.Action" parent="@style/ButtonText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
     </style>
 </resources>

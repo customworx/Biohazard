@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.TextAppearance.AppCompat.Widget.DropDownItem"
-        parent="@android:style/TextAppearance.Small">
+    <style name="Base.TextAppearance.AppCompat.Widget.DropDownItem" parent="@android:style/TextAppearance.Small">
         <item name="android:textColor">@android:color/white</item>
     </style>
-    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title"
-        parent="@style/Base.TextAppearance.AppCompat.Widget.ActionMode.Title" />
     <style name="LabelPreference.Title" parent="@style/LabelPreference">
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="android:textColor">#ffffffff</item>
@@ -21,18 +18,6 @@
     <style name="quantum_text_body_1_white" parent="@style/quantum_text_white_light">
         <item name="android:textSize">14.0sp</item>
     </style>
-
-    <style name="Widget.AppCompat.ActionButton.Overflow"
-        parent="@style/RtlOverlay.Widget.AppCompat.ActionButton.Overflow" />
-    <style name="RtlOverlay.Widget.AppCompat.ActionButton.Overflow"
-        parent="@style/Base.Widget.AppCompat.ActionButton.Overflow">
-        <item name="android:paddingLeft">0.0dip</item>
-        <item name="android:paddingRight">12.0dip</item>
-    </style>
-    <style name="Widget.AppCompat.ActionButton"
-        parent="@style/Base.Widget.AppCompat.ActionButton" />
-
-
     <style name="quantum_text_menu_black" parent="@style/quantum_text_white_light">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textStyle">bold</item>

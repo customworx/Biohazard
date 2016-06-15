@@ -42,4 +42,26 @@
     <attr name="dropDownSelector" format="reference|color" />
     <attr name="popupBackground" format="reference|color" />
     <attr name="cacheColorHint" format="color" />
+    <attr name="panelMenuListTheme" format="reference" />
+    <attr name="searchDialogTheme" format="reference" />
+    <attr name="headerBackground" format="reference|color" />
+    <attr name="amPmBackgroundColor" format="color" />
+    <attr name="headerSelectedTextColor" format="color" />
+    <attr name="numbersBackgroundColor" format="color" />
+    <attr name="calendarViewShown" format="boolean" />
+    <attr name="datePickerMode">
+        <enum name="calendar" value="2" />
+    </attr>
+    <attr name="dayOfWeekBackground" format="reference|color" />
+    <attr name="dayOfWeekTextAppearance" format="reference" />
+    <attr name="headerMonthTextAppearance" format="reference" />
+    <attr name="headerDayOfMonthTextAppearance" format="reference" />
+    <attr name="headerYearTextAppearance" format="reference" />
+    <attr name="yearListItemTextAppearance" format="reference" />
+    <attr name="alertDialogTheme" format="reference" />
+    <attr name="dialogTheme" format="reference" />
+    <attr name="presentationTheme" format="reference" />
+    <attr name="textColorPrimary" format="reference|color" />
+    <attr name="textColorSecondary" format="reference|color" />
+    <attr name="imeFullscreenBackground" format="reference|color" />
 </resources>
