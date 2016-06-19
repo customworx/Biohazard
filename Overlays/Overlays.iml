@@ -64,14 +64,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/Deskclock/jni" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Deskclock/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Deskclock/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/jni" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDeskclock/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDeskclock/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDeskclock/assets" type="java-test-resource" />
@@ -80,6 +72,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testDeskclock/jni" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDeskclock/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDeskclock/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/jni" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDeskclock/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/assets" type="java-resource" />
