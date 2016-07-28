@@ -28,9 +28,9 @@
     <color name="searchbox_hint_text_color">#4dffffff</color>
     <color name="search_shortcut_background_color">@android:color/background_dark</color>
     <color name="search_shortcut_icon_color">#ffd32f2f</color>
-    <color name="searchbox_icon_tint">#ffffffff</color>
-    <color name="dialtacts_primary_text_color">#ffffffff</color>
-    <color name="dialtacts_secondary_text_color">#ffe0e0e0</color>
+    <color name="searchbox_icon_tint">#ffd32f2f</color>
+    <color name="dialtacts_primary_text_color">#ffd32f2f</color>
+    <color name="dialtacts_secondary_text_color">#ff9e9e9e</color>
     <color name="setting_background_color">@android:color/background_dark</color>
     <color name="recent_call_log_item_phone_icon_tint">#ffffffff</color>
     <color name="background_dialer_white">@android:color/background_dark</color>
@@ -99,7 +99,7 @@
     <color name="glowpad_end_call_widget_normal_tint">#ffff1744</color>
     <color name="glowpad_incoming_widget_tint">#ffa3a3a3</color>
     <color name="glowpad_incoming_widget_background_tint">@android:color/background_dark</color>
-    <color name="incall_dialpad_touch_tint">#3303A9F4</color>
+    <color name="incall_dialpad_touch_tint">#33d32f2f</color>
     <color name="dialer_red_highlight_color">#ffff1744</color>
     <color name="dialer_green_highlight_color">#ff00c853</color>
     <color name="call_log_missed_call_highlight_color">#ffff1744</color>

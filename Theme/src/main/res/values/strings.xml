@@ -1,9 +1,8 @@
 <resources>
-    <string name="theme_author">pierx</string>
-    <string name="theme_name">Biohazard</string>
     <string name="ThemeName">Biohazard</string>
     <string name="ThemeAuthor">pierx</string>
     <string name="ThemeDescription">Biohazard is an elegant dark theme with minimal red touch</string>
     <string name="ThemeChangelog">Please use the Google+ community here https://goo.gl/BJHxg4 for bug report, issue or suggestion. </string>
-    <string name="theme_email">https://plus.google.com/u/0/communities/115125731758765813523</string>
+    <string name="theme_email">https://goo.gl/BJHxg4</string>
+    <string name="ThemeType">XML</string>
 </resources>

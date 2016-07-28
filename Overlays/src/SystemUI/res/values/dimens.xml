@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="recents_task_view_rounded_corners_radius">4.0dip</dimen>
+    <dimen name="recents_task_view_rounded_corners_radius">16.0dip</dimen>
     <dimen name="floating_action_button_margin_side">10.0dip</dimen>
     <dimen name="floating_action_button_margin_bottom">56.0dip</dimen>
     <dimen name="notification_side_padding">0.0dip</dimen>

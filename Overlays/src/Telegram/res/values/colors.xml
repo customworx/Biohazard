@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff090909</color>
+    <color name="colorPrimaryDark">#ff000000</color>
+    <color name="colorAccent">#ffd32f2f</color>
+
+    <color name="divider">#dedede</color>
+    <color name="action_bar_color">#ff090909</color>
+    <color name="action_bar_text_color">#ffd32f2f</color>
+    <color name="action_bar_photo_viewer_color">#7f000000</color>
+    <color name="action_bar_media_picker_color">#ff333333</color>
+    <color name="action_bar_channel_intro_color">#ff090909</color>
+    <color name="action_bar_player_color">#ff090909</color>
+    <color name="action_bar_title_color">#ffffff</color>
+    <color name="action_bar_subtitle_color">#ffdedede</color>
+    <color name="action_bar_profile_color">#ff090909</color>
+    <color name="action_bar_profile_subtitle_color">#ffdedede</color>
+    <color name="action_bar_main_avatar_color">#ffd32f2f</color>
+    <color name="action_bar_action_mode_text_color">#ffdedede</color>
+    <color name="action_bar_selector_color">#ff090909</color>
+
+    <color name="input_field_selector_color">#ffd6d6d6</color>
+    <color name="action_bar_picker_selector_color">#ff3d3d3d</color>
+    <color name="action_bar_white_selector_color">#40ffffff</color>
+    <color name="action_bar_audio_selector_color">#2f000000</color>
+    <color name="action_bar_channel_intro_selector_color">#2f000000</color>
+    <color name="action_bar_mode_selector_color">#fff0f0f0</color>
+    <color name="action_bar_blue_selector_color">#ffd32f2f</color>
+    <color name="action_bar_cyan_selector_color">#ffd32f2f</color>
+    <color name="action_bar_green_selector_color">#ff48953d</color>
+    <color name="action_bar_orange_selector_color">#ffe67429</color>
+    <color name="action_bar_pink_selector_color">#ffd44e7b</color>
+    <color name="action_bar_red_selector_color">#ffbc4b41</color>
+    <color name="action_bar_violet_selector_color">#ff735fbe</color>
+    <color name="action_bar_yellow_selector_color">#ffef9f09</color>
+
+    <color name="attach_sheet_text_color">#ff757575</color>
+
+    <color name="dialogs_message_text_color">#ffffff</color>
+    <color name="dialogs_name_text_color">#ffd32f2f</color>
+    <color name="dialogs_attach_text_color">#ffd32f2f</color>
+    <color name="dialogs_printing_text_color">#ffd32f2f</color>
+    <color name="dialogs_draft_text_color">#ffdd4b39</color>
+
+    <color name="chat_unread_text_color">#ffd32f2f</color>
+    <color name="chat_add_contact_text_color">#ffd32f2f</color>
+    <color name="chat_report_spam_text_color">#ffcf5957</color>
+    <color name="chat_bottom_overlay_text_color">#ffffff</color>
+    <color name="chat_bottom_chat_overlay_text_color">#ffd32f2f</color>
+    <color name="chat_gif_hint_text_color">#ffffffff</color>
+    <color name="chat_empty_view_text_color">#ffffffff</color>
+    <color name="chat_search_count_text_color">#ffd32f2f</color>
+
+    <color name="inapp_player_performer_text_color">#dedede</color>
+    <color name="inapp_player_title_text_color">#dedede</color>
+    <color name="inapp_player_background_color">#ff212121</color>
+
+    <color name="reply_panel_name_text_color">#ffd32f2f</color>
+    <color name="reply_panel_message_text_color">#ffdedede</color>
+
+    <color name="alert_panel_name_text_color">#ffd32f2f</color>
+    <color name="alert_panel_message_text_color">#ff999999</color>
+
+    <color name="autodownload_sheet_save_text_color">#ffd32f2f</color>
+
+    <color name="share_sheet_copy_text_color">#ffd32f2f</color>
+    <color name="share_sheet_send_text_color">#ffd32f2f</color>
+    <color name="share_sheet_send_disabled_text_color">#ffb3b3b3</color>
+    <color name="share_sheet_edit_text_color">#ffdedede</color>
+    <color name="share_sheet_edit_placeholder_text_color">#ff979797</color>
+    <color name="share_sheet_badge_text_color">#ffffffff</color>
+
+    <color name="stickers_sheet_title_text_color">#ffdedede</color>
+    <color name="stickers_sheet_send_text_color">#ffd32f2f</color>
+    <color name="stickers_sheet_add_text_color">#ffd32f2f</color>
+    <color name="stickers_sheet_close_text_color">#ffd32f2f</color>
+    <color name="stickers_sheet_remove_text_color">#ffd32f2f</color>
+
+    <color name="pinned_panel_name_text_color">#ffd32f2f</color>
+    <color name="pinned_panel_message_text_color">#ff999999</color>
+
+    <color name="secret_chat_info_text_color">#ffffffff</color>
+
+    <color name="msg_selected_background_color">#66d32f2f</color>
+    <color name="msg_web_preview_duration_text_color">#ffffffff</color>
+    <color name="msg_secret_time_text_color">#ffe4e2e0</color>
+    <color name="msg_sticker_name_text_color">#ffffffff</color>
+    <color name="msg_bot_button_text_color">#ffffffff</color>
+    <color name="msg_bot_progress_color">#ffffffff</color>
+    <color name="msg_in_fordwarded_name_text_color">#ffd32f2f</color>
+    <color name="msg_out_fordwarded_name_text_color">#fffafafa</color>
+    <color name="msg_in_via_bot_name_text_color">#ffd32f2f</color>
+    <color name="msg_out_via_bot_name_text_color">#fffafafa</color>
+    <color name="msg_sticker_via_bot_name_text_color">#ffffffff</color>
+    <color name="msg_in_reply_line_color">#ffd32f2f</color>
+    <color name="msg_out_reply_line_color">#ff88c97b</color>
+    <color name="msg_sticker_reply_line_color">#ffffffff</color>
+    <color name="msg_in_reply_name_text_color">#ffd32f2f</color>
+    <color name="msg_out_reply_name_text_color">#fffafafa</color>
+    <color name="msg_sticker_reply_name_text_color">#ffffffff</color>
+    <color name="msg_in_reply_message_text_color">#ffffffff</color>
+    <color name="msg_out_reply_message_text_color">#ffffffff</color>
+    <color name="msg_in_reply_media_message_text_color">#ffa1aab3</color>
+    <color name="msg_out_reply_media_message_text_color">#fffafafa</color>
+    <color name="msg_in_reply_media_message_seleted_text_color">#ff89b4c1</color>
+    <color name="msg_out_reply_media_message_seleted_text_color">#fffafafa</color>
+    <color name="msg_sticker_reply_message_text_color">#ffffffff</color>
+    <color name="msg_in_web_preview_line_color">#ffd32f2f</color>
+    <color name="msg_out_web_preview_line_color">#ff88c97b</color>
+    <color name="msg_in_site_name_text_color">#ffd32f2f</color>
+    <color name="msg_out_site_name_text_color">#fffafafa</color>
+    <color name="msg_in_contact_name_text_color">#ffefefef</color>
+    <color name="msg_out_contact_name_text_color">#ffefefef</color>
+    <color name="msg_in_contact_phone_text_color">#ffdedede</color>
+    <color name="msg_out_contact_phone_text_color">#ffcdcdcd</color>
+    <color name="msg_media_progress_color">#ffffffff</color>
+    <color name="msg_in_audio_progress_color">#ffffffff</color>
+    <color name="msg_out_audio_progress_color">#ffefffde</color>
+    <color name="msg_in_audio_selected_progress_color">#ffe2f8ff</color>
+    <color name="msg_out_audio_selected_progress_color">#ffd4f5bc</color>
+    <color name="msg_media_time_text_color">#ffffffff</color>
+    <color name="msg_in_time_text_color">#ffa1aab3</color>
+    <color name="msg_out_time_text_color">#ffefefef</color>
+    <color name="msg_in_time_selected_text_color">#ff89b4c1</color>
+    <color name="msg_out_time_selected_text_color">#ffefefef</color>
+    <color name="msg_in_audio_performer_text_color">#ffdedede</color>
+    <color name="msg_out_audio_performer_text_color">#ffcdcdcd</color>
+    <color name="msg_in_audio_title_text_color">#ffd32f2f</color>
+    <color name="msg_out_audio_title_text_color">#fffafafa</color>
+    <color name="msg_in_audio_duration_text_color">#ffa1aab3</color>
+    <color name="msg_out_audio_duration_text_color">#fffafafa</color>
+    <color name="msg_in_audio_duration_selected_text_color">#ff89b4c1</color>
+    <color name="msg_out_audio_duration_selected_text_color">#fffafafa</color>
+    <color name="msg_in_audio_seekbar_color">#ffe4eaf0</color>
+    <color name="msg_out_audio_seekbar_color">#ffbbe3ac</color>
+    <color name="msg_in_audio_seekbar_selected_color">#ffbcdee8</color>
+    <color name="msg_out_audio_seekbar_selected_color">#ffa9dd96</color>
+    <color name="msg_in_audio_seekbar_fill_color">#ffd32f2f</color>
+    <color name="msg_out_audio_seekbar_fill_color">#ff78c272</color>
+    <color name="msg_in_voice_seekbar_color">#ffdee5eb</color>
+    <color name="msg_out_voice_seekbar_color">#ffbbe3ac</color>
+    <color name="msg_in_voice_seekbar_selected_color">#ffbcdee8</color>
+    <color name="msg_out_voice_seekbar_selected_color">#ffa9dd96</color>
+    <color name="msg_in_voice_seekbar_fill_color">#ffd32f2f</color>
+    <color name="msg_out_voice_seekbar_fill_color">#fffafafa</color>
+    <color name="msg_in_file_progress_color">#ffebf0f5</color>
+    <color name="msg_out_file_progress_color">#ffdaf5c3</color>
+    <color name="msg_in_file_progress_selected_color">#ffcbeaf6</color>
+    <color name="msg_out_file_progress_selected_color">#ffc5eca7</color>
+    <color name="msg_in_file_name_text_color">#ffd32f2f</color>
+    <color name="msg_out_file_name_text_color">#fffafafa</color>
+    <color name="msg_in_file_info_text_color">#ffa1aab3</color>
+    <color name="msg_out_file_info_text_color">#fffafafa</color>
+    <color name="msg_in_file_info_selected_text_color">#ff89b4c1</color>
+    <color name="msg_out_file_info_selected_text_color">#fffafafa</color>
+    <color name="msg_in_file_background_color">#ffebf0f5</color>
+    <color name="msg_out_file_background_color">#ffdaf5c3</color>
+    <color name="msg_in_file_background_selected_color">#ffcbeaf6</color>
+    <color name="msg_out_file_background_selected_color">#ffc5eca7</color>
+    <color name="msg_in_venue_name_text_color">#ffd32f2f</color>
+    <color name="msg_out_venue_name_text_color">#fffafafa</color>
+    <color name="msg_in_venue_info_text_color">#ffa1aab3</color>
+    <color name="msg_out_venue_info_text_color">#fffafafa</color>
+    <color name="msg_in_venue_info_selected_text_color">#ff89b4c1</color>
+    <color name="msg_out_venue_info_selected_text_color">#fffafafa</color>
+    <color name="msg_media_info_text_color">#ffffffff</color>
+    <color name="msg_text_color">#ffffffff</color>
+    <color name="msg_link_text_color">#ffd32f2f</color>
+    <color name="msg_link_select_background_color">#33d32f2f</color>
+    <color name="msg_text_select_background_color">#66d32f2f</color>
+
+
+
+    <color name="close_progress_drawable">#ff757575</color>
+
+
+    <!--Main Background-->
+    <color name="white">#ff000000</color>
+    <!--?-->
+    <color name="white2">#ffd32f2f</color>
+    <!--Nope-->
+    <color name="white3">#ffd32f2f</color>
+    <!--?-->
+    <color name="white4">#ff212121</color>
+    <!--Emoji background-->
+    <color name="white5">#1e1e1e</color>
+
+    <color name="white6">#e91e1e</color>
+
+    <color name="black">#ff000000</color>
+    <!--Main Text color-->
+    <color name="black2">#ffffffff</color>
+    <color name="black3">#ffd32f2f</color>
+    <color name="black4">#ffd32f2f</color>
+    <color name="black5">#ffd32f2f</color>
+    <color name="black6">#ffd32f2f</color>
+    <color name="black7">#ffd32f2f</color>
+    <color name="black8">#ffd32f2f</color>
+    <color name="black9">#0dffaa00</color>
+    <color name="black10">#1a000000</color>
+    <color name="black11">#99383838</color>
+    <color name="black12">#ffd32f2f</color>
+
+    <!--Div on NavDrawer and settings-->
+    <color name="grey">#ffd32f2f</color>
+
+    <color name="grey2">#ffd32f2f</color>
+    <color name="grey3">#ffd32f2f</color>
+    <!--Secondary text on settings-->
+    <color name="grey4">#ffd32f2f</color>
+
+    <color name="grey5">#ffd32f2f</color>
+
+    <color name="grey6">#e91e1e</color>
+    <color name="grey7">#ffd32f2f</color>
+    <!--Main screen date-->
+    <color name="grey8">#ffadadad</color>
+    <color name="grey9">#ffd32f2f</color>
+    <!--comppose message text around here-->
+    <color name="grey10">#ffd32f2f</color>
+    <color name="grey11">#ffd32f2f</color>
+    <color name="grey12">#ffd32f2f</color>
+    <color name="grey13">#ffd32f2f</color>
+    <color name="grey14">#ffd32f2f</color>
+    <color name="grey15">#ffd32f2f</color>
+    <color name="grey16">#ffd32f2f</color>
+    <color name="grey17">#ffd32f2f</color>
+    <color name="grey18">#ffd32f2f</color>
+    <color name="grey19">#ffd32f2f</color>
+    <color name="grey20">#ffd32f2f</color>
+
+    <color name="grey21">#ffffff</color>
+    <color name="grey22">#ffffff</color>
+    <color name="grey23">#ffffff</color>
+    <color name="grey24">#ffffff</color>
+    <color name="grey25">#ffffff</color>
+    <!--Main screen Send text-->
+    <color name="grey26">#ffadadad</color>
+    <!--NavDrawer-->
+    <color name="grey27">#ffffff</color>
+    <!---->
+    <color name="grey28">#ffffff</color>
+    <!---->
+    <color name="grey29">#ffffff</color>
+    <!---->
+    <color name="grey30">#ffffff</color>
+
+
+    <color name="grey31">#ffffff</color>
+    <color name="grey32">#ffffff</color>
+    <color name="grey33">#ffffff</color>
+    <color name="grey34">#ffffff</color>
+    <color name="grey35">#ffffff</color>
+
+    <color name="grey36">#ffffff</color>
+    <color name="grey37">#ffffff</color>
+    <color name="grey38">#ffffff</color>
+    <color name="grey39">#ffffff</color>
+    <color name="grey40">#ffffff</color>
+    <!--Off state switch-->
+    <color name="grey41">#cfcfcf</color>
+
+    <color name="blue">#ffffff</color>
+    <color name="blue2">#ffffff</color>
+    <color name="blue3">#ffffff</color>
+    <color name="blue4">#ffffff</color>
+    <color name="blue5">#ffffff</color>
+    <color name="blue6">#ffffff</color>
+    <color name="blue7">#ffffff</color>
+    <!--Settings title text-->
+    <color name="blue8">#ff0004</color>
+    <color name="blue9">#ffffff</color>
+
+    <!--Settings title text, switch on etc-->
+    <color name="blue10">#ffd32f2f</color>
+    <color name="blue11">#ffd32f2f</color>
+    <color name="blue12">#ffd32f2f</color>
+    <color name="blue13">#ffd32f2f</color>
+    <color name="blue14">#ffd32f2f</color>
+    <color name="blue15">#ffd32f2f</color>
+    <color name="blue16">#ffffff</color>
+    <color name="blue17">#ffffff</color>
+    <color name="blue18">#ffffff</color>
+    <!--Settings On state switch bg-->
+    <color name="blue19">#4dffffff</color>
+    <!--Settings On state switch-->
+    <color name="blue20">#ffd32f2f</color>
+    <color name="blue21">#ffffff</color>
+
+    <!--Selected message bg-->
+    <color name="blue_holo_light">#ffd32f2f</color>
+    <!--Cell Number-->
+    <color name="blue_light">#ffd32f2f</color>
+    <color name="blue_light2">#ffd32f2f</color>
+    <color name="blue_light3">#ffd32f2f</color>
+    <color name="blue_light4">#ffd32f2f</color>
+    <color name="blue_light7">#ffd32f2f</color>
+    <color name="blue_light5">#ffd32f2f</color>
+    <!--Cell Number-->
+    <color name="blue_light6">#ffd32f2f</color>
+    <color name="blue_light8">#ffd32f2f</color>
+    <color name="blue_light9">#ffd32f2f</color>
+    <color name="blue_light10">#ffd32f2f</color>
+    <color name="cyan2">#ffd32f2f</color>
+    <color name="cyan3">#ffd32f2f</color>
+
+    <color name="red">#ffff0000</color>
+    <color name="red2">#ffcf3030</color>
+    <color name="red3">#424242</color>
+    <color name="red4">#ffff6666</color>
+    <color name="red5">#ffdb5151</color>
+    <color name="red6">#ffd24949</color>
+    <color name="red7">#ffed3d4c</color>
+    <color name="red8">#ffcd5a5a</color>
+    <color name="magenta">#ffd32f2f</color>
+
+    <color name="teal">#ffd32f2f</color>
+    <color name="cyan">#ffd32f2f</color>
+    <color name="cyan4">#ffd32f2f</color>
+
+    <color name="bluegrey">#ffd32f2f</color>
+    <color name="green">#ffd32f2f</color>
+    <color name="green2">#ffd32f2f</color>
+    <color name="green3">#ffd32f2f</color>
+    <color name="green4">#ffd32f2f</color>
+    <color name="green5">#ffd32f2f</color>
+    <color name="yellow">#ffd32f2f</color>
+
+
+    <!--<array name="arr_colors">-->
+    <color name="flamingo">#ffe56555</color>
+    <color name="flamenco">#fff28c48</color>
+    <color name="blue_marguerite">#ff8e85ee</color>
+    <color name="apple">#ff76c84d</color>
+    <color name="viking">#ffffff00</color>
+    <color name="curious_blue">#ffffff00</color>
+    <color name="blue_marguerite2">#ff8e85ee</color>
+    <color name="deep_blush">#fff2749a</color>
+
+    <!--<array name="arr_colors_profiles_text">-->
+    <color name="arr_colors_profiles_text">#fff9cbc5</color>
+    <color name="arr_colors_profiles_text2">#fffdddc8</color>
+    <color name="arr_colors_profiles_text3">#ffcdc4ed</color>
+    <color name="arr_colors_profiles_text4">#ffc0edba</color>
+    <color name="arr_colors_profiles_text5">#ffb8e2f0</color>
+    <color name="arr_colors_profiles_text6">#ffcdc4ed</color>
+    <color name="arr_colors_profiles_text7">#ffb3d7f7</color>
+
+    <!--<array name="identicon_colors">-->
+    <color name="identicon_colors">#ffffffff</color>
+    <color name="identicon_colors2">#ffd5e6f3</color>
+    <color name="identicon_colors3">#ffffff00</color>
+    <color name="identicon_colors4">#ffffff00</color>
+
+    <!--<array name="tint_shadow_colors">-->
+    <color name="tint_shadow_colors">#00000000</color>
+    <color name="tint_shadow_colors2">#ffff4d4d</color>
+    <color name="tint_shadow_colors3">#fff48022</color>
+    <color name="tint_shadow_colors4">#ffffcd00</color>
+    <color name="tint_shadow_colors5">#ff81d281</color>
+    <color name="tint_shadow_colors6">#ff00ff00</color>
+    <color name="tint_shadow_colors7">#ff00ff00</color>
+    <color name="tint_shadow_colors8">#ff662d91</color>
+
+    <!--<array name="tint_highlighs_colors">-->
+    <color name="tint_highlighs_colors">#00000000</color>
+    <color name="tint_highlighs_colors2">#ffef9286</color>
+    <color name="tint_highlighs_colors3">#ffeacea2</color>
+    <color name="tint_highlighs_colors4">#fff2e17c</color>
+    <color name="tint_highlighs_colors5">#ffa4edae</color>
+    <color name="tint_highlighs_colors6">#ff89dce5</color>
+    <color name="tint_highlighs_colors7">#ff00ff00</color>
+    <color name="tint_highlighs_colors8">#ffcd98e5</color>
+
+
+    <!-- Navigation drawer/hamburger menu icon color-->
+    <color name="menu_hamburger_color">#ffffffff</color>
+
+</resources>

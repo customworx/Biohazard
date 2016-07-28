@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_account"><font color="#FFFFFF">Add account</font></string>
+    <string name="manage_accounts"><font color="#FFFFFF">Manage accounts</font></string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">নাম</font>
+    </string>
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">ফোন</font>
+    </string>
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">ইমেল</font>
+    </string>
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">ঠিকানা</font>
+    </string>
+    <string name="postal_address">
+        <font color="#c0ffffff">ঠিকানা</font>
+    </string>
+    <string name="full_name">
+        <font color="#c0ffffff">নাম</font>
+    </string>
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">তারিখ</font>
+    </string>
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">গোষ্ঠী নাম</font>
+    </string>
+    <string name="ghostData_company">
+        <font color="#c0ffffff">কোম্পানি</font>
+    </string>
+    <string name="ghostData_title">
+        <font color="#c0ffffff">শীর্ষক</font>
+    </string>
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">IM</font>
+    </string>
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">সম্পর্ক</font>
+    </string>
+    <string name="label_notes">
+        <font color="#c0ffffff">দ্রষ্টব্য</font>
+    </string>
+    <string name="label_sip_address">
+        <font color="#c0ffffff">SIP</font>
+    </string>
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">ওয়েবসাইট</font>
+    </string>
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">ডাকনাম</font>
+    </string>
+    <string name="name_phonetic">
+        <font color="#c0ffffff">উচ্চারণগত নাম</font>
+    </string>
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">ফোনেটিক আদ্য নাম</font>
+    </string>
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">উচ্চারণগত মাঝের নাম</font>
+    </string>
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">ফোনেটিক পারিবারিক নাম</font>
+    </string>
+    <string name="name_given">
+        <font color="#c0ffffff">প্রথম নাম</font>
+    </string>
+    <string name="name_family">
+        <font color="#c0ffffff">পারিবারিক নাম</font>
+    </string>
+    <string name="name_prefix">
+        <font color="#c0ffffff">নামের আগের অংশ</font>
+    </string>
+    <string name="name_middle">
+        <font color="#c0ffffff">মাঝের নাম</font>
+    </string>
+    <string name="name_suffix">
+        <font color="#c0ffffff">নামের পরের অংশ</font>
+    </string>
+</resources>

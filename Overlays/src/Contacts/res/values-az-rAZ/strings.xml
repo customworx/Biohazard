@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">Ad</font>
+    </string>
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">Telefon</font>
+    </string>
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">E-poçt</font>
+    </string>
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">Ünvan</font>
+    </string>
+    <string name="postal_address">
+        <font color="#c0ffffff">Ünvan</font>
+    </string>
+    <string name="full_name">
+        <font color="#c0ffffff">Ad</font>
+    </string>
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">Tarix</font>
+    </string>
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">Qrup adı</font>
+    </string>
+    <string name="ghostData_company">
+        <font color="#c0ffffff">Şirkət</font>
+    </string>
+    <string name="ghostData_title">
+        <font color="#c0ffffff">Başlıq</font>
+    </string>
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">IM</font>
+    </string>
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">Əlaqə</font>
+    </string>
+    <string name="label_notes">
+        <font color="#c0ffffff">Qeydlər</font>
+    </string>
+    <string name="label_sip_address">
+        <font color="#c0ffffff">İnternet zəngi</font>
+    </string>
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">Veb sayt</font>
+    </string>
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">Nik</font>
+    </string>
+    <string name="name_phonetic">
+        <font color="#c0ffffff">Fonetik adı</font>
+    </string>
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">Fonetik verilmiş ad</font>
+    </string>
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">Fonetik ata adı</font>
+    </string>
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">Fonetik soyad</font>
+    </string>
+    <string name="name_given">
+        <font color="#c0ffffff">Verilmiş ad</font>
+    </string>
+    <string name="name_family">
+        <font color="#c0ffffff">Soyad</font>
+    </string>
+    <string name="name_prefix">
+        <font color="#c0ffffff">Ad prefiksi</font>
+    </string>
+    <string name="name_middle">
+        <font color="#c0ffffff">Atasının adı</font>
+    </string>
+    <string name="name_suffix">
+        <font color="#c0ffffff">Ad suffiksi</font>
+    </string>
+</resources>

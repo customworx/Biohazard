@@ -2,8 +2,11 @@
 <resources>
     <color name="batterymeter_base_color">#ffffffff</color>
     <color name="batterymeter_bolt_color">#ff4caf50</color>
-    <color name="batterymeter_charge_color">#ffffffff</color>
-    <color name="batterymeter_frame_color">#54ffffff</color>
+    <color name="batterymeter_charge_color">#ffd32f2f</color>
+    <color name="batterymeter_frame_color">#80ffffff</color>
+    <color name="system_accent_color">#ffd32f2f</color>
+    <color name="system_primary_color">#ff131313</color>
+    <color name="system_secondary_color">#ff131313</color>
     <color name="card_undobar_material_text_color">#ffd32f2f</color>
     <color name="clear_recent_button_color">#ffffffff</color>
     <color name="clear_recent_button_ripple">#99d32f2f</color>
@@ -71,7 +74,7 @@
     <color name="qs_text">#ffffffff</color>
     <color name="qs_tile_divider">#00000000</color>
     <color name="qs_tile_text">#ffffffff</color>
-    <color name="qs_user_detail_icon_muted">#ff131313</color>
+    <color name="qs_user_detail_icon_muted">#ffdedede</color>
     <color name="recents_task_bar_dark_dismiss_color">#ff212121</color>
     <color name="recents_task_bar_dark_text_color">#ff212121</color>
     <color name="recents_task_bar_default_background_color">#ff212121</color>
@@ -90,13 +93,9 @@
     <color name="segmented_button_unselected">#65d32f2f</color>
     <color name="status_bar_clock_color">#ffffffff</color>
     <color name="status_bar_recents_app_label_color">#ffffffff</color>
-    <color name="system_accent_color">#ffd32f2f</color>
-    <color name="system_primary_color">#ff111111</color>
-    <color name="system_secondary_color">#ff191919</color>
     <color name="system_warning_color">#ffd32f2f</color>
     <color name="volume_panel_divider">#1fd32f2f</color>
-    <drawable name="heads_up_notification_bg_pressed">#ffd32f2f</drawable>
-    <color name="system_notification_accent_color">#ffd32f2f</color>
+    <!--<color name="system_notification_accent_color">#ffd32f2f</color>-->
     <color name="no_recent_apps">@android:color/background_dark</color>
     <color name="system_bar_background_opaque">@android:color/background_dark</color>
     <color name="system_bar_background_semi_transparent">#80000000</color>
@@ -138,4 +137,23 @@
     <color name="pie_outline_color">#ff5c5c5c</color>
     <color name="card_expand_title_color">#ffb3b2b2</color>
     <color name="equalizer_fill_color">#ffd32f2f</color>
+    <color name="qs_detail_button">#FFB0BEC5</color><!-- 100% blue grey 200 -->
+    <color name="qs_detail_button_white">#B3FFFFFF</color><!-- 70% white -->
+    <!-- Tint color for the content on the notification overflow card. -->
+    <color name="keyguard_overflow_content_color">#ff686868</color>
+    <color name="assist_orb_color">#ffffff</color>
+    <color name="screen_pinning_request_window_bg">#80000000</color>
+    <color name="segmented_buttons_background">#14FFFFFF</color><!-- 8% white -->
+    <color name="dark_mode_icon_color_single_tone">#99000000</color>
+    <color name="dark_mode_icon_color_dual_tone_background">#3d000000</color>
+    <color name="dark_mode_icon_color_dual_tone_fill">#7a000000</color>
+    <color name="light_mode_icon_color_single_tone">#ffffff</color>
+    <color name="light_mode_icon_color_dual_tone_background">#4dffffff</color>
+    <color name="light_mode_icon_color_dual_tone_fill">#ffffff</color>
+    <color name="zen_introduction_message_background">#ffd32f2f</color><!-- deep teal 500 -->
+    <color name="volume_icon_color">#ffffffff</color>
+    <color name="volume_settings_icon_color">#7fffffff</color>
+    <color name="volume_slider_inactive">#FFB0BEC5</color><!-- blue grey 200 -->
+    <color name="volume_slider_active">#ffd32f2f</color>
+    <color name="gesture_color">#ffd32f2f</color>
 </resources>

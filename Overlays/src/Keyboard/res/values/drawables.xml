@@ -8,4 +8,6 @@
     <item type="drawable" name="btn_keyboard_key_pressed_off_lxx_light">#ffcbdae5</item>
     <item type="drawable" name="btn_keyboard_key_pressed_on_lxx_dark">#00000000</item>
     <item type="drawable" name="btn_keyboard_key_pressed_on_lxx_light">#ffcbdae5</item>
+    <item type="drawable" name="btn_keyboard_spacebar_normal_lxx_dark">#00000000</item>
+    <item type="drawable" name="btn_keyboard_spacebar_normal_lxx_light">#00000000</item>
 </resources>

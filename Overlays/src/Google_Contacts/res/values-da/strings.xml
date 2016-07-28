@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">Navn</font>
+    </string>
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">Telefon</font>
+    </string>
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">E-mail</font>
+    </string>
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">Adresse</font>
+    </string>
+    <string name="postal_address">
+        <font color="#c0ffffff">Adresse</font>
+    </string>
+    <string name="full_name">
+        <font color="#c0ffffff">Navn</font>
+    </string>
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">Dato</font>
+    </string>
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">Gruppenavn</font>
+    </string>
+    <string name="ghostData_company">
+        <font color="#c0ffffff">Virksomhed</font>
+    </string>
+    <string name="ghostData_title">
+        <font color="#c0ffffff">Titel</font>
+    </string>
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">Chat</font>
+    </string>
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">Forhold</font>
+    </string>
+    <string name="label_notes">
+        <font color="#c0ffffff">Noter</font>
+    </string>
+    <string name="label_sip_address">
+        <font color="#c0ffffff">SIP</font>
+    </string>
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">Website</font>
+    </string>
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">Kaldenavn</font>
+    </string>
+    <string name="name_phonetic">
+        <font color="#c0ffffff">Fonetisk navn</font>
+    </string>
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">Fonetisk fornavn</font>
+    </string>
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">Fonetisk mellemnavn</font>
+    </string>
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">Fonetisk efternavn</font>
+    </string>
+    <string name="name_given">
+        <font color="#c0ffffff">Fornavn</font>
+    </string>
+    <string name="name_family">
+        <font color="#c0ffffff">Efternavn</font>
+    </string>
+    <string name="name_prefix">
+        <font color="#c0ffffff">Navnepræfiks</font>
+    </string>
+    <string name="name_middle">
+        <font color="#c0ffffff">Mellemnavn</font>
+    </string>
+    <string name="name_suffix">
+        <font color="#c0ffffff">Navnesuffiks</font>
+    </string>
+</resources>

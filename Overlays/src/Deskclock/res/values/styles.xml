@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ControlAccentThemeOverlay">
+        <item name="android:colorControlActivated">#ffd32f2f</item>
+    </style>
+
+    <style name="TimeLabelTextAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">60.0dip</item>
+        <item name="android:textColor">#ffd32f2f</item>
+    </style>
+
+    <style name="AmPmTextAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffd32f2f</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat" parent="@style/Base.TextAppearance.AppCompat"/>
+
+    <style name="TextAppearance.StatusBar.EventContent" parent="@style/TextAppearance.StatusBar">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffbebebe</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.StatusBar.EventContent.Title" parent="@style/TextAppearance.StatusBar.EventContent">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffd32f2f</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.StatusBar" parent="@style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PrimaryLabelTextParentAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffd32f2f</item>
+    </style>
+
+    <style name="undo_toast" parent="@style/body">
+        <item name="android:textColor">#ffd32f2f</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="body">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="day_of_week_label_condensed">
+        <item name="android:tint">#ffd32f2f</item>
+    </style>
+
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">@*android:drawable/action_bar_background</item>
+        <item name="android:elevation">0.0dip</item>
+    </style>
+</resources>

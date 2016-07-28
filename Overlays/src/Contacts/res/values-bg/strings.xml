@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">Име</font>
+    </string>
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">Псевдоним</font>
+    </string>
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">Имейл</font>
+    </string>
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">Адрес</font>
+    </string>
+    <string name="postal_address">
+        <font color="#c0ffffff">Адрес</font>
+    </string>
+    <string name="full_name">
+        <font color="#c0ffffff">Име</font>
+    </string>
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">Дата</font>
+    </string>
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">Име на групата</font>
+    </string>
+    <string name="ghostData_company">
+        <font color="#c0ffffff">Фирма</font>
+    </string>
+    <string name="ghostData_title">
+        <font color="#c0ffffff">Наименование</font>
+    </string>
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">Незабавни съобщения</font>
+    </string>
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">Взаимоотношения</font>
+    </string>
+    <string name="label_notes">
+        <font color="#c0ffffff">Бележки</font>
+    </string>
+    <string name="label_sip_address">
+        <font color="#c0ffffff">SIP</font>
+    </string>
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">Уебсайт</font>
+    </string>
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">Псевдоним</font>
+    </string>
+    <string name="name_phonetic">
+        <font color="#c0ffffff">Име, както се произнася</font>
+    </string>
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">Собствено име, както се произнася</font>
+    </string>
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">Презиме, както се произнася</font>
+    </string>
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">Фамилно име, както се произнася</font>
+    </string>
+    <string name="name_given">
+        <font color="#c0ffffff">Собствено име</font>
+    </string>
+    <string name="name_family">
+        <font color="#c0ffffff">Фамилно име</font>
+    </string>
+    <string name="name_prefix">
+        <font color="#c0ffffff">Обръщение</font>
+    </string>
+    <string name="name_middle">
+        <font color="#c0ffffff">Презиме</font>
+    </string>
+    <string name="name_suffix">
+        <font color="#c0ffffff">Титла</font>
+    </string>
+</resources>

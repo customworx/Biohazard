@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="buttonBarStyle" format="reference"/>
+    <attr name="buttonBarButtonStyle" format="reference"/>
+    <attr name="isLightTheme" format="boolean"/>
+    <attr name="backgroundTint" format="color"/>
+    <attr name="backgroundTintMode">
+        <enum name="multiply" value="14"/>
+        <enum name="screen" value="15"/>
+        <enum name="src_atop" value="9"/>
+        <enum name="src_in" value="5"/>
+        <enum name="src_over" value="3"/>
+    </attr>
+</resources>

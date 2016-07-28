@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2014 The Android Open Source Project     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at          http://www.apache.org/licenses/LICENSE-2.0     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:name="root"
+        android:alpha="1.0" android:height="48dp" android:width="48dp" android:viewportHeight="48"
+        android:viewportWidth="48">
+    <group android:name="ic_signal_airplane" android:translateX="21.9995"
+           android:translateY="25.73401">
+        <group android:name="ic_signal_airplane_pivot" android:translateX="-23.21545"
+               android:translateY="-20.86649">
+            <clip-path android:name="mask"
+                       android:pathData="M 37.8337860107,-40.4599914551 c 0.0,0.0 -35.8077850342,31.5523681641 -35.8077850342,31.5523681641 c 0.0,0.0 9.55097961426,9.55285644531 9.55097961426,9.55285644531 c 0.0,0.0 -2.61698913574,2.09387207031 -2.61698913574,2.09387207031 c 0.0,0.0 -9.75096130371,-9.56428527832 -9.75096130371,-9.56428527832 c 0.0,0.0 -34.6200408936,25.4699249268 -34.6200408936,25.4699249268 c 0.0,0.0 55.9664764404,69.742401123 55.9664764404,69.742401123 c 0.0,0.0 73.2448120117,-59.1047973633 73.2448120117,-59.1047973633 c 0.0,0.0 -55.9664916992,-69.7423400879 -55.9664916992,-69.7423400879 Z" />
+            <group android:name="cross">
+                <path android:name="cross_1"
+                      android:pathData="M 7.54049682617,3.9430847168 c 0.0,0.0 0.324981689453,0.399978637695 0.324981689453,0.399978637695 "
+                      android:strokeColor="#ffd32f2f" android:strokeAlpha="0"
+                      android:strokeWidth="3.5" android:fillColor="#00000000" />
+            </group>
+            <group
+                android:name="plane"
+                android:pivotX="12"
+                android:pivotY="18"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:translateX="12"
+                android:translateY="12">
+                <path
+                    android:name="plane_1"
+                    android:fillColor="#d32f2f"
+                    android:pathData="M18.4244,2.51851 L13.1654,5.53117 L13.9479,3.556 C13.9479,3.556,12.5529,5.2049,12.2571,5.50086 C11.9611,5.79681,11.4962,5.66996,11.3693,5.54311 C11.2425,5.41625,12.0036,3.42945,12.0036,3.42945 C10.397,5.62781,8.875,5.83886,8.875,5.83886 C-2.7934,7.2763,2.21992,19.6913,11.7499,18.6066 C22.15,17.4229,21.8543,21.4815,21.8543,21.4815 L21.8964,21.3543 C21.8964,21.3543,22.2343,17.1692,18.1758,17.0423 C14.1172,16.9155,11.7403,16.8443,8.76917,15.5627 C5.53496,14.1676,2.98226,12.1532,3.63297,9.26341 C3.99955,7.63512,7.31071,6.47323,7.31071,6.47323 C7.31071,6.47323,5.02795,7.95262,4.81659,10.0665 C4.66076,11.6253,6.12698,13.2373,9.88963,15.013 C12.435,16.2141,13.3988,15.9007,13.3988,15.9007 C13.3988,15.9007,13.737,15.6789,13.3143,15.6472 C9.92872,15.3933,9.76308,13.4487,9.76308,13.4487 C9.76308,13.4487,9.6744,12.283,10.2281,12.0536 C10.7819,11.8243,11.9615,12.7301,12.5957,12.6878 C13.2299,12.6456,14.4249,12.8429,15.2167,13.2585 C15.6184,13.4694,15.5339,13.6599,16.2103,14.1884 C17.2086,14.9684,18.303,13.5331,18.3453,13.364 C18.3875,13.1949,18.4296,11.6307,17.2881,11.0811 C16.1466,10.5315,14.8153,8.56566,14.8153,8.56566 C14.8153,8.56566,14.5273,7.72167,14.2655,7.38182 C14.0454,7.09597,14.1096,7.177,13.6833,6.90207 L13.9907,6.61805 C14.5852,6.76062,15.3013,6.98065,15.3013,6.98065 L16.0198,7.1919 L14.2648,6.36454 L18.4248,2.51851 Z M18.2113,13.2795 C18.2324,13.7166,17.6087,13.879,17.6087,13.879 C17.6087,13.879,17.7192,13.2502,18.2113,13.2795 Z"
+                    android:strokeWidth="1"/>
+                <path
+                    android:fillColor="#fff"
+                    android:pathData="M12.0046,8.40018 C12.0046,8.40018,13.9899,8.78544,14.0598,9.84262 C14.127,10.859,13.1076,9.52207,13.006,9.33439 C12.8188,8.98852,12.0045,8.40018,12.0045,8.40018 Z"
+                    android:strokeWidth="1"/>
+                <path
+                    android:fillAlpha="0.21960784"
+                    android:fillColor="#000000"
+                    android:pathData="M8.37993,5.92648 C6.62214,6.50809,4.13772,9.08578,4.95977,11.172 C5.77448,13.0817,8.88816,14.5061,8.88816,14.5061 C8.88816,14.5061,2.33717,9.29652,8.37993,5.92648"
+                    android:strokeWidth="1"/>
+            </group>
+        </group>
+    </group>
+</vector>

@@ -2,8 +2,7 @@
     package="com.pierx.biohazard.overlays">
 
     <application
-        android:hasCode="false"
-        android:vmSafeMode="true" />
+        android:hasCode="false" />
     <overlay
         android:priority="${priorityLabel}"
         android:targetPackage="${targetPackageLabel}" />

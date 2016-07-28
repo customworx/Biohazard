@@ -10,6 +10,7 @@
     <color name="bg_item_selected">#ffd32f2f</color>
     <color name="solid_green">#ffd32f2f</color>
     <color name="dark_green">#ffc62828</color>
+    <color name="quantum_tealA200">#ffd32f2f</color>
     <color name="light_green">#ffd32f2f</color>
     <color name="hangout_audio_only_exit">#ffd32f2f</color>
     <color name="hangout_mute_toolbar_selected">#ffd32f2f</color>
@@ -39,8 +40,8 @@
     <color name="quantum_grey600">#ff9e9e9e</color>
     <color name="quantum_grey700">#ffcecece</color>
     <color name="quantum_grey800">#ffdbdbdb</color>
-    <color name="quantum_grey900">#ffefefef</color>
-    <color name="edit_participants_statusbar_color">#ff454545</color>
+    <color name="quantum_grey900">#ffdbdbdb</color>
+    <color name="edit_participants_statusbar_color">#ff131313</color>
     <color name="action_sheet_secondary_color">#ff616161</color>
     <color name="translucent_white">#80000000</color>
     <color name="card_background_selected">#ff131313</color>
@@ -49,17 +50,26 @@
     <color name="application_background">@android:color/background_dark</color>
     <color name="text_color_primary_settings">#ffffffff</color>
     <color name="text_color_secondary_settings">#fffafafa</color>
-    <color name="quantum_bluegrey50">#ffefefef</color>
-    <color name="quantum_bluegrey200">#ffefefef</color>
+    <!--Invites background-->
+    <color name="quantum_bluegrey50">#ff000000</color>
+    <color name="quantum_bluegrey200">#ffffffff</color>
+    <!--Msg bubble sent bg-->
     <color name="quantum_bluegrey100">#ffd32f2f</color>
-    <color name="quantum_bluegrey300">#ffefefef</color>
-    <color name="quantum_bluegrey400">#ffefefef</color>
-    <color name="quantum_bluegrey500">#ffefefef</color>
-    <color name="quantum_bluegrey600">#ffefefef</color>
-    <color name="quantum_bluegrey700">#ffefefef</color>
-    <color name="quantum_bluegrey800">#ffefefef</color>
-    <color name="quantum_bluegrey900">#ffefefef</color>
-    <color name="quantum_bluegrey950">#ffefefef</color>
+    <color name="quantum_bluegrey300">#ffffffff</color>
+    <color name="quantum_bluegrey400">#ffffffff</color>
+    <!--Snooze notification icon color, Selected, Message on convo etc-->
+    <color name="quantum_bluegrey500">#ffffffff</color>
+    <!--Main screen text and dates-->
+    <color name="quantum_bluegrey600">#c0ffffff</color>
+    <!--Main color ?-->
+    <color name="quantum_bluegrey700">#ffd32f2f</color>
+    <!--NavBar icon color & unread text-->
+    <color name="quantum_bluegrey800">#ffd32f2f</color>
+    <!--Main screen names and convo text and quick reply text-->
+    <color name="quantum_bluegrey900">#ffbdbdbd</color>
+    <!--?-->
+    <color name="quantum_bluegrey950">#ffffffff</color>
+    <color name="quick_button_color">#ff131313</color>
     <color name="incoming_conversation_bubble_background">#ff131313</color>
     <color name="incoming_conversation_bubble_background_otr">#ff131313</color>
     <color name="outgoing_conversation_bubble_background_otr">@android:color/background_dark</color>
@@ -146,6 +156,7 @@
     <color name="screen_capture_stop_button_text">#ffffffff</color>
     <color name="navigation_drawer_item_text">#ffffffff</color>
     <color name="navigation_drawer_item_detail_text">#ffffffff</color>
+    <color name="navigation_drawer_enabled_item_text">#ffd32f2f</color>
     <color name="navigation_drawer_disabled_item_text">#ff9c9c9c</color>
     <color name="bg_item_touch_feedback">#64000000</color>
     <color name="blocked_avatar_availability_overlay">#66ffffff</color>
@@ -221,7 +232,7 @@
     <color name="background_material_dark">#ff212121</color>
     <color name="background_floating_material_dark">#ff212121</color>
     <color name="primary_material_dark">#ff131313</color>
-    <color name="primary_material_light">#ffefefef</color>
+    <color name="primary_material_light">#ff131313</color>
     <color name="primary_dark_material_dark">@android:color/background_dark</color>
     <color name="primary_dark_material_light">#ff757575</color>
     <color name="ripple_material_dark">#4dffffff</color>
@@ -261,9 +272,9 @@
     <color name="photo_info_background_color">@android:color/background_dark</color>
     <color name="notification_bar_zero_messages">#ff999999</color>
     <color name="notification_bar_more_than_zero_messages">#ffdb4937</color>
-    <color name="realtimechat_message_textlink">#8bd32f2f</color>
-    <color name="realtimechat_message_byline_failed">#ffff3d3d</color>
-    <color name="hangout_calling_participants_count">#ff8cc474</color>
+    <!--<color name="realtimechat_message_textlink">#8bd32f2f</color>-->
+    <!--<color name="realtimechat_message_byline_failed">#ffff3d3d</color>-->
+    <color name="hangout_calling_participants_count">#ffd32f2f</color>
     <color name="pstn_call_info">#66ffffff</color>
     <color name="hangout_avatar_border">#33ffffff</color>
     <color name="hangout_title_background">#42000000</color>

@@ -34,6 +34,22 @@ android {
             applicationId packageName + "Android"
             manifestPlaceholders = [ priorityLabel:"50", targetPackageLabel:"android" ]
         }
+        SystemUI {
+            applicationId packageName + "SystemUI"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.systemui" ]
+        }
+        Softkeys {
+            applicationId packageName + "Softkeys"
+            manifestPlaceholders = [ priorityLabel:"70", targetPackageLabel:"com.android.systemui" ]
+        }
+        StatusBars {
+            applicationId packageName + "StatusBars"
+            manifestPlaceholders = [ priorityLabel:"70", targetPackageLabel:"com.android.systemui" ]
+        }
+        Settings {
+            applicationId packageName + "Settings"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
+        }
         AudioFX {
             applicationId packageName + "AudioFX"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"org.cyanogenmod.audiofx" ]
@@ -53,10 +69,6 @@ android {
         Camera {
             applicationId packageName + "Camera"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.camera2" ]
-        }
-        CatLog {
-            applicationId packageName + "CatLog"
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.nolanlawson.logcat" ]
         }
         CellBroadcast {
             applicationId packageName + "CellBroadcast"
@@ -174,6 +186,10 @@ android {
             applicationId packageName + "Inbox"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.inbox" ]
         }
+        JuiceSSH {
+            applicationId packageName + "JuiceSSH"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.sonelli.juicessh" ]
+        }
         Keyboard {
             applicationId packageName + "Keyboard"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.inputmethod.latin" ]
@@ -189,6 +205,10 @@ android {
         Layers_Manager {
             applicationId packageName + "Layers_Manager"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.lovejoy777.rroandlayersmanager" ]
+        }
+        Messanging {
+            applicationId packageName + "Messanging"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.messanging" ]
         }
         Nova_Launcher {
             applicationId packageName + "Nova_Launcher"
@@ -206,10 +226,10 @@ android {
             applicationId packageName + "Pandora"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.pandora.android" ]
         }
-/*        Phone {
+        Phone {
             applicationId packageName + "Phone"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.phone" ]
-        }*/
+        }
         PushBullet {
             applicationId packageName + "PushBullet"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.pushbullet.android" ]
@@ -222,17 +242,9 @@ android {
             applicationId packageName + "SMSBackupRestorePro"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.riteshsahu.SMSBackupRestorePro" ]
         }
-        Settings {
-            applicationId packageName + "Settings"
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
-        }
-/*        Softkey {
-            applicationId packageName + "Softkey"
-            manifestPlaceholders = [ priorityLabel:"998", targetPackageLabel:"com.android.systemui" ]
-        }*/
-        SystemUI {
-            applicationId packageName + "SystemUI"
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.systemui" ]
+        Substratum {
+            applicationId packageName + "substratum"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"projekt.substratum" ]
         }
         SuperSu {
             applicationId packageName + "SuperSu"
@@ -241,14 +253,6 @@ android {
         Telecom {
             applicationId packageName + "Telecom"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.server.telecom" ]
-        }
-/*        TwoColums {
-            applicationId packageName + "TwoColums"
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
-        }*/
-        WhatsApp {
-            applicationId packageName + "WhatsApp"
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.whatsapp" ]
         }
     }
 }

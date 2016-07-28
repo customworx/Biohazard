@@ -13,6 +13,8 @@
     <color name="apply_button_default_color">@android:color/black</color>
     <color name="apply_button_pressed_color">#90000000</color>
     <color name="designed_for_color">@android:color/white</color>
+
+    <color name="drawer_item_textcolor">#fff</color>
     <color name="drawer_item_default">@android:color/black</color>
     <color name="drawer_item_pressed">#ffd32f2f</color>
     <color name="drawer_divider_line">#ff484648</color>

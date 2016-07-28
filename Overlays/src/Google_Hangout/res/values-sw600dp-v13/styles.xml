@@ -13,6 +13,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">56.0dip</item>
         <item name="messageTextColor">#ffffffff</item>
-        <item name="actionTextColor">#ffc62828</item>
+        <item name="actionTextColor">#ffd32f2f</item>
     </style>
 </resources>

@@ -1,49 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pierx.biohazard">
+          package="com.pierx.biohazard">
+
+    <!--<uses-permission android:name="com.android.vending.CHECK_LICENSE"/>-->
 
     <uses-feature
         android:name="org.cyanogenmod.theme"
-        android:required="false" />
+        android:required="false"/>
 
     <meta-data
         android:name="org.cyanogenmod.theme.name"
-        android:value="@string/theme_name" />
+        android:value="@string/ThemeName"/>
     <meta-data
         android:name="org.cyanogenmod.theme.author"
-        android:value="@string/theme_author" />
+        android:value="@string/ThemeAuthor"/>
 
     <application
         android:allowBackup="true"
-        android:hasCode="false"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/theme_name"
+        android:label="@string/ThemeName"
         android:theme="@style/AppTheme">
+        <activity android:name=".SubstratumLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".Overlay"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.layers.plugins.PICK_OVERLAYS" />
-                <category android:name="Overlay" />
+                <action android:name="com.layers.plugins.PICK_OVERLAYS"/>
+                <category android:name="Overlay"/>
             </intent-filter>
         </service>
 
         <meta-data
-            android:name="Substratum_Enabled"
-            android:value="@string/ThemeAuthor" />
+            android:name="Substratum_Legacy"
+            android:value="true"/>
+        <meta-data
+            android:name="Substratum_Name"
+            android:value="@string/ThemeName"/>
+        <meta-data
+            android:name="Substratum_Author"
+            android:value="@string/ThemeAuthor"/>
+        <!-- SUBSTRATUM INTERNAL USE: DO NOT TOUCH -->
+        <meta-data
+            android:name="Substratum_Plugin"
+            android:value="2.1.2"/>
+        <meta-data
+            android:name="Substratum_Mode"
+            android:value="@string/ThemeType"/>
         <meta-data
             android:name="Layers_Name"
-            android:value="@string/ThemeName" />
+            android:value="@string/ThemeName"/>
         <meta-data
             android:name="Layers_Developer"
-            android:value="@string/ThemeAuthor" />
+            android:value="@string/ThemeAuthor"/>
         <meta-data
             android:name="Layers_Description"
-            android:value="@string/ThemeDescription" />
+            android:value="@string/ThemeDescription"/>
         <meta-data
             android:name="Layers_WhatsNew"
-            android:value="@string/ThemeChangelog" />
-
+            android:value="@string/ThemeChangelog"/>
     </application>
-
 </manifest>

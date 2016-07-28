@@ -8,11 +8,17 @@ android {
 
     defaultConfig {
         applicationId "com.pierx.biohazard"
-        minSdkVersion 21
+        minSdkVersion 22
         targetSdkVersion 23
-        versionCode 19
-        versionName "3.4"
+        versionCode 24
+        versionName "Ouroboros"
         setProperty("archivesBaseName", themeName + "-" + "$versionName")
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 }
 
@@ -23,7 +29,7 @@ task cleanFirst(type: Delete) {
 def source = "../Overlays/src/"
 def dest = "src/main/assets/overlays/"
 
-//Theme Engine resources overlays.
+//Resources overlays for OMS and CMTE
 task CMTE(dependsOn: ['cleanFirst']) {
     doFirst {
         copy {
@@ -31,48 +37,24 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "android"
         }
         copy {
-            from source + "AudioFX"
-            into dest + "org.cyanogenmod.audiofx"
-        }
-        copy {
-            from source + "Browser"
-            into dest + "com.android.browser"
+            from source + "SystemUI"
+            into dest + "com.android.systemui"
         }
         copy {
             from source + "Calculator"
             into dest + "com.android.calculator2"
         }
         copy {
-            from source + "Calendar"
-            into dest + "com.android.calendar"
+            from source + "Settings"
+            into dest + "com.android.settings"
         }
         copy {
-            from source + "Camera"
-            into dest + "com.android.camera2"
+            from source + "Softkey"
+            into dest + "com.android.systemui.navbars"
         }
         copy {
-            from source + "CatLog"
-            into dest + "com.nolanlawson.logcat"
-        }
-        copy {
-            from source + "CellBroadcast"
-            into dest + "com.android.cellbroadcastreceiver"
-        }
-        copy {
-            from source + "Chrome"
-            into dest + "com.android.chrome"
-        }
-        copy {
-            from source + "Contacts"
-            into dest + "com.android.contacts"
-        }
-        copy {
-            from source + "com.cyanogenmod.lockclock"
-            into dest + "com.cyanogenmod.lockclock"
-        }
-        copy {
-            from source + "com.cyanogenmod.settings.device"
-            into dest + "com.cyanogenmod.settings.device"
+            from source + "StatusBars"
+            into dest + "com.android.systemui.statusbars"
         }
         copy {
             from source + "com.dirtyunicorns.about"
@@ -91,16 +73,61 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.dirtyunicorns.duupdater"
         }
         copy {
+            from source + "AudioFX"
+            into dest + "org.cyanogenmod.audiofx"
+        }
+        copy {
+            from source + "Browser"
+            into dest + "com.android.browser"
+        }
+
+        copy {
+            from source + "Calendar"
+            into dest + "com.android.calendar"
+        }
+        copy {
+            from source + "Camera"
+            into dest + "com.android.camera2"
+        }
+        copy {
+            from source + "CellBroadcast"
+            into dest + "com.android.cellbroadcastreceiver"
+        }
+        copy {
+            from source + "Chrome"
+            into dest + "com.android.chrome"
+        }
+        copy {
+            from source + "Contacts"
+            into dest + "com.android.contacts"
+        }
+        copy {
             from source + "Dialer"
             into dest + "com.android.dialer"
         }
         copy {
-            from source + "DocumentsUI"
-            into dest + "com.android.documentsui"
+            from source + "Phone"
+            into dest + "com.android.phone"
+        }
+        copy {
+            from source + "com.cyanogenmod.lockclock"
+            into dest + "com.cyanogenmod.lockclock"
+        }
+        copy {
+            from source + "com.cyanogenmod.settings.device"
+            into dest + "com.cyanogenmod.settings.device"
+        }
+        copy {
+            from source + "org.cyanogenmod.theme.chooser"
+            into dest + "org.cyanogenmod.theme.chooser"
         }
         copy {
             from source + "Deskclock"
             into dest + "com.android.deskclock"
+        }
+        copy {
+            from source + "DocumentsUI"
+            into dest + "com.android.documentsui"
         }
         copy {
             from source + "Development"
@@ -123,10 +150,6 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.estrongs.android.pop"
         }
         copy {
-            from source + "Framework"
-            into dest + "android"
-        }
-        copy {
             from source + "Gallery"
             into dest + "com.android.gallery3d"
         }
@@ -144,6 +167,10 @@ task CMTE(dependsOn: ['cleanFirst']) {
         }
         copy {
             from source + "Google_Deskclock"
+            into dest + "com.google.android.deskclock"
+        }
+        copy {
+            from source + "Google_Dialer"
             into dest + "com.google.android.dialer"
         }
         copy {
@@ -194,12 +221,14 @@ task CMTE(dependsOn: ['cleanFirst']) {
             from source + "Inbox"
             into dest + "com.google.android.apps.inbox"
         }
-
+        copy {
+            from source + "JuiceSSH"
+            into dest + "com.sonelli.juicessh"
+        }
         copy {
             from source + "Keyboard"
             into dest + "com.android.inputmethod.latin"
         }
-
         copy {
             from source + "Kernel_Adiutor"
             into dest + "com.grarak.kerneladiutor"
@@ -245,37 +274,21 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.riteshsahu.SMSBackupRestorePro"
         }
         copy {
-            from source + "Settings"
-            into dest + "com.android.settings"
-        }
-        copy {
-            from source + "Softkey"
-            into dest + "com.android.systemui"
-        }
-        copy {
-            from source + "SystemUI"
-            into dest + "com.android.systemui"
-        }
-        copy {
             from source + "SuperSu"
             into dest + "eu.chainfire.supersu"
+        }
+        copy {
+            from source + "Substratum"
+            into dest + "projekt.substratum"
         }
         copy {
             from source + "Telecom"
             into dest + "com.android.server.telecom"
         }
-        copy {
-            from source + "org.cyanogenmod.theme.chooser"
-            into dest + "org.cyanogenmod.theme.chooser"
-        }
-        copy {
-            from source + "WhatsApp"
-            into dest + "com.whatsapp"
-        }
     }
 }
 
-//Overlays location
+//Overlays location (Pre-compiled files)
 def Overlays = copySpec {
     from('../Overlays/build/outputs/apk') {
         include "*.apk"
@@ -310,15 +323,20 @@ task RRO(dependsOn: ['copyOverlays', 'createZip']) {
 //Clean the apk's
 task cleanFiles(type: Delete) {
     delete fileTree(dir: "src/main/assets/Files", exclude: "*.zip")
+//    Blacklist for OMS
+    // Android
+//    delete 'src/main/assets/overlays_legacy/android/res/drawable/btn_check_material_anim.xml'
     doFirst {
         println 'Finishing Plugin'
     }
 }
 
-//Prepare all required files for theme engine and RRO and OMS
+//Prepare all required files for CMTE, OMS and RRO
 project.afterEvaluate {
-//    OMS (without Assets Files for RRO)
 //    prepareDebugDependencies.dependsOn(['CMTE', 'cleanFiles'])
-//    prepareDebugDependencies.dependsOn(['RRO', 'cleanFiles'])
     prepareDebugDependencies.dependsOn(['CMTE', 'RRO', 'cleanFiles'])
+}
+
+dependencies {
+    compile 'com.github.javiersantos:PiracyChecker:0.0.2'
 }

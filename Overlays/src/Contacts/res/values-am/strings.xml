@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">ስም</font>
+    </string>
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">ስልክ</font>
+    </string>
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">ኢሜይል</font>
+    </string>
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">አድራሻ</font>
+    </string>
+    <string name="postal_address">
+        <font color="#c0ffffff">አድራሻ</font>
+    </string>
+    <string name="full_name">
+        <font color="#c0ffffff">ስም</font>
+    </string>
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">ቀን</font>
+    </string>
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">የቡድን ስም</font>
+    </string>
+    <string name="ghostData_company">
+        <font color="#c0ffffff">ኩባንያ</font>
+    </string>
+    <string name="ghostData_title">
+        <font color="#c0ffffff">ርዕስ</font>
+    </string>
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">IM</font>
+    </string>
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">ግንኙነት</font>
+    </string>
+    <string name="label_notes">
+        <font color="#c0ffffff">ማስታወሻዎች</font>
+    </string>
+    <string name="label_sip_address">
+        <font color="#c0ffffff">SIP</font>
+    </string>
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">ድረ-ገፅ</font>
+    </string>
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">ቅጽል ስም</font>
+    </string>
+    <string name="name_phonetic">
+        <font color="#c0ffffff">የድምፀ ልሳን ስም</font>
+    </string>
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">የመጀመሪያ ስም ፎነቲክ</font>
+    </string>
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">የድምፀ ልሳን መካከለኛ ስም</font>
+    </string>
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">የመጠሪያ ስም ፎነቲክ</font>
+    </string>
+    <string name="name_given">
+        <font color="#c0ffffff">የመጀመሪያ ስም</font>
+    </string>
+    <string name="name_family">
+        <font color="#c0ffffff">የመጠሪያ ስም</font>
+    </string>
+    <string name="name_prefix">
+        <font color="#c0ffffff">ቅድመ-ስም</font>
+    </string>
+    <string name="name_middle">
+        <font color="#c0ffffff">የመካከለኛ ስም</font>
+    </string>
+    <string name="name_suffix">
+        <font color="#c0ffffff">ድህረ-ስም</font>
+    </string>
+</resources>

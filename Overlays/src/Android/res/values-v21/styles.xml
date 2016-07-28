@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="Theme.DeviceDefault.Resolver" parent="@android:style/Theme.Material">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColorSecondary">#ffdedede</item>
@@ -15,6 +16,7 @@
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
         <item name="android:backgroundTint">#ff212121</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.PopupWindow" parent="@android:style/Widget.Material.PopupWindow">
         <item name="android:colorBackground">#ff212121</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -27,15 +29,16 @@
         <item name="android:textColorSecondary">#ffdedede</item>
         <item name="android:textColor">#ffffffff</item>
     </style>
+
     <style name="NotificationSecondaryText">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColorSecondary">#ffdedede</item>
         <item name="android:textColor">#ffffffff</item>
     </style>
+
     <style name="notification_secondary_text">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColorSecondary">#ffdedede</item>
         <item name="android:textColor">#ffffffff</item>
     </style>
-
 </resources>

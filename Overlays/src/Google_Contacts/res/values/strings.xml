@@ -1,53 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="nameLabelsGroup">" "<font color="#fff44336">Name</font>" "
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">Name</font>
     </string>
-    <string name="phoneLabelsGroup">" "<font color="#fff44336">Phone</font>" "
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">Phone</font>
     </string>
-    <string name="emailLabelsGroup">" "<font color="#fff44336">Email</font>" "
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">Email</font>
     </string>
-    <string name="postalLabelsGroup">" "<font color="#fff44336">Address</font>" "
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">Address</font>
     </string>
-    <string name="postal_address">" "<font color="#fff44336">Address</font>" "
+    <string name="postal_address">
+        <font color="#c0ffffff">Address</font>
     </string>
-    <string name="full_name">" "<font color="#fff44336">Name</font>" "
+    <string name="full_name">
+        <font color="#c0ffffff">Name</font>
     </string>
-    <string name="event_edit_field_hint_text">" "<font color="#fff44336">Date</font>" "
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">Date</font>
     </string>
-    <string name="group_edit_field_hint_text">" "<font color="#fff44336">Group name</font>" "
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">Group name</font>
     </string>
-    <string name="ghostData_company">" "<font color="#fff44336">Company</font>" "
+    <string name="ghostData_company">
+        <font color="#c0ffffff">Company</font>
     </string>
-    <string name="ghostData_title">" "<font color="#fff44336">Title</font>" "
+    <string name="ghostData_title">
+        <font color="#c0ffffff">Title</font>
     </string>
-    <string name="imLabelsGroup">" "<font color="#fff44336">IM</font>" "
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">IM</font>
     </string>
-    <string name="relationLabelsGroup">" "<font color="#fff44336">Relationship</font>" "
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">Relationship</font>
     </string>
-    <string name="label_notes">" "<font color="#fff44336">Notes</font>" "
+    <string name="label_notes">
+        <font color="#c0ffffff">Notes</font>
     </string>
-    <string name="label_sip_address">" "<font color="#fff44336">SIP</font>" "
+    <string name="label_sip_address">
+        <font color="#c0ffffff">SIP</font>
     </string>
-    <string name="websiteLabelsGroup">" "<font color="#fff44336">Website</font>" "
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">Website</font>
     </string>
-    <string name="nicknameLabelsGroup">" "<font color="#fff44336">Nickname</font>" "
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">Nickname</font>
     </string>
-    <string name="name_phonetic">" "<font color="#fff44336">Phonetic name</font>" "
+    <string name="name_phonetic">
+        <font color="#c0ffffff">Phonetic name</font>
     </string>
-    <string name="name_phonetic_given">" "<font color="#fff44336">Phonetic first name</font>" "
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">Phonetic first name</font>
     </string>
-    <string name="name_phonetic_middle">" "<font color="#fff44336">Phonetic middle name</font>" "
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">Phonetic middle name</font>
     </string>
-    <string name="name_phonetic_family">" "<font color="#fff44336">Phonetic last name</font>" "
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">Phonetic last name</font>
     </string>
-    <string name="name_given">" "<font color="#fff44336">First name</font>" "
+    <string name="name_given">
+        <font color="#c0ffffff">First name</font>
     </string>
-    <string name="name_family">" "<font color="#fff44336">Last name</font>" "
+    <string name="name_family">
+        <font color="#c0ffffff">Last name</font>
     </string>
-    <string name="name_prefix">" "<font color="#fff44336">Name prefix</font>" "
+    <string name="name_prefix">
+        <font color="#c0ffffff">Name prefix</font>
     </string>
-    <string name="name_middle">" "<font color="#fff44336">Middle name</font>" "
+    <string name="name_middle">
+        <font color="#c0ffffff">Middle name</font>
     </string>
-    <string name="name_suffix">" "<font color="#fff44336">Name suffix</font>" "
+    <string name="name_suffix">
+        <font color="#c0ffffff">Name suffix</font>
     </string>
 </resources>

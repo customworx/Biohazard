@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.SystemUI.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <!--    <style name="BatteryMeterViewDrawable.Circle"
+               parent="@*com.android.systemui:style/BatteryMeterViewDrawable">
+            <item name="android:gravity">bottom|center_horizontal</item>
+        </style>
+        <style name="BatteryMeterViewDrawable.Landscape"
+               parent="@*com.android.systemui:style/BatteryMeterViewDrawable">
+            <item name="android:gravity">top|center</item>
+            &lt;!&ndash; Use overlay blend mode &ndash;&gt;
+            <item name="@*com.android.systemui:blendMode">overlay</item>
+        </style>-->
+    <style name="Theme.SystemUI.Dialog" parent="@android:style/Theme.Material.Dialog"/>
     <style name="systemui_theme" parent="@android:style/Theme.Material">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColorSecondary">#ffdbdbdb</item>
@@ -9,10 +19,10 @@
         <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="TextAppearance.Material.Notification.Parenthetical"
-        parent="@android:style/TextAppearance.Material.Notification">
+           parent="@android:style/TextAppearance.Material.Notification">
         <item name="android:textColor">#60ffffff</item>
     </style>
-    <style name="Theme.SystemUI.Dialog.Alert" parent="@android:style/Theme.Material.Dialog.Alert" />
+    <style name="Theme.SystemUI.Dialog.Alert" parent="@android:style/Theme.Material.Dialog.Alert"/>
     <style name="Theme.AlertDialogHost" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -22,5 +32,4 @@
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:alertDialogTheme">@style/Theme.SystemUI.Dialog.Alert</item>
     </style>
-
 </resources>

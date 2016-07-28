@@ -1,0 +1,48 @@
+<!--
+ Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:height="48dp"
+        android:width="48dp"
+        android:viewportHeight="48"
+        android:viewportWidth="48">
+
+    <group
+        android:name="root"
+        android:translateX="24.0"
+        android:translateY="24.0" >
+        <path
+            android:name="progressBar"
+            android:fillColor="#00000000"
+            android:pathData="M0, 0 m 0, -19 a 19,19 0 1,1 0,38 a 19,19 0 1,1 0,-38"
+            android:strokeColor="?android:colorControlActivated"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="bevel"
+            android:strokeWidth="4"
+            android:trimPathEnd="0"
+            android:trimPathOffset="0"
+            android:trimPathStart="0" />
+        <group
+            android:scaleX="1"
+            android:scaleY="1"
+            android:translateX="-12" android:translateY="-12">
+            <path
+                android:fillColor="?android:attr/colorControlNormal"
+                android:pathData="M12.879,1.621L12.875,1.859C14.859,2.156 17.442,4.517 16.516,7.762C16.44,8.025 16.345,8.262 16.24,8.486C15.153,7.398 13.653,6.725 12,6.725C10.34,6.725 8.834,7.404 7.746,8.5C7.213,7.299 7,5.327 8.127,3.805C9.466,1.997 11.104,1.875 11.104,1.875L11.092,1.631C9.876,1.824 8.451,2.138 6.768,4.049C4.804,6.28 5.389,9.385 5.389,9.385C5.389,9.385 3.437,9.761 1.943,12.293C0.188,15.268 1.537,18.186 1.537,18.186L1.746,18.07C1.011,16.203 1.764,12.788 5.035,11.967C5.401,11.875 5.746,11.836 6.076,11.826C6.032,12.12 6,12.419 6,12.725C6,15.503 7.909,17.845 10.48,18.521C10.466,18.553 10.456,18.592 10.441,18.623C9.92,19.774 8.067,21.475 5.832,21.219C3.596,20.962 2.672,19.604 2.672,19.604L2.467,19.736C3.241,20.693 4.228,21.77 6.725,22.273C9.638,22.859 12.033,20.801 12.033,20.801C12.033,20.801 13.333,22.304 16.273,22.332C19.727,22.366 21.58,19.738 21.58,19.738L21.375,19.615C20.127,21.185 16.792,22.241 14.445,19.816C14.037,19.394 13.751,18.954 13.549,18.514C16.106,17.827 18,15.493 18,12.725C18,12.418 17.969,12.117 17.924,11.822C19.237,11.881 21.234,12.675 22.035,14.521C22.931,16.585 22.217,18.064 22.217,18.064L22.434,18.178C22.876,17.028 23.316,15.636 22.502,13.221C21.554,10.404 18.572,9.357 18.572,9.357C18.572,9.357 19.224,7.481 17.779,4.92C16.081,1.912 12.879,1.621 12.879,1.621zM12,8.438C13.287,8.438 14.423,9.008 15.207,9.898C13.883,11.106 12.188,11.213 12.188,11.213L12.24,11.82C13.762,12.334 13.266,13.646 13.266,13.646L13.822,13.982C14.6,12.872 15.432,12.347 16.223,12.082C16.254,12.293 16.287,12.504 16.287,12.725C16.287,14.7 14.962,16.333 13.152,16.836C13.088,15.441 13.621,14.344 13.621,14.344L13.068,14.084C11.862,15.146 10.975,14.059 10.975,14.059L10.404,14.373C10.855,15.341 10.976,16.156 10.926,16.859C9.076,16.384 7.713,14.729 7.713,12.725C7.713,12.514 7.744,12.312 7.773,12.109C9.332,12.7 10.186,13.988 10.186,13.988L10.686,13.641C10.37,12.065 11.754,11.838 11.754,11.838L11.766,11.188C10.305,11.06 9.409,10.533 8.775,9.92C9.56,9.018 10.703,8.438 12,8.438z"/>
+        </group>
+    </group>
+
+
+</vector>

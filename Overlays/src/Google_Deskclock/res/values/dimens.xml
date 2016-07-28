@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_fab_translation_z_pressed">0.0dip</dimen>
+    <dimen name="design_fab_elevation">0.0dip</dimen>
+    <dimen name="design_fab_image_size">56.0dip</dimen>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">الاسم</font>
+    </string>
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">الهاتف</font>
+    </string>
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">البريد الإلكتروني</font>
+    </string>
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">العنوان</font>
+    </string>
+    <string name="postal_address">
+        <font color="#c0ffffff">العنوان</font>
+    </string>
+    <string name="full_name">
+        <font color="#c0ffffff">الاسم</font>
+    </string>
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">التاريخ</font>
+    </string>
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">اسم المجموعة</font>
+    </string>
+    <string name="ghostData_company">
+        <font color="#c0ffffff">الشركة</font>
+    </string>
+    <string name="ghostData_title">
+        <font color="#c0ffffff">العنوان</font>
+    </string>
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">المراسلة الفورية</font>
+    </string>
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">العلاقة</font>
+    </string>
+    <string name="label_notes">
+        <font color="#c0ffffff">ملاحظات</font>
+    </string>
+    <string name="label_sip_address">
+        <font color="#c0ffffff">SIP</font>
+    </string>
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">موقع ويب</font>
+    </string>
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">اللقب</font>
+    </string>
+    <string name="name_phonetic">
+        <font color="#c0ffffff">الاسم صوتيًا</font>
+    </string>
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">الاسم الأول صوتيًا</font>
+    </string>
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">الاسم الصوتي الأوسط</font>
+    </string>
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">اسم العائلة صوتيًا</font>
+    </string>
+    <string name="name_given">
+        <font color="#c0ffffff">الاسم الأول</font>
+    </string>
+    <string name="name_family">
+        <font color="#c0ffffff">اسم العائلة</font>
+    </string>
+    <string name="name_prefix">
+        <font color="#c0ffffff">بادئة الاسم</font>
+    </string>
+    <string name="name_middle">
+        <font color="#c0ffffff">الاسم الأوسط</font>
+    </string>
+    <string name="name_suffix">
+        <font color="#c0ffffff">لاحقة الاسم</font>
+    </string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="day_of_week_label_condensed">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:tint">#ffd32f2f</item>
+    </style>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameLabelsGroup">
+        <font color="#c0ffffff">[Ñåḿé one]</font>
+    </string>
+    <string name="phoneLabelsGroup">
+        <font color="#c0ffffff">[Þĥöñé one two]</font>
+    </string>
+    <string name="emailLabelsGroup">
+        <font color="#c0ffffff">[Éḿåîļ one two]</font>
+    </string>
+    <string name="postalLabelsGroup">
+        <font color="#c0ffffff">[Åððŕéšš one two]</font>
+    </string>
+    <string name="postal_address">
+        <font color="#c0ffffff">[Åððŕéšš one two]</font>
+    </string>
+    <string name="full_name">
+        <font color="#c0ffffff">[Ñåḿé one]</font>
+    </string>
+    <string name="event_edit_field_hint_text">
+        <font color="#c0ffffff">[Ðåţé one]</font>
+    </string>
+    <string name="group_edit_field_hint_text">
+        <font color="#c0ffffff">[Ĝŕöûþ ñåḿé one two]</font>
+    </string>
+    <string name="ghostData_company">
+        <font color="#c0ffffff">[Çöḿþåñý one two]</font>
+    </string>
+    <string name="ghostData_title">
+        <font color="#c0ffffff">[Ţîţļé one two]</font>
+    </string>
+    <string name="imLabelsGroup">
+        <font color="#c0ffffff">[ÎḾ one]</font>
+    </string>
+    <string name="relationLabelsGroup">
+        <font color="#c0ffffff">[Ŕéļåţîöñšĥîþ one two]</font>
+    </string>
+    <string name="label_notes">
+        <font color="#c0ffffff">[Ñöţéš one two]</font>
+    </string>
+    <string name="label_sip_address">
+        <font color="#c0ffffff">[ŠÎÞ one]</font>
+    </string>
+    <string name="websiteLabelsGroup">
+        <font color="#c0ffffff">[Ŵéɓšîţé one two]</font>
+    </string>
+    <string name="nicknameLabelsGroup">
+        <font color="#c0ffffff">[Ñîçķñåḿé one two]</font>
+    </string>
+    <string name="name_phonetic">
+        <font color="#c0ffffff">[Þĥöñéţîç ñåḿé one two three]</font>
+    </string>
+    <string name="name_phonetic_given">
+        <font color="#c0ffffff">[Þĥöñéţîç ƒîŕšţ ñåḿé one two three]</font>
+    </string>
+    <string name="name_phonetic_middle">
+        <font color="#c0ffffff">[Þĥöñéţîç ḿîððļé ñåḿé one two three]</font>
+    </string>
+    <string name="name_phonetic_family">
+        <font color="#c0ffffff">[Þĥöñéţîç ļåšţ ñåḿé one two three]</font>
+    </string>
+    <string name="name_given">
+        <font color="#c0ffffff">[Fîŕšţ ñåḿé one two]</font>
+    </string>
+    <string name="name_family">
+        <font color="#c0ffffff">[Ļåšţ ñåḿé one two]</font>
+    </string>
+    <string name="name_prefix">
+        <font color="#c0ffffff">[Ñåḿé þŕéƒîх one two]</font>
+    </string>
+    <string name="name_middle">
+        <font color="#c0ffffff">[Ḿîððļé ñåḿé one two]</font>
+    </string>
+    <string name="name_suffix">
+        <font color="#c0ffffff">[Ñåḿé šûƒƒîх one two]</font>
+    </string>
+</resources>

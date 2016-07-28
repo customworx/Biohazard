@@ -9,7 +9,7 @@
     <item type="drawable" name="search_bar_default_color">#ff000000</item>
     <item type="drawable" name="safe_mode_background">#60000000</item>
     <item type="drawable" name="input_method_fullscreen_background">#ff000000</item>
-    <item type="drawable" name="selected_day_background">#ff0092f4</item>
+    <item type="drawable" name="selected_day_background">#ffd32f2f</item>
     <item type="drawable" name="notification_template_icon_bg">#33555555</item>
     <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
     <item type="drawable" name="notification_template_divider">#29000000</item>
