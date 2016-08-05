@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Main" parent="@android:style/Theme.Material">
+        <item name="android:actionBarStyle">@style/Theme.ActionBar.SubSettings</item>
+    </style>
+    <style name="Theme.ActionBar.SubSettings" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:contentInsetStart">72.0dip</item>
+    </style>
+</resources>

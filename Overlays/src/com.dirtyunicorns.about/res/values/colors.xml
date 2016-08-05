@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff212121</color>
+    <color name="colorPrimaryDark">#ff131313</color>
+    <color name="colorAccent">#ffd32f2f</color>
+    <color name="light_bg">#ff131313</color>
+    <color name="cardsbg">#ff000000</color>
+    <color name="dark_grey">#ffffffff</color>
+    <color name="sliding_tabs_text_color">#ffffffff</color>
+    <color name="tab_background">#ff131313</color>
+    <color name="tab_indicator_color">#ffd32f2f</color>
+
+    <color name="cardview_light_background">#ff131313</color>
+    <color name="cardview_dark_background">#ff131313</color>
+    <color name="window_background">#ff212121</color>
+
+</resources>

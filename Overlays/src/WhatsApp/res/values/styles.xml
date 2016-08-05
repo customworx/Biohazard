@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme"/>
+
+    <style name="Theme.App" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <!--<item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>-->
+        <!--<item name="actionBarSize">@dimen/actionbar_height</item>-->
+        <!--<item name="actionModeBackground">@color/action_mode</item>-->
+        <!--<item name="toolbarStyle">@style/Widget.Styled.Toolbar</item>-->
+        <!--<item name="panelMenuListTheme">@style/PanelMenuList</item>-->
+        <item name="android:colorPrimary">#ffd32f2f</item>
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="android:colorAccent">#ffd32f2f</item>
+    </style>
+    <style name="Theme.CallRating" parent="@style/Theme.App">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimaryDark">#ffc62828</item>
+        <item name="android:colorAccent">#ffd32f2f</item>
+    </style>
+
+    <style name="AttachPickerLabel">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Toolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--<item name="android:textColorPrimary">@color/primary_text_default_material_light</item>-->
+        <!--<item name="android:textAppearanceMedium">@style/TextAppearanceMenuList</item>-->
+        <!--<item name="colorControlNormal">@android:color/white</item>-->
+        <!--<item name="colorControlActivated">?android:textColorSecondary</item>-->
+        <item name="android:backgroundTint">#ffc62828</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Base.ThemeOverlay.AppCompat.Dark.ActionBar" parent="@style/Base.ThemeOverlay.AppCompat.Dark" />
+    <style name="Base.ThemeOverlay.AppCompat.Dark" parent="@style/Platform.ThemeOverlay.AppCompat.Dark" />
+    <style name="Platform.ThemeOverlay.AppCompat.Dark" parent="@style/Platform.ThemeOverlay.AppCompat" />
+    <style name="Platform.ThemeOverlay.AppCompat" parent="" />
+
+</resources>
