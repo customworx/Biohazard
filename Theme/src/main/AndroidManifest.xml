@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.pierx.biohazard">
 
-    <!--<uses-permission android:name="com.android.vending.CHECK_LICENSE"/>-->
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
 
     <uses-feature
         android:name="org.cyanogenmod.theme"
@@ -19,6 +19,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/ThemeName"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SubstratumLauncher">
             <intent-filter>
@@ -47,7 +48,7 @@
         <!-- SUBSTRATUM INTERNAL USE: DO NOT TOUCH -->
         <meta-data
             android:name="Substratum_Plugin"
-            android:value="2.1.2"/>
+            android:value="2.1.3"/>
         <meta-data
             android:name="Substratum_Mode"
             android:value="@string/ThemeType"/>
