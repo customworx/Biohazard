@@ -10,8 +10,8 @@ android {
         applicationId "com.pierx.biohazard"
         minSdkVersion 22
         targetSdkVersion 23
-        versionCode 24
-        versionName "Ouroboros"
+        versionCode 27
+        versionName "$versionCode"
         setProperty("archivesBaseName", themeName + "-" + "$versionName")
     }
     buildTypes {
@@ -30,7 +30,7 @@ def source = "../Overlays/src/"
 def dest = "src/main/assets/overlays/"
 
 //Resources overlays for OMS and CMTE
-task CMTE(dependsOn: ['cleanFirst']) {
+task OMS(dependsOn: ['cleanFirst']) {
     doFirst {
         copy {
             from source + "Android"
@@ -49,7 +49,11 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.android.settings"
         }
         copy {
-            from source + "Softkey"
+            from source + "Softkeys"
+            into dest + "com.android.systemui"
+        }
+        copy {
+            from source + "Softkeys"
             into dest + "com.android.systemui.navbars"
         }
         copy {
@@ -73,14 +77,21 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.dirtyunicorns.duupdater"
         }
         copy {
+            from source + "aIDE"
+            into dest + "com.aide.ui"
+        }
+        copy {
             from source + "AudioFX"
             into dest + "org.cyanogenmod.audiofx"
+        }
+        copy {
+            from source + "airdroid"
+            into dest + "com.sand.airdroid"
         }
         copy {
             from source + "Browser"
             into dest + "com.android.browser"
         }
-
         copy {
             from source + "Calendar"
             into dest + "com.android.calendar"
@@ -96,6 +107,18 @@ task CMTE(dependsOn: ['cleanFirst']) {
         copy {
             from source + "Chrome"
             into dest + "com.android.chrome"
+        }
+        copy {
+            from source + "Chromium"
+            into dest + "org.chromium.chrome"
+        }
+        copy {
+            from source + "cpuZ"
+            into dest + "com.cpuid.cpu_z"
+        }
+        copy {
+            from source + "daTuner"
+            into dest + "com.bork.dsp.datuna"
         }
         copy {
             from source + "Contacts"
@@ -150,12 +173,20 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.estrongs.android.pop"
         }
         copy {
+            from source + "Firepaper"
+            into dest + "eu.chainfire.firepaper.fivehundredpx"
+        }
+        copy {
             from source + "Gallery"
             into dest + "com.android.gallery3d"
         }
         copy {
             from source + "Gmail"
             into dest + "com.google.android.gm"
+        }
+        copy {
+            from source + "GoogleCalculator"
+            into dest + "com.google.android.calculator"
         }
         copy {
             from source + "Google_Camera"
@@ -206,6 +237,10 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.android.vending"
         }
         copy {
+            from source + "Google_PlayConsole"
+            into dest + "com.google.android.apps.playconsole"
+        }
+        copy {
             from source + "Google_Plus"
             into dest + "com.google.android.apps.plus"
         }
@@ -242,6 +277,10 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.lovejoy777.rroandlayersmanager"
         }
         copy {
+            from source + "LockClock"
+            into dest + "com.cyanogenmod.lockclock"
+        }
+        copy {
             from source + "Messaging"
             into dest + "com.android.messaging"
         }
@@ -274,6 +313,10 @@ task CMTE(dependsOn: ['cleanFirst']) {
             into dest + "com.riteshsahu.SMSBackupRestorePro"
         }
         copy {
+            from source + "Soundcorset"
+            into dest + "com.soundcorset.client.android"
+        }
+        copy {
             from source + "SuperSu"
             into dest + "eu.chainfire.supersu"
         }
@@ -285,10 +328,18 @@ task CMTE(dependsOn: ['cleanFirst']) {
             from source + "Telecom"
             into dest + "com.android.server.telecom"
         }
+        copy {
+            from source + "Twilight"
+            into dest + "com.urbandroid.lux"
+        }
+        copy {
+            from source + "WifiADB"
+            into dest + "com.ttxapps.wifiadb"
+        }
     }
 }
 
-//Overlays location (Pre-compiled files)
+//Overlays location (Pre-compiled files) for Layers
 def Overlays = copySpec {
     from('../Overlays/build/outputs/apk') {
         include "*.apk"
@@ -323,18 +374,17 @@ task RRO(dependsOn: ['copyOverlays', 'createZip']) {
 //Clean the apk's
 task cleanFiles(type: Delete) {
     delete fileTree(dir: "src/main/assets/Files", exclude: "*.zip")
-//    Blacklist for OMS
-    // Android
-//    delete 'src/main/assets/overlays_legacy/android/res/drawable/btn_check_material_anim.xml'
     doFirst {
         println 'Finishing Plugin'
     }
 }
 
-//Prepare all required files for CMTE, OMS and RRO
+//Prepare all required files for OMS, RRO & CMTE
 project.afterEvaluate {
-//    prepareDebugDependencies.dependsOn(['CMTE', 'cleanFiles'])
-    prepareDebugDependencies.dependsOn(['CMTE', 'RRO', 'cleanFiles'])
+    //This switch will ignore build the zip files for Layers
+//    prepareDebugDependencies.dependsOn(['OMS', 'cleanFiles'])
+    //This is the master switch, it will compile and zip and clean automatically
+    prepareDebugDependencies.dependsOn(['OMS', 'RRO', 'cleanFiles'])
 }
 
 dependencies {

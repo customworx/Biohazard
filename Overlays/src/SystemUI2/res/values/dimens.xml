@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recents_task_view_rounded_corners_radius">16.0dip</dimen>
+    <dimen name="floating_action_button_margin_side">10.0dip</dimen>
+    <dimen name="floating_action_button_margin_bottom">56.0dip</dimen>
+    <dimen name="notification_side_padding">0.0dip</dimen>
+    <dimen name="notification_material_rounded_rect_radius">0.0dip</dimen>
+    <!--<dimen name="recents_lock_to_app_size">56.0dip</dimen>-->
+    <dimen name="notification_material_rounded_rect_radius_negative">-2.0dip</dimen>
+    <!--<dimen name="borderless_button_radius">8.0dip</dimen>-->
+    <!--<dimen name="navigation_key_width">70.0dip</dimen>-->
+</resources>

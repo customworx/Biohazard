@@ -20,7 +20,7 @@ android {
         ]
     }
 
-//remove '-debug' when running gradle assembleDebug
+//remove '-debug' suffix when running gradle assembleDebug and this apk's will imported to :Theme module automatically.
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def apk = output.outputFile;
@@ -50,6 +50,14 @@ android {
             applicationId packageName + "Settings"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.settings" ]
         }
+        aIDE {
+            applicationId packageName + "IDE_AIDE"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.aide.ui"]
+        }
+        airdroid {
+            applicationId packageName + "Airdroid"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.sand.airdroid"]
+        }
         AudioFX {
             applicationId packageName + "AudioFX"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"org.cyanogenmod.audiofx" ]
@@ -57,6 +65,10 @@ android {
         Browser {
             applicationId packageName + "Browser"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.browser" ]
+        }
+        Bluetooth {
+            applicationId packageName + "Bluetooth"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.bluetooth" ]
         }
         Calculator {
             applicationId packageName + "Calculator"
@@ -77,6 +89,18 @@ android {
         Chrome {
             applicationId packageName + "Chrome"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.chrome" ]
+        }
+        Chromium {
+            applicationId packageName + "Chromium"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "org.chromium.chrome"]
+        }
+        cpuZ {
+            applicationId packageName + "CPUZ"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.cpuid.cpu_z"]
+        }
+        daTuner {
+            applicationId packageName + "daTuner"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.bork.dsp.datuna"]
         }
         Dialer {
             applicationId packageName + "Dialer"
@@ -110,6 +134,10 @@ android {
             applicationId packageName + "ES_Explorer"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.estrongs.android.pop" ]
         }
+        Firepaper {
+            applicationId packageName + "firepaper"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "eu.chainfire.firepaper.fivehundredpx"]
+        }
         Gallery {
             applicationId packageName + "Gallery"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.gallery3d" ]
@@ -117,6 +145,10 @@ android {
         Gmail {
             applicationId packageName + "Gmail"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.gm" ]
+        }
+        GoogleCalculator {
+            applicationId packageName + "GoogleCalculator"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.google.android.calculator"]
         }
         Google_Camera {
             applicationId packageName + "Google_Camera"
@@ -170,6 +202,10 @@ android {
             applicationId packageName + "Google_PlayStore"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.vending" ]
         }
+        Google_PlayConsole {
+            applicationId packageName + "Google_PlayConsole"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.playconsole" ]
+        }
         Google_Plus {
             applicationId packageName + "Google_Plus"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.google.android.apps.plus" ]
@@ -205,6 +241,10 @@ android {
         Layers_Manager {
             applicationId packageName + "Layers_Manager"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.lovejoy777.rroandlayersmanager" ]
+        }
+        LockClock {
+            applicationId packageName + "LockClock"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.cyanogenmod.lockclock"]
         }
         Messanging {
             applicationId packageName + "Messanging"
@@ -242,6 +282,10 @@ android {
             applicationId packageName + "SMSBackupRestorePro"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.riteshsahu.SMSBackupRestorePro" ]
         }
+        Soundcorset {
+            applicationId packageName + "soundcorset"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.soundcorset.client.android"]
+        }
         Substratum {
             applicationId packageName + "substratum"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"projekt.substratum" ]
@@ -253,6 +297,14 @@ android {
         Telecom {
             applicationId packageName + "Telecom"
             manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.server.telecom" ]
+        }
+        Twilight {
+            applicationId packageName + "Twilight"
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.urbandroid.lux" ]
+        }
+        WifiADB {
+            applicationId packageName + "wifiadb"
+            manifestPlaceholders = [priorityLabel: "60", targetPackageLabel: "com.ttxapps.wifiadb"]
         }
     }
 }

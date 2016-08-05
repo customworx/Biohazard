@@ -20,9 +20,9 @@
         <shape
             android:shape="rectangle"
             android:tint="?android:attr/colorControlNormal">
-            <size android:height="8dp"/>
-            <corners android:radius="4dp"/>
-            <solid android:color="#4dffffff"/>
+            <size android:height="5dp"/>
+            <corners android:radius="2dp"/>
+            <solid android:color="#20ffffff"/>
         </shape>
     </item>
     <item
@@ -31,12 +31,12 @@
         <scale android:scaleWidth="100%">
             <shape
                 android:shape="rectangle">
-                <size android:height="8dp"/>
-                <corners android:radius="4dp"/>
+                <size android:height="5dp"/>
+                <corners android:radius="2dp"/>
                 <stroke
                     android:width="0.3dp"
                     android:color="?android:attr/colorEdgeEffect"/>
-                <solid android:color="#ff131313"/>
+                <solid android:color="@android:color/black"/>
             </shape>
         </scale>
     </item>
@@ -45,8 +45,8 @@
         android:gravity="center_vertical|fill_horizontal">
         <scale android:scaleWidth="100%">
             <shape android:shape="rectangle">
-                <size android:height="8dp"/>
-                <corners android:radius="4dp"/>
+                <size android:height="5dp"/>
+                <corners android:radius="2dp"/>
                 <gradient
                     android:endColor="?android:attr/colorControlActivated"
                     android:startColor="@android:color/black"/>

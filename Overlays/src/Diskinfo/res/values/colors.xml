@@ -46,8 +46,8 @@
     <color name="occupied_lv_end">#ffd32f2f</color>
     <color name="occupied_mem">#ff1976d2</color>
     <color name="occupied_mem_end">#ff1976d2</color>
-    <color name="partitionalias">#ffffffff</color>
-    <color name="partitionname">#ffffffff</color>
+    <color name="partitionAlias">#ffffffff</color>
+    <color name="partitionName">#ffffffff</color>
     <color name="pie_shadow">#ff010101</color>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -68,4 +68,7 @@
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="white">#ffffffff</color>
+    <color name="colorAccent">#ffd32f2f</color>
+    <color name="colorPrimary">#ffd32f2f</color>
+    <color name="colorPrimaryDark">#ff242424</color>
 </resources>

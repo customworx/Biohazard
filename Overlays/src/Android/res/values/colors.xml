@@ -9,8 +9,8 @@
     <color name="holo_red_dark">#ff212121</color>
     <color name="material_deep_teal_200">#ffd32f2f</color>
     <color name="material_deep_teal_500">#ffd32f2f</color>
-    <color name="material_blue_grey_800">#ff424242</color>
-    <color name="material_blue_grey_900">#ff303030</color>
+    <color name="material_blue_grey_800">#ff303030</color>
+    <color name="material_blue_grey_900">#ff212121</color>
     <color name="material_blue_grey_950">#ff000000</color>
     <color name="system_notification_accent_color">#ffd32f2f</color>
     <color name="dslv_icon_dark">#ffd32f2f</color>
@@ -112,5 +112,9 @@
     <!--<color name="notification_mtrl_action_textcolor">@color/secondary_text_material_light</color>-->
     <color name="notification_mtrl_big_picture_bg">#cc727272</color>
     <!--<color name="resolver_list_bg">@color/white</color>-->
-
+    <!--Tipsy-->
+    <color name="dexopt_primary_text">#ffd32f2f</color>
+    <color name="dexopt_progress_tint">#ffd32f2f</color>
+    <color name="dexopt_circle_color">#ccd32f2f</color>
+    <color name="shutdown_primary_text">#ffd32f2f</color>
 </resources>

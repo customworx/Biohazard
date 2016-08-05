@@ -93,37 +93,7 @@
     <style name="Theme.DeviceDefault.Light.Dialog.Presentation" parent="@android:style/Theme.Material.Dialog.Presentation"/>
     <style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="@android:style/Theme.Material.Dialog.Alert"/>
     <style name="Theme.DeviceDefault.Light.SearchBar" parent="@style/Theme.Material.SearchBar"/>
-    <style name="Theme.DeviceDefault.Settings" parent="@android:style/Theme.Material">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings" parent="@android:style/Theme.Material">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.BaseDialog" parent="@*android:style/Theme.Material.BaseDialog">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@*android:style/Theme.Material.Dialog.BaseAlert">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.DialogWhenLarge.NoActionBar" parent="@android:style/Theme.Material.DialogWhenLarge.NoActionBar">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.Dialog.Presentation" parent="@android:style/Theme.Material.Dialog.Presentation">
-        <item name="colorBackground">@android:color/black</item>
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.SearchBar" parent="@*android:style/Theme.Material.SearchBar">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
-    <style name="Theme.Material.Settings.CompactMenu" parent="@*android:style/Theme.Material.CompactMenu">
-        <item name="android:colorAccent">#ffd32f2f</item>
-    </style>
+
     <style name="Theme.Material.SearchBar" parent="@android:style/Theme.Material.Panel"/>
     <style name="TextAppearance.StatusBar" parent="@android:style/TextAppearance">
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
@@ -177,7 +147,7 @@
         <item name="android:textColor">#ffffff</item>
     </style>
     <style name="TextAppearance.Toast" parent="@android:style/TextAppearance">
-        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="Theme.Material.DayNight" parent="@android:style/Theme.Material"/>
     <style name="Theme.Material.DayNight.DarkActionBar" parent="@android:style/Theme.Material"/>
@@ -202,4 +172,17 @@
         <item name="imeFullscreenBackground">@*android:drawable/screen_background_selector_dark
         </item>
     </style>
+
+    <!--Settings-->
+    <style name="Theme.DeviceDefault.Settings" parent="@android:style/Theme.Material"/>
+    <style name="Theme.Material.Settings" parent="@android:style/Theme.Material"/>
+    <style name="Theme.Material.Settings.NoActionBar" parent="@android:style/Theme.Material.NoActionBar"/>
+    <style name="Theme.Material.Settings.BaseDialog" parent="@*android:style/Theme.Material.BaseDialog"/>
+    <style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@*android:style/Theme.Material.Dialog.BaseAlert"/>
+    <style name="Theme.Material.Settings.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge"/>
+    <style name="Theme.Material.Settings.DialogWhenLarge.NoActionBar" parent="@android:style/Theme.Material.DialogWhenLarge.NoActionBar"/>
+    <style name="Theme.Material.Settings.Dialog.Presentation" parent="@android:style/Theme.Material.Dialog.Presentation"/>
+    <style name="Theme.Material.Settings.SearchBar" parent="@*android:style/Theme.Material.SearchBar"/>
+    <style name="Theme.Material.Settings.CompactMenu" parent="@*android:style/Theme.Material.CompactMenu"/>
+
 </resources>

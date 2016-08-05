@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Substratum</string>
+    <string name="drawer_name">Projekt Substratum</string>
+    <string name="legacy_app_name">Substratum Legacy</string>
+    <string name="slide_1_title">Welcome to Substratum</string>
+</resources>

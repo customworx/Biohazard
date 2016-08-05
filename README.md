@@ -1,7 +1,7 @@
 # Biohazard Theme
-Biohazard Layers & CMTE theme
+Biohazard Substratum | RRO | CMTE 
 
-## How to Build
+## How to Build Debug version
 - _Option 1_ - Gradle via Android Studio
     Open Gradle tab on the right side the select 
 ```
@@ -20,7 +20,7 @@ gradlew.bat assembleDebug
 ```
 *It will download the required Gradle plugin first, so make sure you have internet connection.
 
-- Tip
+- Tips
 To switch between overlays package, use the Build Variants tab and select which overlay package you would like to work on. 
 This also preview the files e.g vector.xml
 
@@ -35,5 +35,4 @@ For more info and updates, use the Google+ community here https://goo.gl/BJHxg4
 
 ##Download
 <a href='https://play.google.com/store/apps/details?id=com.pierx.biohazard&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2014 The Android Open Source Project     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at          http://www.apache.org/licenses/LICENSE-2.0     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:name="root"
+    android:alpha="0.3" android:height="48dp" android:width="48dp" android:viewportHeight="48"
+    android:viewportWidth="48">
+    <group android:name="ic_signal_location" android:translateX="21.9995"
+        android:translateY="25.73401">
+        <group android:name="ic_signal_location_pivot" android:translateX="-23.21545"
+            android:translateY="-18.86649">
+            <clip-path android:name="mask"
+                android:pathData="M 38.8337860107,-40.3974914551 c 0.0,0.0 -35.8077850342,31.5523681641 -35.8077850342,31.5523681641 c 0.0,0.0 40.9884796143,41.1153411865 40.9884796143,41.1153411865 c 0.0,0.0 -2.61700439453,2.0938873291 -2.61700439453,2.0938873291 c 0.0,0.0 -41.1884460449,-41.1267852783 -41.1884460449,-41.1267852783 c 0.0,0.0 -34.6200408936,25.4699249268 -34.6200408936,25.4699249268 c 0.0,0.0 55.9664764404,69.742401123 55.9664764404,69.742401123 c 0.0,0.0 73.2448120117,-59.1047973633 73.2448120117,-59.1047973633 c 0.0,0.0 -55.9664916992,-69.7423400879 -55.9664916992,-69.7423400879 Z" />
+            <group android:name="cross">
+                <path android:name="cross_1"
+                    android:pathData="M 6.44050598145,1.9430847168 c 0.0,0.0 33.5749816895,33.4499664307 33.5749816895,33.4499664307 "
+                    android:strokeColor="#ffd32f2f" android:strokeAlpha="1"
+                    android:strokeWidth="3.5" android:fillColor="#00000000" />
+            </group>
+            <group android:name="location" android:translateX="24"
+                   android:translateY="18" android:scaleY="2" android:scaleX="2" android:pivotY="24" android:pivotX="24">
+                <path android:name="pin"
+                      android:pathData="M12,8c-2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4 -1.79,-4 -4,-4zM20.94,11c-0.46,-4.17 -3.77,-7.48 -7.94,-7.94L13,1h-2v2.06C6.83,3.52 3.52,6.83 3.06,11L1,11v2h2.06c0.46,4.17 3.77,7.48 7.94,7.94L11,23h2v-2.06c4.17,-0.46 7.48,-3.77 7.94,-7.94L23,13v-2h-2.06zM12,19c-3.87,0 -7,-3.13 -7,-7s3.13,-7 7,-7 7,3.13 7,7 -3.13,7 -7,7z"
+                    android:fillColor="#ffd32f2f" android:fillAlpha="1" />
+            </group>
+        </group>
+    </group>
+</vector>
