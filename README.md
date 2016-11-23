@@ -1,7 +1,6 @@
 # Biohazard Theme
 Biohazard Substratum | RRO | CMTE 
 [![Build Status](https://travis-ci.org/pierx/Biohazard.svg?branch=master)](https://travis-ci.org/pierx/Biohazard)
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)]()
 
 ## How to Build Debug version
 - _Option 1_ - Gradle via Android Studio
