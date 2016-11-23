@@ -8,9 +8,14 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
 
-before_install:
+before_script:
     - jdk_switcher use oraclejdk8
     - java -version
 
 script:
   ./gradlew build
+
+licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
