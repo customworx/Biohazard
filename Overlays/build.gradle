@@ -20,6 +20,10 @@ android {
         ]
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
 //remove '-debug' suffix when running gradle assembleDebug and this apk's will imported to :Theme module automatically.
     applicationVariants.all { variant ->
         variant.outputs.each { output ->

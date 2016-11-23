@@ -10,4 +10,4 @@ android:
     - build-tools-23.0.3
     - android-23
 
-script: ./gradlew :Theme:assembleDebug
+script: ./gradlew build
