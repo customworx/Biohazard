@@ -13,12 +13,19 @@ android {
         versionCode 28
         versionName "Ouroboros"
         setProperty("archivesBaseName", themeName + "-" + "$versionName")
+        jackOptions {
+            enabled true
+        }
     }
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
