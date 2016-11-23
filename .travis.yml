@@ -1,7 +1,7 @@
 sudo: false
 
 language: android
-jdk: oraclejdk8
+#jdk: oraclejdk8
 
 android:
   components:
@@ -14,17 +14,4 @@ before_install:
   - chmod +x gradlew
 
 script:
-  ./gradlew build
-
-notifications:
-  email: true
-
-before_cache:
-  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
-
-cache:
-  directories:
-  - "$HOME/.m2"
-  - "$HOME/.gradle"
-  - "$HOME/.gradle/caches/"
-  - "$HOME/.gradle/wrapper/"
+- "./gradlew build"
