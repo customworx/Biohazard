@@ -8,6 +8,9 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.github.javiersantos.piracychecker.PiracyChecker;
@@ -28,7 +31,7 @@ public class SubstratumLauncher extends Activity {
     //
     // TODO: Themers, this is your FIRST step
     // UNIVERSAL SWITCH: Control whether Anti-Piracy should be activated while testing
-    private static final boolean ENABLE_ANTI_PIRACY = false;
+    private static final boolean ENABLE_ANTI_PIRACY = true;
     // In order to retrieve your BASE64 license key your app must be uploaded to
     // Play Developer Console. Then access to your app -> Services and APIs.
     // You will need to replace "" with the code you obtained from the Play Developer Console.
@@ -42,13 +45,13 @@ public class SubstratumLauncher extends Activity {
     // logcat.
     // If ENABLE_ANTI_PIRACY is false, you may skip this
     // TODO: Themers, this is your THIRD step
-    private static final String APK_SIGNATURE_PRODUCTION = "";
+    private static final String APK_SIGNATURE_PRODUCTION = "hrjeFoblEJF8ruCVKJIe1JX9ba8=";
     //
     // END OF STATIC THEMER CRUISE CONTROL
 
     private void startAntiPiracyCheck() {
         // TODO: Themers, this is your FOURTH step
-        Log.e("SubstratumAntiPiracyLog", PiracyCheckerUtils.getAPKSignature(this));
+//        Log.e("SubstratumAntiPiracyLog", PiracyCheckerUtils.getAPKSignature(this));
         // COMMENT OUT THE ABOVE LINE ONCE YOU OBTAINED YOUR APK SIGNATURE USING
         // TWO DASHES (LIKE THIS EXACT LINE)
 
@@ -57,7 +60,7 @@ public class SubstratumLauncher extends Activity {
                 // TODO: Themers, this is your FINAL step
                 // To disable certain piracy features, comment it out so that it doesn't
                 // trigger anti-piracy.
-                .enableInstallerId(InstallerID.GOOGLE_PLAY)
+//                .enableInstallerId(InstallerID.GOOGLE_PLAY)
                 //.enableInstallerId(InstallerID.AMAZON_APP_STORE)
                 // END OF THEMER TOUCHABLE OPTIONS
                 // TO RETAIN INTEGRITY, PLEASE DO NOT MODIFY ANY OTHER LINES
@@ -165,13 +168,40 @@ public class SubstratumLauncher extends Activity {
         finish();
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    private void preparing() {
         if (ENABLE_ANTI_PIRACY && !BuildConfig.DEBUG) {
             startAntiPiracyCheck();
         } else {
             beginSubstratumLaunch();
         }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_welcome);
+        ImageView img = (ImageView) findViewById(R.id.biohazard_intro);
+        Animation biohazardRotate = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.heavy_rotation);
+        img.setAnimation(biohazardRotate);
+
+        biohazardRotate.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                preparing();
+                finish();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+
+        });
     }
 }

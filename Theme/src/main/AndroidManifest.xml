@@ -27,15 +27,6 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".Overlay"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.layers.plugins.PICK_OVERLAYS"/>
-                <category android:name="Overlay"/>
-            </intent-filter>
-        </service>
-
         <meta-data
             android:name="Substratum_Legacy"
             android:value="true"/>
@@ -52,7 +43,7 @@
         <meta-data
             android:name="Substratum_Mode"
             android:value="@string/ThemeType"/>
-        <meta-data
+        <!--<meta-data
             android:name="Layers_Name"
             android:value="@string/ThemeName"/>
         <meta-data
@@ -63,6 +54,6 @@
             android:value="@string/ThemeDescription"/>
         <meta-data
             android:name="Layers_WhatsNew"
-            android:value="@string/ThemeChangelog"/>
+            android:value="@string/ThemeChangelog"/>-->
     </application>
 </manifest>

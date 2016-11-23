@@ -1,4 +1,4 @@
-include ':Theme'
-include ':Overlays'
+//include ':Theme'
+//include ':Overlays'
 //include ':LabsOMS'
-//include ':Labs'
+include ':Labs'

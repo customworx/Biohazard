@@ -248,7 +248,7 @@ android {
         }
         Messanging {
             applicationId packageName + "Messanging"
-            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.messanging" ]
+            manifestPlaceholders = [ priorityLabel:"60", targetPackageLabel:"com.android.messaging" ]
         }
         Nova_Launcher {
             applicationId packageName + "Nova_Launcher"
