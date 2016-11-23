@@ -11,16 +11,16 @@ android:
   - android-23
 
 before_install:
-- chmod +x gradlew
+  - chmod +x gradlew
 
 script:
-- "./gradlew clean build connectedAndroidTest -PdisablePreDex --stacktrace"
+  ./gradlew build
 
 notifications:
   email: true
 
 before_cache:
-- rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 
 cache:
   directories:
