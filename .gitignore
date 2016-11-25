@@ -102,3 +102,4 @@ src/main/assets/overlays/org.chromium.chrome/
 src/main/assets/overlays/org.cyanogenmod.audiofx/
 src/main/assets/overlays/org.omnirom.omniswitch/
 src/main/assets/overlays/projekt.substratum/
+/keystore.properties

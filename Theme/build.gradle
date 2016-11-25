@@ -1,31 +1,35 @@
 apply plugin: 'com.android.application'
 
 def themeName = 'Biohazard'
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.3"
-
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
     defaultConfig {
         applicationId "com.pierx.biohazard"
         minSdkVersion 22
-        targetSdkVersion 23
-        versionCode 28
+        targetSdkVersion 25
+        versionCode 29
         versionName "Ouroboros"
         setProperty("archivesBaseName", themeName + "-" + "$versionName")
-        jackOptions {
-            enabled true
-        }
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -383,5 +387,4 @@ project.afterEvaluate {
 }
 
 dependencies {
-    compile 'com.github.javiersantos:PiracyChecker:0.0.2'
 }

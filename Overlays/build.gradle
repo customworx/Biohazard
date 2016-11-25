@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "24.0.3"
 
     def themeName = "Biohazard"
     def themeAuthor = "pierx"
@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId packageName + "overlay"
         minSdkVersion 21
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         manifestPlaceholders = [
